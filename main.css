@@ -630,6 +630,9 @@ input[type="submit"]:hover {
 }
 
 @media screen and (max-width: 600px) {
+    .bar {
+        height: 2px;
+    }
     .menu-toggler {
         top: 2rem;
         right: 2rem;  
@@ -711,8 +714,16 @@ input[type="submit"]:hover {
     .up {
         right: 2rem;
     }
-    .aos-item {
-      width: 20%;
+    ul.contact-social-media-ul {
+        text-align: center;
+        display: table; 
+        margin-top: -4rem;
+    }
+    ul.contact-social-media-ul li {
+        display: inline-block; 
+    }
+    ul.contact-social-media-ul li a {
+        margin: 0 2rem;
     }
     
 
