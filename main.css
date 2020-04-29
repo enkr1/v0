@@ -26,6 +26,7 @@ a {
 p {
     font-size: 1.8rem;
     font-weight: 300;
+    line-height: 1.6;
 }
 img {
     width: 100%; 
@@ -261,7 +262,6 @@ li {
 }
 .about-details p {
     font-weight: 300;
-    line-height: 1.6;
 }
 .social-media {
     margin-top: 5rem;
@@ -335,7 +335,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin: 5rem 0;  */
+    margin: 5rem 0; 
 }
 .profile-item:last-child {
     margin-bottom: 0;
@@ -465,7 +465,7 @@ input[type="submit"]:hover {
     background-color: var(--sec-color);
 }
 .emailme a {
-    font-size: 6rem;
+    font-size: 24rem;
 }
 .emailme {
     margin-bottom: 10rem;
@@ -627,6 +627,20 @@ input[type="submit"]:hover {
     .timeline .date:after {
         left: -5.3rem;
     }
+    .emailme a {
+        font-size: 18rem;
+    }
+    ul.contact-social-media-ul {
+        text-align: center;
+        display: table; 
+        margin-top: -4rem;
+    }
+    ul.contact-social-media-ul li {
+        display: inline-block; 
+    }
+    ul.contact-social-media-ul li a {
+        margin: 0 2rem;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -638,6 +652,13 @@ input[type="submit"]:hover {
         right: 2rem;  
         width: 3rem;
         height: 2rem; 
+    }
+    .section-heading h6 {
+        font-size: 1.4rem; 
+        margin-top: 1.3rem;
+    }
+    .section-heading h6 span {
+        display: none;
     }
     /* .landing-text h1 {
         font-size: 7rem;
@@ -713,6 +734,13 @@ input[type="submit"]:hover {
     }
     .up {
         right: 2rem;
+    }
+    .emailme {
+        margin: -4rem 0 2rem 0;
+    }
+    .emailme a {
+        margin: -12rem 0;
+        font-size: 18rem;
     }
     ul.contact-social-media-ul {
         text-align: center;
