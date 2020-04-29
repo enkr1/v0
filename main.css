@@ -28,7 +28,13 @@ p {
     font-weight: 300;
 }
 img {
-    width: 100%;
+    width: 100%; 
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 /*End global*/
 
@@ -123,8 +129,8 @@ li {
     /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
     /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-    font-size: 5em;
-    padding: 1rem;
+    font-size: 3.5em;
+    padding: 2rem;
 }
 .nav-link:hover, 
 .nav-link:focus {
@@ -137,7 +143,7 @@ li {
     border-radius: initial;
 }
 .menu-toggler {
-    position: absolute;
+    position: fixed;
     top: 5rem;
     right: 5rem;
     width: 5rem;
@@ -147,7 +153,7 @@ li {
     justify-content: space-between;
     cursor: pointer;
     z-index: 999;
-    transition: transform 650ms ease-out;
+    transition: transform 500ms ease-out;
 }
 .menu-toggler.open {
     transform: rotate(-270deg);
@@ -195,10 +201,19 @@ li {
     text-align: center;
     z-index: 1;
 }
+.landing-text .logo {
+    width: 80%;
+    user-select: none;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    user-select: none;
+}
 .landing-text h1 {
-    font-size: 18rem;
-    /* font-family: 'Caveat', cursive; */
-    font-family: 'Great Vibes', cursive;
+    font-size: 18rem;  
+    font-weight: 300;
     background: var(--background);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -206,9 +221,12 @@ li {
     user-select: none;
 }
 .landing-text h6 {
+    font-family: monospace;
+    margin-top: 20%;
     font-size: 2rem;
     font-weight: 400;
     color: var(--background);
+
 }
 /*End header*/
 
@@ -229,7 +247,8 @@ li {
     opacity: .3;
 }
 .about-heading h6 {
-    font-size: 2rem;
+    /* color: var(--background); */
+    font-size: 3rem;
     font-weight: 300;
     margin-top: 0rem;
 }
@@ -351,6 +370,7 @@ li {
 /*Start timeline*/
 .timeline {
     margin-left: 22rem;
+    margin-bottom: 8rem;
 }
 .timeline ul {
     border-left: 4px solid var(--pri-color);
@@ -494,13 +514,14 @@ input[type="submit"]:hover {
         background: url("images/sitebg2.jpg") no-repeat center fixed;
         background-size: cover;
     } */
-    .landing-text h1 {
-        font-size: 15rem;
-    }
+    
+    /* .landing-text h1 {
+        font-size: 12rem;
+    } */
     .landing-text h6 {
-        margin-top: 2rem;
         font-size: 1.7rem;
-    }
+        margin-top: 20%;
+    } 
     .nav-list {
         flex-direction: column;
     }
@@ -545,19 +566,35 @@ input[type="submit"]:hover {
 @media screen and (max-width: 600px) {
     .menu-toggler {
         top: 2rem;
-        right: 2rem;
+        right: 2rem;  
+        width: 3rem;
+        height: 2rem; 
     }
-    .landing-text h1 {
-        font-size: 8rem;
-    }
+    /* .landing-text h1 {
+        font-size: 7rem;
+    } */
+
     .landing-text h6 {
         font-size: 1.4rem;
+        margin-top: 28%;
     }
     .nav-link {
-        font-size: 3rem; 
+        font-size: 2rem; 
     }
     .about .container {
         flex-direction: column;
+    }
+    .about-details p {
+        text-align: center;
+        font-weight: 300;
+        line-height: 1.6;
+        font-size: 1.4rem;
+        padding: 0 4rem;
+        margin-bottom: -2rem;
+    }
+    .social-media i {
+        font-size: 3rem;
+        margin: 0 -0.6rem;
     }
     .profile-img {
         margin: 0 0 7rem 0;
@@ -573,18 +610,45 @@ input[type="submit"]:hover {
         margin: 0;
         order: 2;
     }
-    .timeline p {
+    .portfolio-description .cta { 
+        margin-bottom: 4rem;
+    }
+    .timeline {
+        margin: 0;
+        padding: 0; 
+        margin-left: 12rem;
+    }
+    .timeline ul {
+        padding: 0 auto;
+        margin: 0 auto;
+    }
+    .timeline p { 
         font-size: 1.4rem;
     }
+    .timeline p, .timeline h1 {
+        margin-left: -1.6rem;
+    }
     .timeline .date::before {
-        font-size: 1.6rem;
+        font-size: 1.6rem; 
+        margin-left: 4.3rem;
+    }
+    .timeline .date::after {
+        left: -5.3rem;
+
     }
     form {
         width: 100%;
     }
+    input[type="submit"] {
+        margin-left: 11rem;
+    }
     .up {
         right: 2rem;
     }
+    .aos-item {
+      width: 20%;
+    }
+    
 
 }
 /*End media queries*/
