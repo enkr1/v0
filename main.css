@@ -13,8 +13,7 @@ html {
 body {
     width: 100%;
     height: 100%;
-    /* background: url("images/sitebg.jpg") no-repeat center fixed; */
-    background: var(--main-grad); /* HERE */
+    background: url("images/sitebg.jpg") no-repeat center fixed;
     background-size: cover;
 }
 section {
@@ -41,12 +40,12 @@ img {
 /*End global*/
 
 /*Start reusable*/
-:root { /*HERE*/
-    --main-grad: linear-gradient(69deg, #0F2027, #203A43, rgb(44, 100, 83));
-    --background: linear-gradient(70deg, rgb(77, 171, 80), #ec5a5a58, #203A43);
-    --pri-color: #b9fffb;
-    --sec-color: #6fbab7;
-    --third-color: #0F2027;
+:root { /*HERE*/ 
+    /* --background: linear-gradient(70deg, rgb(77, 171, 80), #ec5a5a58, #203A43); */
+    --background: linear-gradient(45deg, rgb(8, 49, 15), #318225, #aad737, #d2d737);
+    --pri-color: rgb(145, 226, 132);
+    --sec-color: #46763e;
+    --third-color: #102128;
 
 }
 .container {
