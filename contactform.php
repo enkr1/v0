@@ -1,23 +1,17 @@
 <?php
 
-if(isset($_POST['submit'])) {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
+if($_POST["submit"]) {
+    $recipient="enkr99@gmail.com";
+    $subject="Form to email message";
+    $sender=$_POST["name"];
+    $senderEmail=$_POST["email"];
+    $message=$_POST["message"];
 
-    $mailTo = "enkr99@gmail.com";
-    $headers = "From: ".$email;
-    $txt = "You have received an e-mail from ".$name.".\n\n".$message;
+    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
 
-    if(mail($mailTo, "From My Website", $message, $headers)) {
-        echo "<h1>Sent successfully!</h1>";
-    } else {
-        echo "Something went wrong...";
-    }
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
 
-    // header("Localtion: index.html");
-
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
 }
-
 
 ?>
