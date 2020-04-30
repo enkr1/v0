@@ -13,7 +13,8 @@ html {
 body {
     width: 100%;
     height: 100%;
-    background: url("images/sitebg.jpg") no-repeat center fixed;
+    /* background: url("images/sitebg.jpg") no-repeat center fixed; */
+    background: var(--main-grad); /* HERE */
     background-size: cover;
 }
 section {
@@ -40,11 +41,12 @@ img {
 /*End global*/
 
 /*Start reusable*/
-:root {
-    --background: linear-gradient(to top, #9796f0, #fbc7d4);
-    --pri-color: #9796f0;
-    --sec-color: #fbc7d4;
-    --third-color: rgba(42, 6, 68, 0.90);
+:root { /*HERE*/
+    --main-grad: linear-gradient(69deg, #0F2027, #203A43, rgb(44, 100, 83));
+    --background: linear-gradient(70deg, rgb(77, 171, 80), #9796f0, #ec5a5a);
+    --pri-color: #b9fffb;
+    --sec-color: #6fbab7;
+    --third-color: #0F2027;
 
 }
 .container {
@@ -212,22 +214,21 @@ li {
     transform: translate(-50%, -50%); 
     user-select: none;
 }
-.landing-text h1 {
-    font-size: 18rem;  
-    font-weight: 300;
-    background: var(--background);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding: 1rem;
-    user-select: none;
-}
 .landing-text h6 {
     font-family: monospace;
     margin-top: 20%;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 400;
     color: var(--background);
-
+}
+.landing-text h6 span {  
+    font-size: 2rem;
+}
+.landing-text h6 span.span1 {
+    padding-right: 1rem;
+}
+.landing-text h6 span.span2 {
+    padding-left: 0.5rem;
 }
 /*End header*/
 
@@ -362,11 +363,11 @@ li {
     margin-top: 2.5rem;
     font-size: 1.5rem;
     text-transform: uppercase;
-    color: #6633ca;
+    color: var(--pri-color);
     transition: color 650ms;
 }
 .portfolio-description .cta:hover { 
-    color: #c24ee2;
+    color: var(--sec-color);
 }
 /*End services*/
 
@@ -424,8 +425,7 @@ li {
     border-radius: 100%;
     left: -4rem;
     height: 1.5rem;
-    width: 1.5rem;
-    /* background-color: var(--sec-color); */
+    width: 1.5rem; 
     background-color: #eee;
 }
 /*End timeline*/
@@ -588,6 +588,9 @@ input[type="submit"]:hover {
         font-size: 1.7rem;
         margin-top: 20%;
     } 
+    .landing-text h6 span {  
+        font-size: 1.5rem;
+    } 
     .nav-list {
         flex-direction: column;
     }
@@ -665,8 +668,11 @@ input[type="submit"]:hover {
     } */
 
     .landing-text h6 {
-        font-size: 1.4rem;
+        font-size: 1.4 rem;
         margin-top: 28%;
+    }
+    .landing-text h6 span {  
+        font-size: 1.4rem;
     }
     .nav-link {
         font-size: 2rem; 
