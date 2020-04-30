@@ -246,7 +246,7 @@ li {
     animation: flying 5s linear infinite;
     border-bottom-right-radius: 100%;
     border-top-left-radius: 100%;
-    top: -10rem;
+    top: -11rem;
 }
 .area li:nth-child(1) {
     left: 88%;
@@ -268,8 +268,8 @@ li {
 }
 .area li:nth-child(4) {
     left: 8%;
-    width: 10rem;
-    height: 10rem;
+    width: 9rem;
+    height: 9rem;
     animation-delay: 4.6s;
 }
 .area li:nth-child(5) {
@@ -385,17 +385,19 @@ li {
     padding: 2rem;
 }
 .skill h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin: 2rem -2px 2rem 0;
+    margin: 4rem -2px 2rem 0;
     color: var(--pri-color);
 }
 .icon-container {
-    width: 10rem;
-    height: 10rem;
+    width: 14rem;
+    height: 14rem;
     border: 3px solid var(--pri-color);
+    border-top-right-radius: 90%;
+    border-bottom-left-radius: 90%;
     /* background-color: var(--pri-color); */
     margin-bottom: 2rem;
     display: flex;
@@ -542,7 +544,8 @@ input[type="submit"]:hover {
     color: var(--third-color);
     background-color: var(--sec-color);
 }
-.emailme a {
+.emailme a i {
+    transition: color 650ms;
     font-size: 24rem;
 }
 .emailme {
@@ -560,7 +563,7 @@ input[type="submit"]:hover {
     width: 100%;
     text-align: center;
     background-color: var(--third-color);
-    padding: 3.5rem 0;
+    padding: 6rem 0;
     position: relative;
 }
 .up {
