@@ -43,7 +43,7 @@ img {
 /*Start reusable*/
 :root { /*HERE*/
     --main-grad: linear-gradient(69deg, #0F2027, #203A43, rgb(44, 100, 83));
-    --background: linear-gradient(70deg, rgb(77, 171, 80), #9796f0, #ec5a5a);
+    --background: linear-gradient(70deg, rgb(77, 171, 80), #9796f0, #ec5a5a58);
     --pri-color: #b9fffb;
     --sec-color: #6fbab7;
     --third-color: #0F2027;
@@ -481,7 +481,7 @@ input[type="submit"]:hover {
     height: 10vh;
     width: 100%;
     text-align: center;
-    background-color: #16162d;
+    background-color: var(--third-color);
     padding: 3.5rem 0;
     position: relative;
 }
@@ -498,7 +498,7 @@ input[type="submit"]:hover {
     animation: pulse 2s infinite;
 }
 .up i {
-    color: #16162d;
+    color: var(--third-color);
     font-size: 2rem;
     margin: auto;
 }
