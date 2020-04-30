@@ -43,7 +43,7 @@ img {
 /*Start reusable*/
 :root { /*HERE*/
     --main-grad: linear-gradient(69deg, #0F2027, #203A43, rgb(44, 100, 83));
-    --background: linear-gradient(70deg, rgb(77, 171, 80), #9796f0, #ec5a5a58);
+    --background: linear-gradient(70deg, rgb(77, 171, 80), #ec5a5a58, #203A43);
     --pri-color: #b9fffb;
     --sec-color: #6fbab7;
     --third-color: #0F2027;
@@ -395,7 +395,7 @@ li {
     opacity: .3;
 }
 .timeline .date {
-    border-bottom: 2px solid rgba(255, 255, 255, .1);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     position: relative;
@@ -426,7 +426,7 @@ li {
     left: -4rem;
     height: 1.5rem;
     width: 1.5rem; 
-    background-color: #eee;
+    background-color: var(--third-color);
 }
 /*End timeline*/
 
