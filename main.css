@@ -367,6 +367,55 @@ li {
 .fa-soundcloud:hover {
     color: #ff7700 ;
 }
+
+
+#svg-beatboxer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+#svg-beatboxer path:nth-child(2) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards;
+}
+#svg-beatboxer path:nth-child(3) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards 0.5s;
+}
+#svg-beatboxer path:nth-child(4) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards 1s;
+}
+#svg-beatboxer path:nth-child(5) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards 1.5s;
+}
+#svg-beatboxer path:nth-child(6) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards 2s;
+}#svg-beatboxer path:nth-child(7) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards 2.5s;
+}#svg-beatboxer path:nth-child(8) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards 3s;
+}#svg-beatboxer path:nth-child(9) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards 3.5s;
+}#svg-beatboxer path:nth-child(10) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards 4.5s;
+}
 /*End about*/
 
 /*Start Specialization*/
@@ -686,7 +735,11 @@ input[type="submit"]:hover {
   @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
   @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
   @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
-  
+  @keyframes line-anime {
+      to {
+          stroke-dashoffset: 0;
+      }
+  }
 /*End animations*/
 
 /*Start media queries*/
