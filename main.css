@@ -42,7 +42,7 @@ img {
 /*Start reusable*/
 :root {
     --background: linear-gradient(45deg, rgb(8, 49, 15), #318225, #aad737, #d2d737);
-    --pri-color: rgb(196, 251, 169);
+    --pri-color: rgb(196, 251, 169); /* #C4FBA9 */
     --sec-color: #46763e;
     --third-color: #102128;
 
@@ -369,7 +369,7 @@ li {
 }
 /*End about*/
 
-/*Start services*/
+/*Start Specialization*/
 .my-skills {
     margin-top: 10rem;
     display: grid;
@@ -395,21 +395,34 @@ li {
 .icon-container {
     width: 14rem;
     height: 14rem;
-    border: 3px solid var(--pri-color);
-    border-top-right-radius: 90%;
-    border-bottom-left-radius: 90%;
-    /* background-color: var(--pri-color); */
+    border: 2px solid var(--pri-color);
     margin-bottom: 2rem;
     display: flex;
-    transform: rotate(45deg)
+    transform: rotate(0deg); 
+    -webkit-box-shadow: 0px 0px 22px 0px var(--pri-color);
+    -moz-box-shadow: 0px 0px 22px 0px  var(--pri-color);
+    box-shadow: 0px 0px 22px 0px  var(--pri-color);
+}
+.icon-container::after {
+    position: absolute;
+    content: '';
+    width: 13.1rem;
+    height: 13.1rem;
+    border: 2px solid var(--pri-color); 
+    display: flex;
+    transform: rotate(45deg); 
+    -webkit-box-shadow: 0px 0px 22px 0px var(--pri-color);
+    -moz-box-shadow: 0px 0px 22px 0px  var(--pri-color);
+    box-shadow: 0px 0px 22px 0px  var(--pri-color);
+    opacity: 0.6;
 }
 .icon-container i {
+    position: relative;
     color: var(--pri-color);
     font-size: 5rem;
-    margin: auto;
-    transform: rotate(-45deg);
+    margin: auto; 
 }
-/*End services*/
+/*End Specialization*/
 
 /*Start portfolio*/
 .portfolio-item {
@@ -670,19 +683,14 @@ input[type="submit"]:hover {
         opacity: 0;
     }
   }
+  @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+  @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+  @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
   
 /*End animations*/
 
 /*Start media queries*/
 @media screen and (max-width: 768px) {
-    /* body {
-        background: url("images/sitebg2.jpg") no-repeat center fixed;
-        background-size: cover;
-    } */
-    
-    /* .landing-text h1 {
-        font-size: 12rem;
-    } */
     .landing-text h6 {
         font-size: 1.7rem;
         margin-top: 20%;
@@ -790,6 +798,9 @@ input[type="submit"]:hover {
     .social-media i {
         font-size: 3rem;
         margin: 0 -0.6rem;
+    }
+    .icon-container i { 
+        font-size: 4.5rem; 
     }
     .profile-img {
         margin: 0 0 7rem 0;
