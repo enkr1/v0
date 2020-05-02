@@ -828,6 +828,14 @@ input[type="submit"]:hover {
 }
 
 @media screen and (max-width: 600px) {
+    p {
+        font-size: 1.6rem;
+        line-height: 1.6;
+        word-spacing: 0;
+        letter-spacing: 0;
+        color: var(--main-p-color);
+        /* font-family: 'Lato', sans-serif; */
+    }
     .bar {
         height: 2px;
     }
@@ -839,7 +847,7 @@ input[type="submit"]:hover {
     }
     .section-heading h6 {
         font-size: 1.4rem; 
-        margin-top: 1.3rem;
+        margin-top: 1.1rem;
     }
     .section-heading h6 span {
         display: none;
@@ -864,7 +872,6 @@ input[type="submit"]:hover {
     .about-details p {
         text-align: center;
         line-height: 1.6;
-        font-size: 1.6rem;
         padding: 0 auto;
         margin-bottom: -2rem;
     }
