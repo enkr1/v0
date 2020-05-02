@@ -476,7 +476,7 @@ li {
     -webkit-box-shadow: 0px 0px 22px 0px var(--pri-color);
     -moz-box-shadow: 0px 0px 22px 0px  var(--pri-color);
     box-shadow: 0px 0px 22px 0px  var(--pri-color);
-    opacity: 0.6;
+    opacity: 0.8;
 }
 .icon-container i {
     position: relative;
