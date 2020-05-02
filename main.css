@@ -832,9 +832,7 @@ input[type="submit"]:hover {
         font-size: 1.6rem;
         line-height: 1.6;
         word-spacing: 0;
-        letter-spacing: 0;
-        color: var(--main-p-color);
-        /* font-family: 'Lato', sans-serif; */
+        letter-spacing: 0; 
     }
     .bar {
         height: 2px;
