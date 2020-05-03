@@ -879,7 +879,7 @@ ul.contact-social-media-ul {
 /*Start media queries*/
 @media screen and (max-width: 768px) {
     .cursor {
-     /* display: none;    */
+        display: none;   
     }
     .landing-text h6 {
         font-size: 1.7rem;
