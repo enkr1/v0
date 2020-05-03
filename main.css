@@ -329,7 +329,7 @@ li {
     transform-origin: 100% 100%;
     pointer-events: none;
     z-index: 999;
-    transition: all 0.4s ease;
+    transition: all 0.6s ease-in-out;
     transition-property: background, transform;
     /* transition: all 0.1s ease; */
     -webkit-box-shadow: 0px 0px 22px 0px var(--pri-color);
@@ -337,15 +337,11 @@ li {
     box-shadow: 0px 0px 22px 0px  var(--pri-color);
     
     
-    backdrop-filter: sepia(90%);
-    /* backdrop-filter: invert(70%); */
+    backdrop-filter: sepia(100%);
+    /* backdrop-filter: invert(30%); */
 }
 .img-grow {
-    transform: scale(3);
-    /* background: #000; */
-}
-.img-hover {
-    backdrop-filter: hue-rotate(120deg);
+    transform: scale(4); 
 }
 
 /*End header*/
@@ -376,6 +372,11 @@ li {
 .profile-img {
     flex: 1;
     margin-right: 5rem;
+    /* animation: pulse 2s infinite; */
+    z-index: 2;
+    -webkit-box-shadow: 0px 0px 6px 0px var(--pri-color);
+    -moz-box-shadow: 0px 0px 6px 0px  var(--pri-color);
+    box-shadow: 0px 0px 6px 0px  var(--pri-color);
 }
 .about-details {
     flex: 1;
