@@ -17,7 +17,7 @@ $(document).ready(function () {
 
 
     let mouseCursor = document.querySelector(".cursor");
-    let words = document.querySelectorAll("img");
+    let words = document.querySelectorAll("img, .nav-link");
     window.addEventListener('mousemove', cursor);
 
     function cursor(e) {
