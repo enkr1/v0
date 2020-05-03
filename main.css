@@ -842,6 +842,29 @@ ul.contact-social-media-ul {
         box-shadow: 0 0 0 0 rgba(251, 199, 212, 0);
     }
 }
+@keyframes flying {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    20% {
+        transform: translateY(20vh) rotate(90deg);
+        opacity: 0.8;
+    }
+    60% {
+        transform: translateY(60vh) rotate(-45deg);
+        opacity: 0.4;
+    }
+    90% {
+        opacity: 0.9;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+        /* opacity: 1; */
+        stroke-dashoffset: 0;
+    }
+  }
   @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
   @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
   @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
