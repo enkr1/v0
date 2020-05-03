@@ -1,0 +1,16 @@
+/* main page  */
+
+body.bbx-body {
+    background-image: url(/images/interest-main-img.jpg);
+}
+
+img.interest-img {
+    width: 50vw;
+    /* position:absolute; */
+    /* float:right;
+    right:0;
+    clear:both; */
+    
+}
+
+/* main page  */

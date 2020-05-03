@@ -15,6 +15,30 @@ $(document).ready(function () {
         }, 2000)
     });
 
+
+    let mouseCursor = document.querySelector(".cursor");
+    let words = document.querySelectorAll("p");
+    window.addEventListener('mousemove', cursor);
+
+    function cursor(e) {
+        mouseCursor.style.top = e.pageY + 'px';
+        mouseCursor.style.left = e.pageX + 'px';
+    }
+
+    words.forEach(word => {
+        word.addEventListener("mouseover", () => {
+            mouseCursor.classList.add("img-grow");
+            // image.classList.add("img-hover");
+        })
+        word.addEventListener("mouseleave", () => {
+            mouseCursor.classList.remove("img-grow");
+            // image.classList.add("img-hover");
+        })  
+    });
+    
+
+
+
     $('#up').on('click', function() {
         $('html, body').animate({
             scrollTop: 0
@@ -26,7 +50,7 @@ $(document).ready(function () {
         duration: 1800,
         once: true
     });
-
+    
 
 
 });

@@ -16,6 +16,7 @@
 
 <body>
     <header>
+        <div class="cursor"></div>
         <div class="menu-toggler">
             <div class="bar half start"></div>
             <div class="bar half middle"></div>
@@ -33,6 +34,7 @@
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
+
 
         <div class="landing-text">
             <div class="logo">
@@ -91,17 +93,36 @@
         </div>
     </section>
 
-
-    <section class="portfolio" id="portfolio">
+    <!-- <section class="gallery" id="gallery">
         <div class="container">
             <div class="section-heading">
-                <!-- <h1></h1> -->
-                <!-- <h6></h6> -->
+                <h1>Gallery</h1>
+                <h6>Some pictures of me</h6>
             </div>
 
+            <div class="rotating-box">
+                <div class="single-rb">
+                    <div class="font-side">
+                        <img src="images/1.jpg" alt="">
+                    </div>
+                    <div class="back-side">
+                        <img src="images/2.jpg" alt="">
+                    </div>
+                    <div class="left-side">
+                        <img src="images/3.jpg" alt="">
+                    </div>
+                    <div class="right-side">
+                        <img src="images/4.jpg" alt="">
+                    </div>
+                    <div class="top-side">
+                    </div>
+                    <div class="bottom-side">
+                    </div>
+                </div>
+            </div>
 
         </div>
-    </section>
+    </section> -->
 
 
     <section class="specialization" id="specialization">
@@ -129,9 +150,9 @@
                     <h1>Web Development</h1>
                     <p>
                         Skilled in building an JSP and ASP.NET Core Web Application.
-                        Tools: 
+                        Tools:
                         NetBeans IDE,
-                        Visual Studio, 
+                        Visual Studio,
                         Microsoft SQL Server Management Studio.
 
                         <!-- Visual Studio, Visual Studio code, NetBeans IDE,
@@ -170,7 +191,7 @@
                     <h6>Web Design</h6>
                     <h1>Company Website: YINEN CRYSTAL</h1>
                     <p>
-                        I redesign an existing Singapore commercial website 
+                        I redesign an existing Singapore commercial website
                         and applied a grid system and optimised my graphics
                         for web purposes.
                         The design of this website will be a solution to help users find relevant information using
@@ -253,7 +274,6 @@
         </div>
     </section>
 
-
     <section class="contact" id="contact" data-aos="fade-up" data-aos-delay="300">
         <div class="container">
             <div class="section-heading">
@@ -261,49 +281,57 @@
                 <h6>Please feel free to contact me <span>if you need any further information</span></h6>
             </div>
 
-            <!-- <form action="contactform.php" method="post" name="form">
-                <label for="name">Name: </label>
-                <input type="text" id="name" name="name" placeholder="Enter your name..." required>
-                <label for="email">Email: </label>
-                <input type="email" id="email" name="email" placeholder="Enter your email..." required>
-                <label for="service">Services: </label>
-                <select name="services" id="service">
-                    <option value="">Web Design</option>
-                    <option value="">Web Development</option>
-                    <option value="">Web Design/Development</option>
-                </select>
-                <label for="message">Message: </label>
-                <textarea name="message" id="message" cols="10" rows="10"></textarea>
+            <form action="http://formspree.io/enkr99@gmail.com" method="POST" name="form">
+
+                <div class="name-section">
+                    <input type="text" id="name" name="name" required pattern=".*\S.*">
+                    <label class="label-name" for="name">
+                        <span class="content-name">Name</span>
+                    </label>
+                </div>
+
+
+                <div class="email-section">
+                    <input type="email" id="email" name="email" required>
+                    <label class="label-email" for="email">
+                        <span class="content-email">Email</span>
+                    </label>
+                </div>
+
+
+                <div class="message-section">
+                    <textarea name="message" id="message" cols="10" rows="10" required pattern="^\s?(?=\S).*"></textarea>
+                    <label class="label-message" for="message">
+                        <span class="content-message">Message</span>
+                    </label>
+                </div>
+
                 <input type="submit" value="Submit">
             </form>
-             -->
-            <div class="emailme">
-                <a href="mailto:enkr99@gmail.com" class="icon-link">
-                    <i class="far fa-envelope"></i>
-                </a>
-                <!-- <p data-aos="slide-right" data-aos-delay="600">Online beatbox class is available!</p> -->
-            </div>
 
 
             <div class="social-media">
                 <ul class="nav-list contact-social-media-ul">
                     <li data-aos="zoom-out-up" data-aos-delay="400">
-                        <a target="_blank" href="https://github.com/enkr1" class="icon-link"><i
-                                class="fab fa-github-square"></i></a></li>
+                        <a target="_blank" href="https://github.com/enkr1" class="icon-link">
+                            <i class="fab fa-github-square"></i></a></li>
                     <li data-aos="zoom-out-down" data-aos-delay="800">
-                        <a target="_blank" href="https://www.linkedin.com/in/jinghuipang/" class="icon-link"><i
-                                class="fab fa-linkedin"></i></a></li>
+                        <a target="_blank" href="https://www.linkedin.com/in/jinghuipang/" class="icon-link">
+                            <i class="fab fa-linkedin"></i></a></li>
                     <li data-aos="zoom-out-up" data-aos-delay="1200">
                         <a target="_blank"
                             href="https://www.youtube.com/channel/UCJJmK5bN3b4izpMb2vtRXpw?view_as=subscriber"
-                            class="icon-link"><i class="fab fa-youtube-square"></i></a></li>
+                            class="icon-link">
+                            <i class="fab fa-youtube-square"></i></a></li>
                     <li data-aos="zoom-out-down" data-aos-delay="1600">
-                        <a target="_blank" href="https://www.facebook.com/enkrbeatbox" class="icon-link"><i
-                                class="fab fa-facebook-square"></i></a></li>
+                        <a target="_blank" href="https://www.facebook.com/enkrbeatbox" class="icon-link">
+                            <i class="fab fa-facebook-square"></i></a></li>
                     <li data-aos="zoom-out-up" data-aos-delay="2000">
-                        <a target="_blank" href="https://soundcloud.com/enkr1" class="icon-link"><i
-                                class="fab fa-soundcloud"></i></a></li>
-                    <!-- <li><a href="mailto:enkr99@gmail.com" class="icon-link"><i class="far fa-envelope"></i></a></li> -->
+                        <a href="mailto:enkr99@gmail.com" class="icon-link">
+                            <i class="far fa-envelope"></i></a></li>
+                    <!-- <li data-aos="zoom-out-up" data-aos-delay="2000">
+                        <a target="_blank" href="https://soundcloud.com/enkr1" class="icon-link">
+                            <i class="fab fa-soundcloud"></i></a></li> -->
                 </ul>
             </div>
 
