@@ -6,4 +6,11 @@ body.interest-body {
 }
 
 
+@media screen and (max-width: 600px) {
+
+    body.interest-body {
+        background: url("images/interest-main-img-m.jpg") no-repeat center fixed;
+        background-size: cover;
+    }
+}
 /* main page  */
