@@ -217,16 +217,16 @@ li {
     user-select: none;
     margin: 0;
     position: absolute;
-    top: 50%;
+    top: 46%;
     left: 50%;
     transform: translate(-50%, -50%); 
     user-select: none;
 }
 .landing-text h6 {
     font-family: monospace;
-    margin-top: 20%;
-    font-size: 3rem;
-    font-weight: 400;
+    margin-top: 22%;
+    font-size: 2.6rem;
+    font-weight: 300;
     color: var(--background);
 }
 .landing-text h6 span {  
@@ -907,7 +907,7 @@ ul.contact-social-media-ul {
     }
     .landing-text h6 {
         font-size: 1.7rem;
-        margin-top: 20%;
+        margin-top: 28%;
     } 
     .landing-text h6 span {  
         font-size: 1.5rem;
@@ -999,7 +999,6 @@ ul.contact-social-media-ul {
 
     .landing-text h6 {
         font-size: 1.4rem;
-        margin-top: 28%;
     }
     .landing-text h6 span {  
         font-size: 1.4rem;
