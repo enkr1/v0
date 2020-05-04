@@ -1,7 +1,7 @@
 /* main page  */
 
 body.bbx-body {
-    background: url("/images/interest-main-img.jpg");
+    background: url("images/interest-main-img.jpg");
     background-size: cover;
 }
 
