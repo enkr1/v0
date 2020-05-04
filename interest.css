@@ -1,7 +1,8 @@
 /* main page  */
 
 body.bbx-body {
-    background-image: url(/images/interest-main-img.jpg);
+    background-image: url("/images/interest-main-img.jpg") no-repeat center fixed;
+    background-size: cover;;
 }
 
 
