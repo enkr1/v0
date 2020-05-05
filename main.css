@@ -337,7 +337,6 @@ li {
     -moz-box-shadow: 0px 0px 22px 0px  var(--pri-color);
     box-shadow: 0px 0px 22px 0px  var(--pri-color);
     
-    
     backdrop-filter: sepia(100%);
     /* backdrop-filter: invert(30%); */
 }
@@ -413,56 +412,6 @@ li {
 }
 .fa-soundcloud:hover {
     color: #ff7700 ;
-}
-
-
-#svg-beatboxer {
-    width: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
-}
-#svg-beatboxer path:nth-child(2) {
-    stroke-dasharray: 555;
-    stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards 1s;
-}
-#svg-beatboxer path:nth-child(3) {
-    stroke-dasharray: 555;
-    stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards 1.5s;
-}
-#svg-beatboxer path:nth-child(4) {
-    stroke-dasharray: 555;
-    stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards 2s;
-}
-#svg-beatboxer path:nth-child(5) {
-    stroke-dasharray: 555;
-    stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards 2.5s;
-}
-#svg-beatboxer path:nth-child(6) {
-    stroke-dasharray: 555;
-    stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards 3s;
-}#svg-beatboxer path:nth-child(7) {
-    stroke-dasharray: 555;
-    stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards 3.5s;
-}#svg-beatboxer path:nth-child(8) {
-    stroke-dasharray: 555;
-    stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards 4s;
-}#svg-beatboxer path:nth-child(9) {
-    stroke-dasharray: 555;
-    stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards 4.5s;
-}#svg-beatboxer path:nth-child(10) {
-    stroke-dasharray: 555;
-    stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards 5s;
 }
 /*End about*/
 
@@ -578,49 +527,6 @@ li {
     color: var(--sec-color);
 }
 /*End portfolio*/
-
-/* Start gallery  */
-.rotating-box {
-    width: 30rem;
-    height: 30rem;
-    margin: auto;
-    perspective: 100rem;
-}
-.single-rb {
-    width: auto;
-    margin: auto;
-    margin-top: 16rem;
-    animation: box-rotate 12s linear infinite;
-    transform-style: preserve-3d;
-}
-.single-rb img {
-    position: absolute;
-    width: 30rem;
-    height: 30rem;
-} 
-.font-side {
-    transform: translateZ(15rem);
-}
-.back-side {
-    transform: rotateY(180deg) translateZ(15rem);
-}
-.left-side {
-    transform: rotateY(-90deg) translateX(-15rem);
-    transform-origin: left;
-}
-.right-side {
-    transform: rotateY(90deg) translateX(15rem);
-    transform-origin: right;
-}
-.top-side {
-    transform: rotateX(-90deg) translateY(-15rem);
-    transform-origin: top;
-}
-.bottom-side {
-    transform: rotateX(90deg) translateY(15rem);
-    transform-origin: bottom;
-}
-/* End gallery  */
 
 
 /*Start timeline*/
@@ -867,8 +773,106 @@ ul.contact-social-media-ul {
     transform: scale(1.1); 
 }
 
+.rotating-box {
+    width: 30rem;
+    height: 30rem;
+    margin: auto;
+    perspective: 100rem;
+}
+.single-rb {
+    width: auto;
+    margin: auto;
+    margin-top: 16rem;
+    animation: box-rotate 16s linear infinite;
+    transform-style: preserve-3d;
+}
+.single-rb img {
+    position: absolute;
+    width: 30rem;
+    height: 30rem;
+} 
+.single-rb:hover {
+    /* animation: box-rotate 22s linear infinite; */ 
+    /* transition: transform 0.3s; */
+
+}
+
+.font-side {
+    transform: translateZ(15rem);
+}
+.back-side {
+    transform: rotateY(180deg) translateZ(15rem);
+}
+.left-side {
+    transform: rotateY(-90deg) translateX(-15rem);
+    transform-origin: left;
+}
+.right-side {
+    transform: rotateY(90deg) translateX(15rem);
+    transform-origin: right;
+}
+.top-side {
+    transform: rotateX(-90deg) translateY(-15rem);
+    transform-origin: top;
+}
+.bottom-side {
+    transform: rotateX(90deg) translateY(15rem);
+    transform-origin: bottom;
+}
 /* gallery page  */
 
+
+/* interest page */
+
+#svg-beatboxer {
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+#svg-beatboxer path:nth-child(2) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards 1s;
+}
+#svg-beatboxer path:nth-child(3) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards 1.5s;
+}
+#svg-beatboxer path:nth-child(4) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards 2s;
+}
+#svg-beatboxer path:nth-child(5) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards 2.5s;
+}
+#svg-beatboxer path:nth-child(6) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards 3s;
+}#svg-beatboxer path:nth-child(7) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards 3.5s;
+}#svg-beatboxer path:nth-child(8) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards 4s;
+}#svg-beatboxer path:nth-child(9) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards 4.5s;
+}#svg-beatboxer path:nth-child(10) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards 5s;
+}
+/* interest page */
 
 
 /*Start animations*/
