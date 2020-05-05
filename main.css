@@ -104,6 +104,7 @@ img {
 }
 .has-margin-right {
     margin-right: 5rem;
+    text-align: right;
 }
 /*End reusable*/
 
@@ -979,6 +980,10 @@ ul.contact-social-media-ul {
     .icon-container i {
         font-size: 3.5rem;
     } 
+    /* this is the second item  */
+    .portfolio-description.has-margin-right { 
+        text-align: left;
+    }
     .timeline ul {        
         /* padding: 2rem 0 2rem 1rem; */
         padding: 1rem 0 3rem 4.3rem;
@@ -1075,10 +1080,6 @@ ul.contact-social-media-ul {
         margin: 0;
         order: 2;
     }
-    /* this is the second item  */
-    /* .portfolio-description.has-margin-right { 
-        margin-left: 0rem;
-    } */
     .portfolio-description .cta { 
         margin-bottom: 4rem;
     }
