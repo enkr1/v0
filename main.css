@@ -364,7 +364,8 @@ li {
     opacity: .3;
 }
 .about-heading h6 {
-    color: var(--pri-color);
+    font-family: monospace;
+    color: var(--main-p-color);
     font-size: 3rem;
     font-weight: 300;
     margin-top: 0rem;
