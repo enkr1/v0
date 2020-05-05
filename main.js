@@ -15,6 +15,7 @@ $(document).ready(function () {
         }, 2000)
     });
 
+    
 
     let mouseCursor = document.querySelector(".cursor");
     let words = document.querySelectorAll("img, .nav-link");
@@ -44,6 +45,15 @@ $(document).ready(function () {
             scrollTop: 0
         }, 3000)
     });
+
+    $(window).scroll(function() {
+        if($(this).scrollTop()>800) {
+            $('#up').fadeIn();
+        }
+        else {
+            $('#up').fadeOut();
+        }
+    })
 
     AOS.init({
         easing: 'ease',

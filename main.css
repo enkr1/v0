@@ -378,6 +378,10 @@ li {
     -moz-box-shadow: 0px 0px 3px 0px  var(--pri-color);
     box-shadow: 0px 0px 3px 0px  var(--pri-color);
 }
+.profile-img a img:hover {
+    transition: all 0.7s ease; 
+    transform: scale(1.02); 
+}
 .about-details {
     flex: 1;
 }
@@ -809,21 +813,22 @@ ul.contact-social-media-ul {
     position: relative;
 }
 .up {
-    position: absolute;
+    position: fixed;
     height: 5rem;
     width: 5rem;
     background-color: var(--pri-color);
-    top: -2.5rem;
-    right: 5rem;
+    top: 85vh;
+    right: 5vw;
     border-radius: 100%;
-    display: flex;
+    display: none;
     cursor: pointer;
     animation: pulse 2s infinite;
+    z-index: 999;
 }
 .up i {
     color: var(--third-color);
     font-size: 2rem;
-    margin: auto;
+    margin: 1.3rem auto;
 }
 .copyright p {
     letter-spacing: 0.6px;
@@ -1037,9 +1042,9 @@ ul.contact-social-media-ul {
         order: 2;
     }
     /* this is the second item  */
-    .portfolio-description.has-margin-right { 
-        margin-left: -5.7rem;
-    }
+    /* .portfolio-description.has-margin-right { 
+        margin-left: 0rem;
+    } */
     .portfolio-description .cta { 
         margin-bottom: 4rem;
     }
@@ -1102,7 +1107,14 @@ ul.contact-social-media-ul {
         width: 100%;
     }
     .up {
-        right: 2rem;
+        height: 4rem;
+        width: 4rem;
+        top: 90vh;
+        right: 5vw;
+    }
+    .up i {
+        font-size: 1.8rem;
+        margin-top: 1rem;
     }
     #svg-beatboxer {
         width: 30rem;
