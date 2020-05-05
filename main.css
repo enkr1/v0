@@ -836,6 +836,25 @@ ul.contact-social-media-ul {
 }
 /*End footer*/
 
+
+/* gallery page  */
+.back a i {
+    position: absolute;
+    font-size: 3rem;
+    /* top: 2rem;
+    left: 2rem; */
+    color: var(--pri-color);
+    padding: 2rem;
+}
+.back a i:hover {
+    transition: all 0.7s ease; 
+    transform: scale(1.1); 
+}
+
+/* gallery page  */
+
+
+
 /*Start animations*/
 @keyframes pulse {
     0% {
@@ -1118,6 +1137,11 @@ ul.contact-social-media-ul {
     }
     #svg-beatboxer {
         width: 30rem;
+    }
+    .back a i {
+        font-size: 2.4rem;
+        padding: 1.8rem;
+        color: var(--pri-color);
     }
     
 
