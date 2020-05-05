@@ -532,9 +532,24 @@ li {
 }
 .portfolio-img {
     flex: 1;
-    -webkit-box-shadow: 0px 0px 8px 0px var(--pri-color);
+    /* -webkit-box-shadow: 0px 0px 8px 0px var(--pri-color);
     -moz-box-shadow: 0px 0px 8px 0px  var(--pri-color);
-    box-shadow: 0px 0px 8px 0px  var(--pri-color);
+    box-shadow: 0px 0px 8px 0px  var(--pri-color); */
+    /* -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out; */
+    transition: all 2s ease; 
+}
+
+/* .portfolio-img.first-pi img:last-child {
+    display: none;
+} */
+/* .portfolio-img:hover.first-pi img:last-child {
+    transition: all 2s ease; 
+    display: block;
+} */
+.portfolio-img:hover.first-pi img:first-child {
+    background: url("images/portitem1.1.jpg");
 }
 .portfolio-description {
     flex: 1;
