@@ -13,9 +13,7 @@ $(document).ready(function () {
         $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top - 100
         }, 2000)
-    });
-
-    
+    });   
 
     let mouseCursor = document.querySelector(".cursor");
     let words = document.querySelectorAll("img, .nav-link");
@@ -36,7 +34,41 @@ $(document).ready(function () {
             // image.classList.add("img-hover");
         })  
     });
+
     
+    var svgSkills = document.querySelectorAll("[id='svg-skills']");
+    $(window).scroll(function() {
+        if($(this).scrollTop()>1900) { 
+            for (var i = 0; i < svgSkills.length; i++) {
+                svgSkills[i].classList.add('svg-skills-display');
+            }
+            // animationCounter();
+        }
+        else { 
+            for (var i = 0; i < svgSkills.length; i++) {
+                svgSkills[i].classList.remove('svg-skills-display');
+            } 
+        }
+    })
+    // $('.svg-skills').hover(
+
+        
+    //     // function(){ $(".content-carrousel").addClass('stop-3d-animation') },
+    //     // function(){ $(".content-carrousel").removeClass('stop-3d-animation') }
+    //  )
+    // function animationCounter(){
+    //     $('.count').each(function () {
+    //         $(this).prop('Counter',0).animate({
+    //             Counter: $(this).text()
+    //         }, {
+    //             duration: 3000,
+    //             easing: 'swing',
+    //             step: function (now) {
+    //                 $(this).text(Math.ceil(now));
+    //             }
+    //         });
+    //     });
+    // }
 
 
 
@@ -54,6 +86,9 @@ $(document).ready(function () {
             $('#up').fadeOut();
         }
     })
+
+
+
 
     AOS.init({
         easing: 'ease',
