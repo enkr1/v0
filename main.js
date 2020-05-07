@@ -36,20 +36,22 @@ $(document).ready(function () {
     });
 
     
-    var svgSkills = document.querySelectorAll("[id='svg-skills']");
-    $(window).scroll(function() {
-        if($(this).scrollTop()>1900) { 
-            for (var i = 0; i < svgSkills.length; i++) {
-                svgSkills[i].classList.add('svg-skills-display');
-            }
-            // animationCounter();
-        }
-        else { 
-            for (var i = 0; i < svgSkills.length; i++) {
-                svgSkills[i].classList.remove('svg-skills-display');
-            } 
-        }
-    })
+    // var svgSkills = document.querySelectorAll("[id='svg-skills']");
+    // $(window).scroll(function() {
+    //     if($(this).scrollTop()>1900) { 
+    //         for (var i = 0; i < svgSkills.length; i++) {
+    //             svgSkills[i].classList.add('svg-skills-display');
+    //         }
+    //         // animationCounter();
+    //     }
+    //     else { 
+    //         for (var i = 0; i < svgSkills.length; i++) {
+    //             svgSkills[i].classList.remove('svg-skills-display');
+    //         } 
+    //     }
+    // })
+
+
     // $('.svg-skills').hover(
 
         
