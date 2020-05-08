@@ -31,6 +31,14 @@ p {
     color: var(--main-p-color);
     /* font-family: 'Lato', sans-serif; */
 }
+h1::selection,
+h6::selection,
+a::selection,
+span::selection,
+p::selection {
+    color: var(--third-color);
+    background-color: var(--pri-color);
+}
 img {
     width: 100%; 
     user-drag: none; 
