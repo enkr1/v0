@@ -152,6 +152,7 @@ li {
     background: var(--background);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    display: inline;
 }
 .top-nav.open {
     top: 0;
