@@ -805,7 +805,7 @@ ul.contact-social-media-ul {
 }
 .visitcount {
     margin-top: 1rem;
-    transform: translate(0, 20%);
+    transform: translate(0, 1%);
     pointer-events: none;
 }
 /*End footer*/
