@@ -803,6 +803,19 @@ ul.contact-social-media-ul {
     letter-spacing: 0.6px;
     font-size: 1.2rem;
 }
+a.hitCounter.badge-done0 {
+    background-color: var(--third-color);
+    background-image: none;
+    display: block;
+    /* background-repeat: no-repeat; */
+    color: var(--pri-color);
+    text-decoration: none;
+    text-indent: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    /* background-position: 8px 10px; */
+    pointer-events: none;
+}
 /*End footer*/
 
 
