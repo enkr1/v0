@@ -1072,6 +1072,12 @@ ul.contact-social-media-ul {
     stroke-dashoffset: 555;
     animation: line-anime 4s ease forwards 5s;
 }
+/* for the N of the coming sooN */
+#svg-beatboxer path:nth-child(11) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards 5.5s;
+}
 /* interest page */
 
 
