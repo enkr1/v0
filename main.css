@@ -538,7 +538,7 @@ li {
     font-weight: 300;
     opacity: .3;
 }
-.portfolio-description .cta {
+.portfolio-description .cta, .cta {
     display: inline-block;
     margin-top: 2.5rem;
     font-size: 1.5rem;
@@ -546,8 +546,13 @@ li {
     color: var(--pri-color);
     transition: color 650ms;
 }
-.portfolio-description .cta:hover { 
+.portfolio-description .cta:hover, .cta:hover { 
     color: var(--sec-color);
+}
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /*End portfolio*/
 
@@ -807,6 +812,8 @@ ul.contact-social-media-ul {
     margin-top: 1rem;
     transform: translate(0, 1%);
     pointer-events: none;
+}
+.visitcount a { 
 }
 /*End footer*/
 
