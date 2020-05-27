@@ -50,7 +50,7 @@ $(document).ready(function () {
     let letter = '';
     let letterdone = false;
 
-    if (window.location.pathname == '/index.html') {
+    if (window.location.pathname == 'index.html') {
         (function type() {
             if (count === landingtexts.length) {
                 count = 0;
