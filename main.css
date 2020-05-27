@@ -106,14 +106,11 @@ img {
     border-radius: 0.8rem;
 }
 .section-heading h6 {
-    margin-top: -0.3rem;
+    margin-top: -0.5rem;
     font-size: 1.6rem;
     font-weight: 300;  
     color: var(--main-p-color);
     letter-spacing: 1px;
-}
-.skills-3d-section-heading h6 {
-    margin-top: -0.2rem;
 }
 .has-margin-right {
     margin-right: 5rem;
@@ -253,14 +250,12 @@ li {
     display: inline-block;
     position: relative;
 }
-/* not responsive  */
 .typing::after { 
     content: "|";
     position: absolute;
-    /* right: -1rem; */
-    /* top: .2rem; */
     animation: caret infinite 1s steps(1, end); 
 }
+/* come here  */
 @keyframes caret {
     0%,
     100% {
@@ -1051,7 +1046,7 @@ ul.contact-social-media-ul {
 /* End 3d Skills pagr */
 
 
-/* interest page */
+/* Start interest page */
 
 #svg-beatboxer {
     width: auto;
@@ -1111,7 +1106,9 @@ ul.contact-social-media-ul {
     stroke-dashoffset: 555;
     animation: line-anime 4s ease forwards 5.5s;
 }
-/* interest page */
+/* End interest page */
+
+
 
 
 /*Start animations*/
@@ -1234,9 +1231,6 @@ ul.contact-social-media-ul {
     .section-heading h6 {
         margin-top: 0.8rem;
         font-size: 1.6rem;
-    }
-    .skills-3d-section-heading h6 {
-        margin-top: 1rem;
     }
     .about-details .nav-list {
         flex-direction: row;
@@ -1405,9 +1399,6 @@ ul.contact-social-media-ul {
     }
     .section-heading h6 span {
         display: none;
-    }
-    .skills-3d-section-heading h6 {
-        margin-top: 1.1rem;
     }
     .landing-text h6 {
         font-size: 1.4rem;
