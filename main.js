@@ -35,43 +35,42 @@ $(document).ready(function () {
         })  
     });
 
-    
-    // var svgSkills = document.querySelectorAll("[id='svg-skills']");
-    // $(window).scroll(function() {
-    //     if($(this).scrollTop()>1900) { 
-    //         for (var i = 0; i < svgSkills.length; i++) {
-    //             svgSkills[i].classList.add('svg-skills-display');
-    //         }
-    //         // animationCounter();
-    //     }
-    //     else { 
-    //         for (var i = 0; i < svgSkills.length; i++) {
-    //             svgSkills[i].classList.remove('svg-skills-display');
-    //         } 
-    //     }
-    // })
+    // typing effects
+    const landingtexts = 
+    ['i design websites,',
+    'products',
+    'and i am looking for internship!'];
+    let count = 0;
+    let index = 0;
+    let currentText = '';
+    let letter = '';
+    let letterdone = false;
 
+    (function type() {
 
-    // $('.svg-skills').hover(
+        if(count === landingtexts.length) {
+            count = 0;
+        }
 
-        
-    //     // function(){ $(".content-carrousel").addClass('stop-3d-animation') },
-    //     // function(){ $(".content-carrousel").removeClass('stop-3d-animation') }
-    //  )
-    // function animationCounter(){
-    //     $('.count').each(function () {
-    //         $(this).prop('Counter',0).animate({
-    //             Counter: $(this).text()
-    //         }, {
-    //             duration: 3000,
-    //             easing: 'swing',
-    //             step: function (now) {
-    //                 $(this).text(Math.ceil(now));
-    //             }
-    //         });
-    //     });
-    // }
+        currentText = landingtexts[count];
+        letter = currentText.slice(0, ++index);
 
+        document.querySelector('.typing').textContent = letter;
+
+        if(letter.length === currentText.length) {
+            count++;
+            index = 0; // reset 
+            letterdone = true;
+        }
+
+        if(letterdone == false) {
+            setTimeout(type, 100);
+        } else {
+            setTimeout(type, 800);
+            letterdone = false;
+        }
+
+    }())
 
 
     $('#up').on('click', function() {

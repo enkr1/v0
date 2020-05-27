@@ -245,6 +245,32 @@ li {
     font-weight: 300;
     color: var(--background);
 }
+.typing-area {
+    text-align: center;
+    margin-top: -4rem;
+}
+.typing {
+    display: inline-block;
+    position: relative;
+}
+/* not responsive  */
+.typing::after { 
+    content: "|";
+    position: absolute;
+    /* right: -1rem; */
+    /* top: .2rem; */
+    animation: caret infinite 1s steps(1, end); 
+}
+@keyframes caret {
+    0%,
+    100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+}
+
 .landing-text h6 span {  
     font-size: 2rem;
 }
