@@ -40,10 +40,10 @@ $(document).ready(function () {
         ['i design websites,',
             'products',
             'and i am looking for internship!'];
-    const quotes = 
-        ['i am where i am because i believe in all possibilities',
-        'i am willing to learn new skills',
-        'and i will never stop improving!'];
+    const quotes =
+        ['"i am where i am because i believe in all possibilities"',
+            'i am willing to learn new skills',
+            'i will never stop improving!'];
     let count = 0;
     let index = 0;
     let currentText = '';
