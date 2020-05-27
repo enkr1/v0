@@ -36,10 +36,6 @@ $(document).ready(function () {
     });
 
     // typing effects
-    const landingtexts =
-        ['i design websites,',
-            'products',
-            'and i am looking for internship!'];
     const quotes =
         ['"i am where i am because i believe in all possibilities"',
             'i am willing to learn new skills',
@@ -50,33 +46,7 @@ $(document).ready(function () {
     let letter = '';
     let letterdone = false;
 
-    if (window.location.pathname == 'index.html') {
-        (function type() {
-            if (count === landingtexts.length) {
-                count = 0;
-            }
-
-            currentText = landingtexts[count];
-            letter = currentText.slice(0, ++index);
-            document.querySelector('.typing').textContent = letter;
-
-            if (letter.length === currentText.length) {
-                count++;
-                index = 0; // reset 
-                letterdone = true;
-            }
-
-            // one line check
-            if (letterdone == false) {
-                setTimeout(type, 100);
-            } else {
-                setTimeout(type, 800);
-                letterdone = false;
-            }
-
-        }())
-    }
-    else if (window.location.pathname == '/myskills.html') {
+    if (window.location.pathname == '/myskills.html') {
         (function type() {
             if (count === quotes.length) {
                 count = 0;
@@ -101,7 +71,6 @@ $(document).ready(function () {
             }
 
         }())
-
     }
 
     $('#up').on('click', function () {

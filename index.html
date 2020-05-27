@@ -275,8 +275,8 @@
                 </div>
             </div>
 
-            <a data-aos="fade-up" data-aos-delay="700"
-            target="_blank" href="portfolio.html" class="cta">View more projects</a>
+            <a data-aos="fade-up" data-aos-delay="700" target="_blank" href="portfolio.html" class="cta">View more
+                projects</a>
 
         </div>
     </section>
@@ -415,7 +415,43 @@
     </footer>
 
 
+    <script>
+        // typing effects
+        const landingtexts =
+            ['i design websites,',
+                'products',
+                'and i am looking for internship!'];
+        let count = 0;
+        let index = 0;
+        let currentText = '';
+        let letter = '';
+        let letterdone = false;
 
+        (function type() {
+            if (count === landingtexts.length) {
+                count = 0;
+            }
+
+            currentText = landingtexts[count];
+            letter = currentText.slice(0, ++index);
+            document.querySelector('.typing').textContent = letter;
+
+            if (letter.length === currentText.length) {
+                count++;
+                index = 0; // reset 
+                letterdone = true;
+            }
+
+            // one line check
+            if (letterdone == false) {
+                setTimeout(type, 100);
+            } else {
+                setTimeout(type, 800);
+                letterdone = false;
+            }
+
+        }())
+    </script>
 
 
 
@@ -432,4 +468,3 @@
 </body>
 
 </html>
-
