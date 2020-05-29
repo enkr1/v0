@@ -73,9 +73,6 @@ $(document).ready(function () {
         }())
     }
 
-    // https://www.youtube.com/watch?v=GUEB9FogoP8&t=173s vanilla
-
-
 
     $('#up').on('click', function () {
         $('html, body').animate({

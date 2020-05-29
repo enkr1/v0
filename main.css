@@ -245,35 +245,20 @@ li {
 .landing-text h6 {
     font-family: monospace;
     margin-top: 22%;
-    font-size: 2.6rem;
+    font-size: 2.2rem;
     font-weight: 300;
     color: var(--background);
 }
-.typing-area {
-    text-align: center;
-    margin-top: -4rem;
+span {
+    /* opacity: 0; */
+    transition: all .3s ease;
+    color: var(--sec-color);
 }
-.typing {
-    display: inline-block;
-    position: relative;
+.main-h6-anim {
+    /* opacity: 1; */
+    color: rgb(198, 224, 203);
 }
-.typing::after { 
-    content: "|";
-    position: absolute;
-    animation: caret infinite 1s steps(1, end); 
-}
-/* come here  */
-@keyframes caret {
-    0%,
-    100% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-}
-
-.landing-text h6 span {  
+/* .landing-text h6 span {  
     font-size: 2rem;
 }
 .landing-text h6 span.span1 {
@@ -281,7 +266,9 @@ li {
 }
 .landing-text h6 span.span2 {
     padding-left: 0.5rem;
-}
+} */
+
+
 .leaves {
     position: absolute;
     top: 0;
@@ -644,6 +631,20 @@ li {
 
 
 /*Start contact*/
+.typing-area {
+    text-align: center;
+    margin-top: -4rem;
+}
+.typing {
+    display: inline-block;
+    position: relative;
+}
+.typing::after { 
+    content: "|";
+    position: absolute;
+    animation: caret infinite 1s steps(1, end); 
+}
+
 .contact {
     background-color: var(--third-color);
 }
@@ -1188,15 +1189,24 @@ ul.contact-social-media-ul {
         transform: rotateY(360deg);
     }
 }
+@keyframes caret {
+    0%,
+    100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+}
 /*End animations*/
 
 /* ------------------------------------------------------------------------------- */
 
 /*Start media queries*/
-@media screen and (max-width: 1281px) {
-    /* li {
-        margin: 0;
-    } */
+@media screen and (max-width: 1281px) {    
+    .landing-text h6 { 
+        font-size: 1.8rem;
+    }
     .nav-link {
         font-size: 2.5em; 
         padding: 1.2rem;
@@ -1404,14 +1414,8 @@ ul.contact-social-media-ul {
         font-size: 1.4rem; 
         margin-top: 1rem;
     }
-    .section-heading h6 span {
-        display: none;
-    }
-    .landing-text h6 {
-        font-size: 1.4rem;
-    }
-    .landing-text h6 span {  
-        font-size: 1.4rem;
+    .landing-text h6 span{
+        font-size: 1.2rem;
     }
     .nav-link {
         font-size: 1.6rem; 

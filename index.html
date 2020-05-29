@@ -46,7 +46,8 @@
             <div class="logo">
                 <img src="images/logo.jpg" alt="" data-aos="zoom-out">
             </div>
-            <h6><span class="span1">&#60;</span>Web Developer<span class="span2">/&#62;</span></h6>
+            <!-- <h6 class="main-h6"><span class="span1">&#60;</span>Web Developer<span class="span2">/&#62;</span></h6> -->
+            <h6 class="main-h6">Web Developer | Web Designer </h6>
         </div>
 
         <div class="animation-leaves">
@@ -323,7 +324,7 @@
         <div class="container">
             <div class="section-heading">
                 <h1>Contact</h1>
-                <h6>Please feel free to contact me <span>if you need any further information</span></h6>
+                <h6>Please feel free to contact me</h6>
             </div>
 
             <div class="typing-area">
@@ -451,6 +452,34 @@
             }
 
         }())
+
+        // https://www.youtube.com/watch?v=GUEB9FogoP8&t=173s vanilla
+        const text = document.querySelector(".main-h6");
+        const strText = text.textContent;
+        const splitText = strText.split("");
+        text.textContent = "";
+
+        for (let i = 0; i < splitText.length; i++) {
+            text.innerHTML += "<span>" + splitText[i] + "</span>";
+        }
+
+        let char = 0;
+        let timer = setInterval(onTick, 50);
+
+        function onTick() {
+            const span = text.querySelectorAll('span')[char];
+            span.classList.add('main-h6-anim');
+            char++;
+            if (char === splitText.length) {
+                complete();
+                return;
+            }
+        }
+        function complete() {
+            clearInterval(timer);
+            timer = null;
+        }
+
     </script>
 
 
