@@ -450,13 +450,13 @@ span {
     width: 30%;
     transform: translate(0, 150%);
     background: var(--background);
-    opacity: 0.5;
+    opacity: .5;
 
 }
 .myskills-button a p {
     color: var(--third-color);
     font-size: 1.5rem;
-    transform: translate(0, 40%);
+    transform: translate(0, 35%);
 }
 .myskills-button:hover {
     opacity: 1;
@@ -785,9 +785,9 @@ input[type="submit"] {
 input[type="submit"]:hover {
     color: var(--third-color);
     background-color: var(--pri-color);
-    -webkit-box-shadow: 0px 0px 22px 0px var(--pri-color);
-    -moz-box-shadow: 0px 0px 22px 0px  var(--pri-color);
-    box-shadow: 0px 0px 22px 0px  var(--pri-color);
+    -webkit-box-shadow: 0px 0px 10px 0px var(--pri-color);
+    -moz-box-shadow: 0px 0px 10px 0px  var(--pri-color);
+    box-shadow: 0px 0px 10px 0px  var(--pri-color);
 }
 ul.contact-social-media-ul {
     margin-top: 10%;
@@ -833,8 +833,8 @@ ul.contact-social-media-ul {
     height: 5rem;
     width: 5rem;
     background-color: var(--pri-color);
-    top: 85vh;
-    right: 5vw;
+    top: 89vh;
+    right: 3%;
     border-radius: 100%;
     display: none;
     cursor: pointer;
@@ -1254,6 +1254,7 @@ ul.contact-social-media-ul {
     }
     .myskills-button { 
         width: 40%;
+        opacity: .7;
     }
     .section-heading h1 {
         font-size: 3rem;
@@ -1445,6 +1446,9 @@ ul.contact-social-media-ul {
         margin-top: 100%;
         width: 4rem;
     }
+    .myskills-button {
+        opacity: .8;
+    }
     
     /* specialization */
     .icon-container i { 
@@ -1503,7 +1507,7 @@ ul.contact-social-media-ul {
     .up {
         height: 4rem;
         width: 4rem;
-        top: 90vh;
+        top: 91vh;
         right: 5vw;
     }
     .up i {
