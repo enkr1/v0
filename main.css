@@ -253,13 +253,19 @@ li {
     font-weight: 300;
     color: var(--background);
 }
+.main-h6 {
+    opacity: 0;
+}
+.show {
+    opacity: 1;
+}
 span {
-    /* opacity: 0; */
+    opacity: 0.6;
     transition: all .3s ease;
     color: var(--sec-color);
 }
 .main-h6-anim {
-    /* opacity: 1; */
+    opacity: 1;
     color: rgb(198, 224, 203);
 }
 /* .landing-text h6 span {  
@@ -1225,7 +1231,7 @@ ul.contact-social-media-ul {
         font-size: 1.7rem;
         margin-top: 28%;
     } 
-    .landing-text h6 span {  
+    .landing-text h6 {  
         font-size: 1.5rem;
     } 
     .nav-list { 
@@ -1418,7 +1424,7 @@ ul.contact-social-media-ul {
         font-size: 1.4rem; 
         margin-top: 1rem;
     }
-    .landing-text h6 span{
+    .landing-text h6 {
         font-size: 1.2rem;
     }
     .nav-link {
