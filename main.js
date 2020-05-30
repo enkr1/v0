@@ -9,6 +9,12 @@ $(document).ready(function () {
         $('.top-nav').removeClass('open');
     });
 
+    // Handle ESC key (key code 27)
+    document.addEventListener('keyup', function (e) {
+        $('.menu-toggler').removeClass('open');
+        $('.top-nav').removeClass('open');
+    });
+
     $('nav a[href*="#"]').on('click', function () {
         $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top - 100
