@@ -89,24 +89,25 @@ img {
 .section-heading h1::after {
     content: '';
     position: absolute;
-    bottom: -.5rem;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(255, 255, 255, .6);
 }
 .section-heading h1::before {
-    width: 10rem;
+    width: 16rem;
     height: 2px;
     border-radius: 0.8rem;
 }
 .section-heading h1::after {
     top: 7.5rem;
     width: 8rem;
-    height: 2px;
+    height: 1.5px;
     border-radius: 0.8rem;
 }
 .section-heading h6 {
-    margin-top: -0.5rem;
+    /* margin-top: -0.4rem; */
+    transform: translateY(-30%);
     font-size: 1.6rem;
     font-weight: 300;  
     color: var(--main-p-color);
@@ -635,7 +636,7 @@ span {
     content: '';
     box-shadow: 0 0 0 4px var(--pri-color);
     border-radius: 100%;
-    left: -4rem;
+    left: -3.9rem;
     height: 1.5rem;
     width: 1.5rem; 
     background-color: var(--third-color);
@@ -1260,7 +1261,7 @@ ul.contact-social-media-ul {
         font-size: 3rem;
     }
     .section-heading h6 {
-        margin-top: 0.8rem;
+        margin-top: 1.1rem;
         font-size: 1.6rem;
     }
     .about-details .nav-list {
@@ -1426,7 +1427,7 @@ ul.contact-social-media-ul {
     }
     .section-heading h6 {
         font-size: 1.4rem; 
-        margin-top: 1rem;
+        margin-top: 1.23rem;
     }
     .landing-text h6 {
         font-size: 1.2rem;
