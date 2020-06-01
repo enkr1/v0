@@ -106,7 +106,7 @@ img {
     border-radius: 0.8rem;
 }
 .section-heading h6 {
-    /* margin-top: -0.4rem; */
+    margin-top: -0.1em;
     transform: translateY(-30%);
     font-size: 1.6rem;
     font-weight: 300;  
