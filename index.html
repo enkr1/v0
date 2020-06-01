@@ -24,7 +24,7 @@
 <body>
     <header>
 
-        <div class="menu-toggler">
+        <div class="menu-toggler hide">
             <div class="bar half start"></div>
             <div class="bar half middle"></div>
             <div class="bar half end"></div>
@@ -38,7 +38,7 @@
                 <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
-                <p>Designed by ENKR</p>
+                <p class="designedby">Designed by ENKR</p>
             </ul>
         </nav>
 
@@ -485,6 +485,24 @@
 
     </script>
 
+    <!-- scrolling detection  -->
+    <script>
+        
+        let topnav = document.querySelector(".top-nav");
+
+        window.onscroll = function (e) {
+            // print "false" if direction is down and "true" if up
+            console.log(this.oldScroll > this.scrollY);
+
+            if(this.oldScroll > this.scrollY) {
+                topnav.classList.add('scrollup')
+            } else {
+                topnav.classList.remove('scrollup')
+            }
+
+            this.oldScroll = this.scrollY;
+        }
+    </script>
 
 
 

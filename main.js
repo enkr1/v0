@@ -86,6 +86,7 @@ $(document).ready(function () {
         }, 3000)
     });
 
+    
     $(window).scroll(function () {
         if ($(this).scrollTop() > 800) {
             $('#up').fadeIn();
@@ -94,8 +95,6 @@ $(document).ready(function () {
             $('#up').fadeOut();
         }
     })
-
-
 
 
     AOS.init({
