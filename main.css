@@ -230,6 +230,12 @@ li {
     transform: rotate(-450deg) translateX(0rem);
 }
 
+/* Start navigation bar  */
+.hide {
+    display: none;
+}
+/* End navigation bar */
+
 
 .landing-text {
     position: absolute;
@@ -272,17 +278,6 @@ span {
     opacity: 1;
     color: rgb(198, 224, 203);
 }
-/* .landing-text h6 span {  
-    font-size: 2rem;
-}
-.landing-text h6 span.span1 {
-    padding-right: 1rem;
-}
-.landing-text h6 span.span2 {
-    padding-left: 0.5rem;
-} */
-
-
 .leaves {
     position: absolute;
     top: 0;
