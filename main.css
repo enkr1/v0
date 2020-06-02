@@ -264,9 +264,10 @@ li a {
     /* right: -100vw; */
     z-index: 900;
     transition: all 800ms cubic-bezier(1, 0, 0, 1);
+    background-color: rgba(245, 254, 241, 0.1);
 }
 .startscrolling {
-    background-color: rgba(245, 254, 241, 0.2);
+    background-color: rgba(245, 254, 241, 0.1);
 }
 .scrollup {
     height: 6vh;
