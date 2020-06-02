@@ -670,7 +670,7 @@ span {
     content: '';
     box-shadow: 0 0 0 4px var(--pri-color);
     border-radius: 100%;
-    left: -3.89rem;
+    left: -3.38rem;
     height: 1.5rem;
     width: 1.5rem; 
     background-color: var(--third-color);
@@ -1259,9 +1259,12 @@ ul.contact-social-media-ul {
         font-size: 1.8em; 
         padding: 1.2rem;
     }
-    .timeline .date::after { 
-        left: -3.79rem; 
+    .timeline .date::after {
+        left: -3.3rem;
     }
+    /* .timeline .date::after { 
+        left: -3.79rem; 
+    } */
 }
 /* tablet */
 @media screen and (max-width: 768px) {
