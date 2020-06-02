@@ -32,6 +32,11 @@
 
         <nav class="top-nav">
             <ul class="nav-list">
+                <div class="nav-logo">
+                    <a>
+                        ENKR
+                    </a>
+                </div>
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#specialization" class="nav-link">Specialization</a></li>
@@ -488,19 +493,30 @@
     <!-- scrolling detection  -->
     <script>
         
-        let topnav = document.querySelector(".top-nav");
+        let topnav = document.querySelector('.top-nav');
+        let navlogo = document.querySelector('.nav-logo')
 
         window.onscroll = function (e) {
             // print "false" if direction is down and "true" if up
             console.log(this.oldScroll > this.scrollY);
-
+            console.log(this.scrollY)
+            
             if(this.oldScroll > this.scrollY) {
                 topnav.classList.add('scrollup')
             } else {
                 topnav.classList.remove('scrollup')
+                topnav.classList.add('startscrolling')
+                navlogo.classList.add('hide')
+            }
+
+            // leave top
+            if (this.scrollY == 0) {
+                topnav.classList.remove('scrollup')
+                navlogo.classList.remove('hide')
             }
 
             this.oldScroll = this.scrollY;
+            
         }
     </script>
 

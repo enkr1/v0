@@ -79,6 +79,15 @@ $(document).ready(function () {
         }())
     }
 
+    
+    // $(window).scroll(function () {
+    //     if ($(this).scrollTop() > 100) { 
+    //         $('.top-nav').toggleClass('startscrolling');
+    //     } else {
+    //         $('.top-nav').removeClass('startscrolling');
+    //     }
+    // })
+
 
     $('#up').on('click', function () {
         $('html, body').animate({
@@ -90,7 +99,7 @@ $(document).ready(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 800) {
             $('#up').fadeIn();
-        }
+        } 
         else {
             $('#up').fadeOut();
         }
