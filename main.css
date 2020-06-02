@@ -245,7 +245,7 @@ li a {
 .nav-logo {
     position: absolute;
     left: 1rem;
-    top: .6rem;
+    top: .7rem;
     font-size: 2rem;
     transition: all .8s ease-in-out;
 }
