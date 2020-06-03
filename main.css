@@ -669,6 +669,15 @@ span {
     justify-content: center;
     align-items: center;
 }
+#portfolio-page {
+    transform: translateY(5%);
+}
+
+#skills-3d-page
+{
+    transform: translateY(32%);
+}
+
 /*End portfolio*/
 
 
@@ -1527,6 +1536,14 @@ ul.contact-social-media-ul {
     }
     .content-carrousel figure:nth-child(10) {
         transform: rotateY(324deg) translateZ(30rem);
+    }
+    #portfolio-page {
+        transform: translateY(0);
+    }
+    
+    #skills-3d-page
+    {
+        transform: translateY(0);
     }
 
 }
