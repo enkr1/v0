@@ -30,20 +30,24 @@
             <div class="bar half end"></div>
         </div>
 
+        <!-- remember to update other page -->
+
         <nav class="top-nav">
-            <ul class="nav-list">
+            <ul class="nav-list top-nav-list">
                 <div class="nav-logo">
                     <a>
                         ENKR
                     </a>
                 </div>
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#specialization" class="nav-link">Specialization</a></li>
-                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-                <p class="designedby">Designed by ENKR</p>
+                <div class="nav-link-container">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#specialization" class="nav-link">Specialization</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <p class="designedby">Designed and developed by ENKR</p>
+                </div>
             </ul>
         </nav>
 
@@ -492,16 +496,17 @@
 
     <!-- scrolling detection  -->
     <script>
-        
+
         let topnav = document.querySelector('.top-nav');
         let navlogo = document.querySelector('.nav-logo')
+
 
         window.onscroll = function (e) {
             // print "false" if direction is down and "true" if up
             console.log(this.oldScroll > this.scrollY);
             console.log(this.scrollY)
-            
-            if(this.oldScroll > this.scrollY) {
+
+            if (this.oldScroll > this.scrollY) {
                 topnav.classList.add('scrollup')
             } else {
                 topnav.classList.remove('scrollup')
@@ -511,12 +516,13 @@
 
             // leave top
             if (this.scrollY == 0) {
+                topnav.classList.remove('startscrolling')
                 topnav.classList.remove('scrollup')
                 navlogo.classList.remove('hide')
             }
 
             this.oldScroll = this.scrollY;
-            
+
         }
     </script>
 
@@ -530,6 +536,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="main.js"></script>
+
 </body>
 
 </html>
