@@ -1310,10 +1310,10 @@ ul.contact-social-media-ul {
         opacity: 1;
     }
     .nav-logo {
-        /* display: none; */
-        position: absolute;
+        display: none;
+        /* position: absolute;
         left: 2rem;
-        margin: auto;
+        margin: auto; */
     }
     .top-nav {
         /* width: 100%; */
