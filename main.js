@@ -79,15 +79,36 @@ $(document).ready(function () {
         }())
     }
 
-    
-    // $(window).scroll(function () {
-    //     if ($(this).scrollTop() > 100) { 
-    //         $('.top-nav').toggleClass('startscrolling');
-    //     } else {
-    //         $('.top-nav').removeClass('startscrolling');
-    //     }
-    // })
+    // scrolling detection
+    let topnav = document.querySelector('.top-nav');
+    let navlogo = document.querySelector('.nav-logo')
 
+
+    window.onscroll = function (e) {
+        // print "false" if direction is down and "true" if up
+        // console.log(this.oldScroll > this.scrollY);
+        // console.log(this.scrollY)
+
+        if (screen.width >= 768) {
+            if (this.oldScroll > this.scrollY) {
+                topnav.classList.add('scrollup')
+            } else {
+                topnav.classList.remove('scrollup')
+                topnav.classList.add('startscrolling')
+                navlogo.classList.add('hide')
+            }
+
+            // leave top
+            if (this.scrollY == 0) {
+                topnav.classList.remove('startscrolling')
+                topnav.classList.remove('scrollup')
+                navlogo.classList.remove('hide')
+            }
+
+            this.oldScroll = this.scrollY;
+
+        }
+    }
 
     $('#up').on('click', function () {
         $('html, body').animate({
