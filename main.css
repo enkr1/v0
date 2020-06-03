@@ -54,6 +54,26 @@ img {
     -webkit-user-select: none;
     -ms-user-select: none;
 }
+/* width */
+::-webkit-scrollbar {
+    /* display: none; */
+  width: .6rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #4d4d4d10; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--sec-color); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--third-color); 
+}
 /*End global*/
 
 /*Start reusable*/
