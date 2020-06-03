@@ -877,7 +877,7 @@ input[type="submit"]:hover {
     box-shadow: 0px 0px 10px 0px  var(--pri-color);
 }
 ul.contact-social-media-ul {
-    margin-top: 10%;
+    margin-top: 6%;
 }
 .contact-social-media {
     margin-top: 5rem;
@@ -885,6 +885,7 @@ ul.contact-social-media-ul {
 .contact-social-media i {
     font-size: 4rem;
     transition: color 650ms;
+    margin: 0 .6rem;
 }
 .fa-github-square:hover {
     color: #211F1F;
@@ -912,7 +913,7 @@ ul.contact-social-media-ul {
     width: 100%;
     text-align: center;
     background-color: var(--third-color);
-    padding: 5rem 0;
+    padding: 4rem 0;
     position: relative;
 }
 .up {
