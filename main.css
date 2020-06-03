@@ -520,7 +520,7 @@ span {
     font-weight: 300;
 }
 .about-social-media img {
-    margin-top: 100%;
+    margin: 60% 1rem 0 1rem;
     width: 5rem;
 }
 .about-social-media img:hover {
@@ -1573,7 +1573,8 @@ ul.contact-social-media-ul {
         padding: 0 auto;
     }
     .about-social-media img {
-        margin-top: 100%;
+        /* margin-top: 100%; */
+        margin: 100% 0 0 0;
         width: 4rem;
     }
     .myskills-button {
