@@ -281,7 +281,8 @@ li {
     text-align: center;
     letter-spacing: .6rem;
     font-size: 2rem;
-    padding-bottom: .4rem;
+    height: 50%;
+    padding-bottom: 1rem;
 }
 .nav-logo a {
     /* need to find a better font fam */
@@ -306,7 +307,8 @@ li {
     /* background-color: rgba(245, 254, 241, 0.1); */
 }
 .startscrolling {
-    top: -3rem;
+    /* top: -3rem; */
+    transform: translateY(-50%);
     background-color: #10212820; 
     /* browser support */
     -webkit-transition: all 1s ease;
