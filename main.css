@@ -731,7 +731,7 @@ span {
     content: '';
     box-shadow: 0 0 0 4px var(--pri-color);
     border-radius: 100%;
-    left: -3.38rem;
+    left: -2.96rem;
     height: 1.5rem;
     width: 1.5rem; 
     background-color: var(--third-color);
@@ -1320,7 +1320,7 @@ ul.contact-social-media-ul {
         padding: 1.2rem;
     }
     .timeline .date::after {
-        left: -3.3rem;
+        left: -2.89rem;
     }
     /* .timeline .date::after { 
         left: -3.79rem; 
