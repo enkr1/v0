@@ -33,10 +33,12 @@ body {
 section {
     padding: 6rem 0;
 }
+/* all links */
 a {
     text-decoration: none;
     color: var(--pri-color);
 }
+/* all p/fonts */
 p {
     font-size: 1.8rem;
     font-weight: 100;
@@ -46,6 +48,7 @@ p {
     color: var(--main-p-color);
     /* font-family: 'Lato', sans-serif; */
 }
+/* all image */
 img {
     width: 100%; 
     user-drag: none; 
@@ -60,24 +63,18 @@ img {
     /* display: none; */
   width: .6rem;
 }
-
 /* Track */
 ::-webkit-scrollbar-track {
   background: #4d4d4d10; 
 }
- 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--sec-color); 
 }
-
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: var(--third-color); 
 }
-/*End global*/
-
-/*Start reusable*/
 :root {
     --background: 
         linear-gradient(45deg, rgb(10, 67, 21), #318225, #aad737, #d2d737); /* rgb(8, 49, 15) */
@@ -86,6 +83,9 @@ img {
     --third-color: #102128;
     --main-p-color: #ddfff8;
 }
+/*End global*/
+
+/*Start reusable*/
 .container {
     width: 90%;
     max-width: 120rem;
