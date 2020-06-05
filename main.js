@@ -1,4 +1,12 @@
 $(document).ready(function () {
+
+    // preload
+    window.addEventListener('load', () => {
+        const preload = document.querySelector('.preload');
+        preload.classList.add('preload-finish');
+    });
+
+
     $('.menu-toggler').on('click', function () {
         $(this).toggleClass('open');
         $('.top-nav').toggleClass('open');

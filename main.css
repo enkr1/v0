@@ -83,6 +83,74 @@ img {
     --third-color: #102128;
     --main-p-color: #ddfff8;
 }
+.preload {
+    position: fixed;
+    top: 0;
+    background-color: var(--third-color);
+    z-index: 9999;
+    height: 100vh;
+    width: 100%;
+
+}
+#svg-loading {
+    width: 10%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -47%);
+}
+.loading-leave { 
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    background: #ffffff20;
+    border-bottom-right-radius: 100%;
+    border-top-left-radius: 100%; 
+    top: 37%;
+    left: 48%;
+    transform: translate(-50%, -100%);
+	-webkit-animation: preload-anim 2s linear infinite alternate;
+	        animation: preload-anim 2s linear infinite alternate;
+}
+#svg-loading path:nth-child(1) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards .2s;
+}
+#svg-loading path:nth-child(2) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards .2s;
+}
+#svg-loading path:nth-child(3) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards .2s;
+}
+#svg-loading path:nth-child(4) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards .2s;
+}
+#svg-loading path:nth-child(5) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards .2s;
+}
+#svg-loading path:nth-child(6) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards .2s;
+}
+#svg-loading path:nth-child(7) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards .2s;
+}
+.preload-finish {
+    opacity: 0;
+    pointer-events: none;
+}
 /*End global*/
 
 /*Start reusable*/
@@ -1240,6 +1308,36 @@ ul.contact-social-media-ul {
         box-shadow: 0 0 0 0 rgba(251, 199, 212, 0);
     }
 }
+
+@-webkit-keyframes preload-anim {
+    0% {
+      -webkit-transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+              transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+    }
+    50% {
+      -webkit-transform: scale(0.5) rotate3d(-1, 1, 0, 180deg);
+              transform: scale(0.5) rotate3d(-1, 1, 0, 180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+              transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+    }
+  }
+  @keyframes preload-anim {
+    0% {
+      -webkit-transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+              transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+    }
+    50% {
+      -webkit-transform: scale(0.5) rotate3d(-1, 1, 0, 180deg);
+              transform: scale(0.5) rotate3d(-1, 1, 0, 180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+              transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+    }
+  }
+  
 @keyframes flying {
     0% {
         transform: translateY(0) rotate(0deg);
@@ -1313,6 +1411,12 @@ ul.contact-social-media-ul {
 
 /*Start media queries*/
 @media screen and (max-width: 1281px) {    
+    .loading-leave {
+        /* width: 9rem;
+        height: 9rem; */
+        top: 36%;
+        left: 47%;
+    }
     .landing-text h6 { 
         font-size: 1.8rem;
     }
@@ -1329,6 +1433,15 @@ ul.contact-social-media-ul {
 }
 /* tablet */
 @media screen and (max-width: 768px) {
+    .loading-leave {
+        width: 9rem;
+        height: 9rem;
+        top: 36%;
+        left: 45%;
+    }
+    #svg-loading {
+        width: 16%;
+    }
     .cursor {
         display: none;   
     }
@@ -1551,6 +1664,16 @@ ul.contact-social-media-ul {
 
 /* mobile  */
 @media screen and (max-width: 600px) {
+    .loading-leave {
+        width: 6rem;
+        height: 6rem;
+        top: 40%;
+        left: 43%;
+    }
+    #svg-loading {
+        width: 26%;
+        transform: translate(-50%, -25%);
+    }
 
     p {
         font-size: 1.6rem;
