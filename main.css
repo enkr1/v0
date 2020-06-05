@@ -1436,7 +1436,7 @@ ul.contact-social-media-ul {
     } */
 }
 /* tablet */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 801px) {
     .loading-leave {
         width: 9rem;
         height: 9rem;
@@ -1724,6 +1724,7 @@ ul.contact-social-media-ul {
     }
     .myskills-button {
         opacity: .8;
+        transform: translate(0, 80%);
     }
     
     /* specialization */
