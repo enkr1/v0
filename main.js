@@ -12,7 +12,7 @@ $(document).ready(function () {
         const preload = document.querySelector('.preload');
         preload.classList.add('preload-finish');
         // only when finish loading, add y scroll 
-        var root = this.getElementsByTagName('html')[0]; // '0' to assign the first (and only `HTML` tag)
+        var root = document.getElementsByTagName('html')[0]; // '0' to assign the first (and only `HTML` tag)
         root.classList.add('enablescroll');
         // root.classList.remove('unablescroll');
     });
