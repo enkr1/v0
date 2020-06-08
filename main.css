@@ -595,7 +595,7 @@ span {
     color: var(--main-p-color);
     font-size: 3rem;
     font-weight: 300;
-    margin-top: 0rem;
+    margin-top: .45rem;
 }
 .profile-img {
     flex: 1;
@@ -1541,6 +1541,9 @@ ul.contact-social-media-ul {
     .section-heading h6 {
         /* margin-top: 1.1rem; */
         font-size: 1.6rem;
+    }
+    .about-heading h6 {
+        margin-top: .3rem;
     }
     .about-details .nav-list {
         flex-direction: row;
