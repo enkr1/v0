@@ -266,9 +266,9 @@ header {
     justify-content: center;
     align-items: center; 
 }
-/* .nav-link-container li a {
-    color: var(--third-color);
-} */
+.nav-link-container {
+    transform: translateX(.4%);
+}
 .nav-list p.designedby {
     position: absolute;
     bottom: 0;
@@ -278,7 +278,7 @@ header {
 }
 /* also for contact icon */
 li {
-    margin: 0 1%;   
+    margin: 0 .5%;   
 }
 .top-nav-list {
     display: inline-block;
@@ -1525,8 +1525,8 @@ ul.contact-social-media-ul {
         margin: 2rem 0;
     }
     .nav-link {
-        font-size: 2rem;
-        letter-spacing: .2rem;
+        font-size: 1.8rem;
+        letter-spacing: .1rem;
     }
     .about-heading h1 {
         font-size: 8rem;
@@ -1731,7 +1731,8 @@ ul.contact-social-media-ul {
         font-size: 1.2rem;
     }
     .nav-link {
-        font-size: 1.6rem; 
+        font-size: 1.2rem;
+        padding: 5% 1rem;
     }
     .about .container {
         flex-direction: column;
