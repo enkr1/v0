@@ -10,7 +10,14 @@ $(document).ready(function () {
     // });
     setTimeout(function() {
         const preload = document.querySelector('.preload');
+        const preloadTop = document.querySelector('.preload-top');
+        const preloadBot = document.querySelector('.preload-bot');
+        const svgLoading = document.querySelector('.svg-loading');
+        svgLoading.classList.add('loading-finish');
         preload.classList.add('preload-finish');
+        preloadTop.classList.add('moveup');
+        preloadBot.classList.add('movedown');
+
         // only when finish loading, add y scroll 
         var root = document.getElementsByTagName('html')[0]; // '0' to assign the first (and only `HTML` tag)
         root.classList.add('enablescroll');

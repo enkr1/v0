@@ -87,11 +87,31 @@ img {
 .preload {
     position: fixed;
     top: 0;
-    background-color: var(--third-color);
+    /* background-color: var(--third-color); */
     z-index: 9999;
     height: 100vh;
     width: 100%;
     transition: all 1s ease-in-out;
+}
+.preload-top {
+    top: 0; 
+    height: 50%;
+    background-color: var(--third-color);
+    width: 100vw;
+}
+.preload-bot {
+    bottom: 0; 
+    height: 50%;
+    background-color: var(--third-color);
+    width: 100vw;
+}
+.moveup {
+    transform: translateY(-100%);
+    transition: all .6s ease-in-out;
+}
+.movedown {
+    transform: translateY(100%);
+    transition: all .6s ease-in-out;
 }
 .enablescroll {
     overflow-y: visible;
@@ -119,41 +139,45 @@ img {
 #svg-loading path:nth-child(1) {
     stroke-dasharray: 555;
     stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards .2s;
+    animation: line-anime 2s ease forwards .2s;
 }
 #svg-loading path:nth-child(2) {
     stroke-dasharray: 555;
     stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards .2s;
+    animation: line-anime 2s ease forwards .2s;
 }
 #svg-loading path:nth-child(3) {
     stroke-dasharray: 555;
     stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards .2s;
+    animation: line-anime 2s ease forwards .2s;
 }
 #svg-loading path:nth-child(4) {
     stroke-dasharray: 555;
     stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards .2s;
+    animation: line-anime 2s ease forwards .2s;
 }
 #svg-loading path:nth-child(5) {
     stroke-dasharray: 555;
     stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards .2s;
+    animation: line-anime 2s ease forwards .2s;
 }
 #svg-loading path:nth-child(6) {
     stroke-dasharray: 555;
     stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards .2s;
+    animation: line-anime 2s ease forwards .2s;
 }
 #svg-loading path:nth-child(7) {
     stroke-dasharray: 555;
     stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards .2s;
+    animation: line-anime 2s ease forwards .2s;
 }
 .preload-finish {
     opacity: 0;
     pointer-events: none;
+}
+.loading-finish {
+    opacity: 0;
+    transition: all 0s ease-in-out;
 }
 /*End global*/
 
