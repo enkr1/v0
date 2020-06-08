@@ -267,7 +267,7 @@ header {
     align-items: center; 
 }
 .nav-link-container {
-    transform: translateX(.4%);
+    transform: translateX(.46%);
 }
 .nav-list p.designedby {
     position: absolute;
