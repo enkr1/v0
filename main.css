@@ -1575,10 +1575,10 @@ ul.contact-social-media-ul {
         margin: 0 0 0 auto;
     }
     .timeline .date::before {
-        transform: translate(-22rem, -30%);
+        transform: translate(-22rem, -100%);
     }
     .timeline .date::after {
-        transform: translateX(-355%); 
+        transform: translate(-355%, -110%); 
     }
     .emailme a {
         font-size: 18rem;
@@ -1807,7 +1807,7 @@ ul.contact-social-media-ul {
     }
     .timeline .date::before {
         font-size: 1.6rem; 
-        transform: translate(-19rem, -30%);
+        transform: translate(-19rem, -110%);
     }
     .timeline .date::after {
         /* transform: translateX(-355%);  */
