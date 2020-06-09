@@ -799,6 +799,9 @@ span {
     margin-bottom: 0.3rem;
     opacity: .3;
 }
+.timeline p, .timeline h1 {
+    transform: translateX(2.6rem);
+}
 .timeline .date {
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
     margin-bottom: 1rem;
@@ -815,22 +818,21 @@ span {
     position: absolute;
     display: block;
     top: 50%;
-    transform: translateY(-50%);
 }
 .timeline .date::before {
     content: attr(data-date);
-    left: -20rem;
     text-align: right;
     min-width: 12rem;
     font-size: 2rem;
+    transform: translate(-20rem, -70%);
 }
 .timeline .date::after {
     content: '';
     box-shadow: 0 0 0 4px var(--pri-color);
     border-radius: 100%;
-    left: -2.96rem;
     height: 1.5rem;
     width: 1.5rem; 
+    transform: translate(-166%, -80%);
     background-color: var(--third-color);
 }
 /*End timeline*/
@@ -1452,12 +1454,17 @@ ul.contact-social-media-ul {
         font-size: 1.8em; 
         padding: 1.2rem;
     }
-    .timeline .date::after {
-        left: -2.89rem;
+}
+@media screen and (max-width: 1024px) {    
+    .timeline p, .timeline h1 {
+        transform: translateX(1.2rem);
     }
-    /* .timeline .date::after { 
-        left: -3.79rem; 
-    } */
+    .timeline .date::before {
+        transform: translate(-140%, -70%);
+    }
+    .timeline .date::after {
+        transform: translate(-159%, -70%);   
+    }
 }
 /* tablet */
 @media screen and (max-width: 801px) {
@@ -1559,16 +1566,19 @@ ul.contact-social-media-ul {
     .portfolio-description.has-margin-right { 
         text-align: left;
     }
+    .timeline p, .timeline h1 {
+        transform: translateX(0);
+    }
     .timeline ul {        
         /* padding: 2rem 0 2rem 1rem; */
         padding: 1rem 0 3rem 4.3rem;
         margin: 0 0 0 auto;
     }
-    .timeline .date:before {
-        left: -23rem;
+    .timeline .date::before {
+        transform: translate(-22rem, -30%);
     }
-    .timeline .date:after {
-        left: -5.28rem;
+    .timeline .date::after {
+        transform: translateX(-355%); 
     }
     .emailme a {
         font-size: 18rem;
@@ -1792,14 +1802,15 @@ ul.contact-social-media-ul {
         font-size: 1.4rem;
     }
     .timeline p, .timeline h1 {
-        margin-left: -1.6rem;
+        /* margin-left: -2.2rem; */
+        transform: translateX(-2.4rem);
     }
     .timeline .date::before {
         font-size: 1.6rem; 
-        margin-left: 4.3rem;
+        transform: translate(-19rem, -30%);
     }
     .timeline .date::after {
-        left: -5.29rem;
+        /* transform: translateX(-355%);  */
     }
     form {
         width: 100%;
