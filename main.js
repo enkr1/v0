@@ -1,13 +1,5 @@
 $(document).ready(function () {
     // preload
-    // window.addEventListener('load', () => {
-    //     const preload = document.querySelector('.preload');
-    //     preload.classList.add('preload-finish');
-    //     // only when finish loading, add y scroll 
-    //     var root = this.getElementsByTagName('html')[0]; // '0' to assign the first (and only `HTML` tag)
-    //     root.classList.add('enablescroll');
-    //     // root.classList.remove('unablescroll');
-    // });
     setTimeout(function() {
         const preload = document.querySelector('.preload');
         const preloadTop = document.querySelector('.preload-top');
