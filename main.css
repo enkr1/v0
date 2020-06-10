@@ -1055,276 +1055,6 @@ ul.contact-social-media-ul li a {
 /*End footer*/
 
 
-/* gallery page  */
-/* this for both  */
-.back a img {
-    position: absolute;
-    height: 2.8rem;
-    width: 3rem;
-    top: 2.5rem;
-    left: 2rem;
-    z-index: 1;
-}
-.back a img:hover {
-    transition: all 0.7s ease;
-    transform: scale(1.2);
-}
-.rotating-box {
-    width: 30rem;
-    height: 30rem;
-    margin: auto;
-    perspective: 100rem;
-}
-.single-rb {
-    width: auto;
-    margin: auto;
-    margin-top: 16rem;
-    animation: box-rotate 16s linear infinite;
-    transform-style: preserve-3d;
-}
-.single-rb img {
-    position: absolute;
-    width: 30rem;
-    height: 30rem;
-} 
-/* .single-rb:hover { */
-    /* animation: box-rotate 22s linear infinite; */ 
-    /* transition: transform 0.3s; */
-/* } */
-.font-side {
-    transform: translateZ(15rem);
-}
-.back-side {
-    transform: rotateY(180deg) translateZ(15rem);
-}
-.left-side {
-    transform: rotateY(-90deg) translateX(-15rem);
-    transform-origin: left;
-}
-.right-side {
-    transform: rotateY(90deg) translateX(15rem);
-    transform-origin: right;
-}
-.top-side {
-    transform: rotateX(-90deg) translateY(-15rem);
-    transform-origin: top;
-}
-.bottom-side {
-    transform: rotateX(90deg) translateY(15rem);
-    transform-origin: bottom;
-}
-.more-button {
-    position: absolute;
-    text-align: center;
-    stroke-dasharray: 5;
-    stroke-dashoffset: 555;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 450%);
-    cursor: pointer;
-}
-.more-button a p {
-    position: absolute;
-    color: var(--pri-color);
-    font-size: 1.5rem;
-    bottom: 0;
-    padding: 2rem;
-    left: 2rem;
-    z-index: 2;
-    /* transform: translate(0, 130%); */
-}
-.more-button #arrow-svg {
-    transform: scale(1.2);
-}
-.more-button:hover #arrow-svg {
-    transition: all 0.3s ease-in-out;
-    animation: line-anime 8s ease forwards;
-}
-/* gallery page  */
-
-
-/* Start 3d Skills page*/
-.main-3d-content {
-    width: 10rem;
-    height: 10rem;
-    margin: 30vh auto;
-    perspective: 200rem;
-    /* position: relative; */
-    position: absolute; 
-    z-index: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.content-carrousel {
-    margin-top: 0rem;
-    width: auto; 
-    margin: auto; 
-    animation: fan 120s infinite linear;
-    transform-style: preserve-3d;
-}
-.content-carrousel:hover {
-    /* animation-play-state: paused; */
-    cursor: pointer;
-}
-.content-carrousel figure img {
-    text-align: center;
-    width: 10rem;
-    height: 10rem; 
-    overflow: hidden;
-    position: absolute;
-    z-index: 2; 
-    transition: all 0.5s ease; 
-}
-.content-carrousel figure:hover img {
-    /* transform: scale(1.1);  */
-    transform: scale(.8); 
-}
-.content-carrousel figure svg {
-    position: absolute;
-    width: 13rem;
-    height: 13rem;
-    left: 50%;
-    transform: translate(-50%, -11%);
-    stroke-dasharray: 555;
-    stroke-dashoffset: 555;
-    opacity: 0.6;
-    animation: line-anime-skills 4s ease forwards;
-}
-.content-carrousel figure p {
-    position: absolute;
-    color: var(--pri-color);
-    font-size: 3rem;
-    font-family: monospace;
-    font-weight: 100;
-    bottom: 0;
-    margin: 0;
-    padding: 0; 
-    transform: translate(60%, 340%);
-}
-.content-carrousel figure p .first-p {
-    transition: all 0.1s ease-in-out; 
-    opacity: 0;
-}
-.content-carrousel figure p .sec-p {
-    transition: all 0.4s ease-in-out; 
-    opacity: 0;
-}
-.content-carrousel figure p .third-p {
-    transition: all 0.7s ease-in-out; 
-    opacity: 0;
-}
-.content-carrousel figure:hover .first-p,
-.content-carrousel figure:hover .sec-p,
-.content-carrousel figure:hover .third-p
-{
-    opacity: 1;
-}
-.content-carrousel figure p .first-p { 
-    margin-left: -0.4rem;
-}
-.content-carrousel figure p .sec-p { 
-    margin-left: -1.8rem;
-}
-.content-carrousel figure p .third-p { 
-    margin-left: -1.7rem;
-}
-.content-carrousel figure:nth-child(1) {
-    transform: rotateY(0deg) translateZ(60rem);
-}
-.content-carrousel figure:nth-child(2) {
-    transform: rotateY(36deg) translateZ(60rem);
-}
-.content-carrousel figure:nth-child(3) {
-    transform: rotateY(72deg) translateZ(60rem);
-}
-.content-carrousel figure:nth-child(4) {
-    transform: rotateY(108deg) translateZ(60rem);
-}
-.content-carrousel figure:nth-child(5) {
-    transform: rotateY(144deg) translateZ(60rem);
-}
-.content-carrousel figure:nth-child(6) {
-    transform: rotateY(180deg) translateZ(60rem);
-}
-.content-carrousel figure:nth-child(7) {
-    transform: rotateY(216deg) translateZ(60rem);
-}
-.content-carrousel figure:nth-child(8) {
-    transform: rotateY(252deg) translateZ(60rem);
-}
-.content-carrousel figure:nth-child(9) {
-    transform: rotateY(288deg) translateZ(60rem);
-}
-.content-carrousel figure:nth-child(10) {
-    transform: rotateY(324deg) translateZ(60rem);
-}
-/* End 3d Skills pagr */
-
-
-/* Start interest page */
-
-#svg-beatboxer {
-    width: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-#svg-beatboxer path:nth-child(2) {
-    stroke-dasharray: 555;
-    stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards 1s;
-}
-#svg-beatboxer path:nth-child(3) {
-    stroke-dasharray: 555;
-    stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards 1.5s;
-}
-#svg-beatboxer path:nth-child(4) {
-    stroke-dasharray: 555;
-    stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards 2s;
-}
-#svg-beatboxer path:nth-child(5) {
-    stroke-dasharray: 555;
-    stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards 2.5s;
-}
-#svg-beatboxer path:nth-child(6) {
-    stroke-dasharray: 555;
-    stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards 3s;
-}
-#svg-beatboxer path:nth-child(7) {
-    stroke-dasharray: 555;
-    stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards 3.5s;
-}
-#svg-beatboxer path:nth-child(8) {
-    stroke-dasharray: 555;
-    stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards 4s;
-}
-#svg-beatboxer path:nth-child(9) {
-    stroke-dasharray: 555;
-    stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards 4.5s;
-}
-#svg-beatboxer path:nth-child(10) {
-    stroke-dasharray: 555;
-    stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards 5s;
-}
-/* for the N of the coming sooN */
-#svg-beatboxer path:nth-child(11) {
-    stroke-dasharray: 555;
-    stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards 5.5s;
-}
-/* End interest page */
-
-
 
 
 /*Start animations*/
@@ -1493,36 +1223,23 @@ ul.contact-social-media-ul li a {
     }
     .nav-logo {
         display: none;
-        /* position: absolute;
-        left: 2rem;
-        margin: auto; */
     }
     .top-nav {
-        /* width: 100%; */
         height: 100vh;
-        /* position: fixed; */
         right: -100vw;
-        /* z-index: 900; */
         background-color: var(--third-color);
         /* border-bottom-left-radius: 100%; */
         /* transition: all 800ms cubic-bezier(1, 0, 0, 1); */
         opacity: 0;
     }
-    /* li a {
-        color: var(--pri-color);
-    } */
     .nav-link {
         color: var(--pri-color);
 
     }
     .nav-list p.designedby {
-        /* position: absolute;
-        bottom: 0;
-        margin-bottom: 4rem; */
         font-size: 1.1rem;
         display: block;
     }
-    
     .nav-link-container { 
         flex-direction: column;
     }
@@ -1561,8 +1278,7 @@ ul.contact-social-media-ul li a {
     }
     .icon-container i {
         font-size: 3.5rem;
-    } 
-
+    }
     /* this is the second item  */
     .portfolio-description.has-margin-right { 
         text-align: left;
@@ -1594,10 +1310,8 @@ ul.contact-social-media-ul li a {
     ul.contact-social-media-ul li a {
         margin: 0 2rem;
     }
-    
-    #svg-beatboxer {
-        width: 40rem;
-    }
+
+    /* need to move to the correct css */
     .back a img { 
         top: 2.5rem;  
     }
@@ -1770,9 +1484,6 @@ ul.contact-social-media-ul li a {
     .icon-container i { 
         font-size: 4.5rem; 
     }
-    /* .skills-3d { */
-        /* display: none; */
-    /* } */
     .profile-img {
         margin: 0 0 7rem 0;
     }
@@ -1830,15 +1541,15 @@ ul.contact-social-media-ul li a {
         font-size: 1.8rem;
         margin-top: 1rem;
     }
-    #svg-beatboxer {
-        width: 30rem;
-    }
+
+    /* need to move to the correct css */
     .back a img {
         height: 2.3rem;
         width: 2.5rem;
         top: 2rem;
         left: 0.6rem;  
     }
+
     
     .rotating-box {
         width: 20rem;
@@ -1888,6 +1599,10 @@ ul.contact-social-media-ul li a {
         transform: scale(0.9);
     }
 
+
+}
+
+@media screen and (max-width: 321px) {
 
 }
 /*End media queries*/

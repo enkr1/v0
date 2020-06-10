@@ -1,16 +1,110 @@
 /* main page  */
-
 body.interest-body {
     background: url("images/interest-main-img.jpg") no-repeat center fixed;
     background-size: cover;
 }
 
+/* Start interest page */
+.svg-beatbox-container p {
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#svg-beatboxer {
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#svg-beatboxer path:nth-child(2) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards 1s;
+}
+#svg-beatboxer path:nth-child(3) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards 1.5s;
+}
+#svg-beatboxer path:nth-child(4) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards 2s;
+}
+#svg-beatboxer path:nth-child(5) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards 2.5s;
+}
+#svg-beatboxer path:nth-child(6) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards 3s;
+}
+#svg-beatboxer path:nth-child(7) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards 3.5s;
+}
+#svg-beatboxer path:nth-child(8) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards 4s;
+}
+#svg-beatboxer path:nth-child(9) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards 4.5s;
+}
+#svg-beatboxer path:nth-child(10) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards 5s;
+}
+/* for the N of the coming sooN */
+#svg-beatboxer path:nth-child(11) {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: line-anime 4s ease forwards 5.5s;
+}
 
+/* Start beatbox body */
+.beatbox {
+    height: 100vh;
+}
+.countdown {
+    transition: all 1s;
+    font-size: 2.6rem;
+}
+/* End beatbox body */
+
+/* End interest page */
+
+/* tablet */
+@media screen and (max-width: 801px) {
+    #svg-beatboxer {
+        width: 40rem;
+    }
+}
 @media screen and (max-width: 600px) {
-
     body.interest-body {
         background: url("images/interest-main-img-m.jpg") no-repeat center fixed;
         background-size: cover;
+    }
+    #svg-beatboxer {
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    #svg-beatboxer {
+        width: 26rem;
+    }
+    .countdown {
+        font-size: 2rem;
     }
 }
 /* main page  */
