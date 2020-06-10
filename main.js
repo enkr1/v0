@@ -58,44 +58,6 @@ $(document).ready(function () {
         })
     });
 
-    // typing effects
-    const quotes =
-        ['"i am where i am because i believe in all possibilities"',
-            'i am willing to learn new skills',
-            'i will never stop improving!'];
-    let count = 0;
-    let index = 0;
-    let currentText = '';
-    let letter = '';
-    let letterdone = false;
-
-    if (window.location.pathname == 'myskills') {
-        (function type() {
-            if (count === quotes.length) {
-                count = 0;
-            }
-
-            currentText = quotes[count];
-            letter = currentText.slice(0, ++index);
-            document.querySelector('.typing').textContent = letter;
-
-            if (letter.length === currentText.length) {
-                count++;
-                index = 0; // reset 
-                letterdone = true;
-            }
-
-            // one line check
-            if (letterdone == false) {
-                setTimeout(type, 80);
-            } else {
-                setTimeout(type, 1000);
-                letterdone = false;
-            }
-
-        }())
-    }
-
     // scrolling detection
     let topnav = document.querySelector('.top-nav');
     let navlogo = document.querySelector('.nav-logo')

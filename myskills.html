@@ -13,8 +13,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
     <link
-    href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Anonymous+Pro&family=K2D&family=Overpass+Mono&family=Radley&display=swap"
-    rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Anonymous+Pro&family=K2D&family=Overpass+Mono&family=Radley&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -38,7 +38,7 @@
             <div class="preload-top"></div>
             <div class="preload-bot"></div>
         </div>
-        
+
         <div class="menu-toggler hide">
             <div class="bar half start"></div>
             <div class="bar half middle"></div>
@@ -452,6 +452,44 @@
 
     <div class="cursor"></div>
 
+    <script>
+        // typing effects
+        const quotes =
+            ['"i am where i am because i believe in all possibilities"',
+                'i am willing to learn new skills',
+                'i will never stop improving!'];
+        let count = 0;
+        let index = 0;
+        let currentText = '';
+        let letter = '';
+        let letterdone = false;
+
+        (function type() {
+            if (count === quotes.length) {
+                count = 0;
+            }
+
+            currentText = quotes[count];
+            letter = currentText.slice(0, ++index);
+            document.querySelector('.typing').textContent = letter;
+
+            if (letter.length === currentText.length) {
+                count++;
+                index = 0; // reset 
+                letterdone = true;
+            }
+
+            // one line check
+            if (letterdone == false) {
+                setTimeout(type, 80);
+            } else {
+                setTimeout(type, 1000);
+                letterdone = false;
+            }
+
+        }())
+
+    </script>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
