@@ -2,6 +2,9 @@
 body.interest-body {
     background: url("images/interest-main-img.jpg") no-repeat center fixed;
     background-size: cover;
+
+    /* for loading too long */
+    background-color: #131218;
     transition: all .5s ease-in-out;
 }
 
