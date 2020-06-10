@@ -69,7 +69,7 @@ $(document).ready(function () {
     let letter = '';
     let letterdone = false;
 
-    if (window.location.pathname == '/myskills.html') {
+    if (window.location.pathname == '/myskills') {
         (function type() {
             if (count === quotes.length) {
                 count = 0;
