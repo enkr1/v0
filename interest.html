@@ -210,8 +210,20 @@
 
         </div>
     </section>
+    <footer class="copyright">
 
+        <div class="up" id="up">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+
+        <p>&copy; Copyright 2020</p>
+        <p>Developed and designed by ENKR</p>
+        <!-- <p>enkr99@gmail.com</p> -->
+
+
+    </footer>
     <script>
+        // from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_coming_soon_js
         // Set the date we're counting down to
         var countDownDate = new Date("July 1, 2020 00:00:00").getTime();
         
@@ -240,7 +252,18 @@
             document.getElementById("countdown").innerHTML = "EXPIRED";
           }
         }, 1000);
-        </script>
+    </script>
+
+    <script>
+        function bgChanger() {
+            if(this.scrollY > this.innerHeight / 1.2) {
+                document.body.classList.remove("interest-body");
+            } else {
+                document.body.classList.add("interest-body");
+            }
+        }
+        window.addEventListener("scroll", bgChanger);
+    </script>
 
 
 

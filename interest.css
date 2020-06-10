@@ -2,6 +2,7 @@
 body.interest-body {
     background: url("images/interest-main-img.jpg") no-repeat center fixed;
     background-size: cover;
+    transition: all .5s ease-in-out;
 }
 
 /* Start interest page */
@@ -78,6 +79,9 @@ body.interest-body {
 .countdown {
     transition: all 1s;
     font-size: 2.6rem;
+}
+.bg-beatbox {
+    background-color: #fff;
 }
 /* End beatbox body */
 
