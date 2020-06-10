@@ -87,7 +87,6 @@ img {
 .preload {
     position: fixed;
     top: 0;
-    /* background-color: var(--third-color); */
     z-index: 9999;
     height: 100vh;
     width: 100%;
@@ -770,8 +769,7 @@ span {
     transform: translateY(5%);
 }
 
-#skills-3d-page
-{
+#skills-3d-page {
     transform: translateY(32%);
 }
 
@@ -987,13 +985,16 @@ input[type="submit"]:hover {
 ul.contact-social-media-ul {
     margin-top: 6%;
 }
+ul.contact-social-media-ul li a { 
+    color: var(--pri-color);
+}
 .contact-social-media {
     margin-top: 5rem;
 }
 .contact-social-media i {
     font-size: 4rem;
     transition: color 650ms;
-    margin: 0 .6rem;
+    margin: 0 1rem;
 }
 .fa-github-square:hover {
     color: #211F1F;
