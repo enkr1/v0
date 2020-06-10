@@ -605,10 +605,10 @@ span {
     -moz-box-shadow: 0px 0px 3px 0px  var(--pri-color);
     box-shadow: 0px 0px 3px 0px  var(--pri-color);
 }
-.profile-img a img:hover {
+/* .profile-img a img:hover {
     transition: all 0.7s ease; 
     transform: scale(1.02); 
-}
+} */
 .about-details {
     flex: 1;
 }
