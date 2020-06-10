@@ -299,6 +299,13 @@ li {
     display: inline;
     text-shadow: -2px 1.5px 2px #000000;
 }
+/* .userposition {
+    position: absolute;
+    z-index: -1;
+    background: red;
+    transition: all .5s ease-in-out;
+    /* transform: scale(1.1); */
+} */
 .top-nav.open {
     right: 0;
     opacity: 1;
@@ -766,14 +773,6 @@ span {
     justify-content: center;
     align-items: center;
 }
-#portfolio-page {
-    transform: translateY(5%);
-}
-
-#skills-3d-page {
-    transform: translateY(32%);
-}
-
 /*End portfolio*/
 
 
@@ -1337,13 +1336,6 @@ ul.contact-social-media-ul li a {
     .more-button #arrow-svg {
         transform: scale(1.2);
     }
-    /* 3d skills page */
-    .main-3d-content {
-        width: 8rem;
-        height: 8rem;
-        perspective: 300rem;
-        margin: 30vh auto 20vh auto;
-    }
     .content-carrousel {
         animation: fan 40s infinite linear;
     }
@@ -1407,14 +1399,6 @@ ul.contact-social-media-ul li a {
     }
     .content-carrousel figure:nth-child(10) {
         transform: rotateY(324deg) translateZ(30rem);
-    }
-    #portfolio-page {
-        transform: translateY(0);
-    }
-    
-    #skills-3d-page
-    {
-        transform: translateY(0);
     }
 
 }

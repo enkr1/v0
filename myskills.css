@@ -1,5 +1,8 @@
 
 /* Start 3d Skills page*/
+#skills-3d-page {
+    transform: translateY(32%);
+}
 .main-3d-content {
     width: 10rem;
     height: 10rem;
@@ -116,3 +119,34 @@
     transform: rotateY(324deg) translateZ(60rem);
 }
 /* End 3d Skills pagr */
+
+/*Start media queries*/
+
+/* tablet */
+@media screen and (max-width: 801px) {
+    .back a img { 
+        top: 2.5rem;  
+    }
+    /* 3d skills page */
+    .main-3d-content {
+        width: 8rem;
+        height: 8rem;
+        perspective: 300rem;
+        margin: 30vh auto 20vh auto;
+    }
+    #skills-3d-page
+    {
+        transform: translateY(0);
+    }
+}
+/* mobile  */
+@media screen and (max-width: 600px) {
+    .back a img {
+        height: 2.3rem;
+        width: 2.5rem;
+        top: 2rem;
+        left: 0.6rem;  
+    }
+}
+/*End media queries*/
+
