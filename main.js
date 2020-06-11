@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // preload
-    setTimeout(function() {
+    setTimeout(function () {
         const preload = document.querySelector('.preload');
         const preloadTop = document.querySelector('.preload-top');
         const preloadBot = document.querySelector('.preload-bot');
@@ -27,46 +27,22 @@ $(document).ready(function () {
     });
 
 
-    // dev ed https://www.youtube.com/watch?v=RLc8NB2JyxE
-    // const sections = document.querySelectorAll('section');
-    // const userposition = document.querySelector('.userposition');
 
-    // const options = {
-    //     threshold: 0.5
-    // };
-
-    // let observer = new IntersectionObserver(navCheck, options);
-
-    // function navCheck(entries) {
-    //     entries.forEach(entry => {
-    //         const className = entry.target.className; 
-    //         console.log(className)
-    //         const activeAnchor = document.querySelector(`[data-page=${className}]`);
-    //         const targetIndex = entry.target.getAttribute('data-index');
-    //         const coords = activeAnchor.getBoundingClientRect();
-    //         const directions = {
-    //             height: coords.height/4,
-    //             width: coords.width,
-    //             top: coords.top,
-    //             left: coords.left
-    //         };
-    //         if(entry.isIntersecting) {
-    //             userposition.style.setProperty('left',`${directions.left}px`);
-    //             userposition.style.setProperty('top',`${directions.top}px`);
-    //             userposition.style.setProperty('width',`${directions.width}px`);
-    //             userposition.style.setProperty('height',`${directions.height}px`);
-    //         }
-            
-            
-    //     });
-    // }
-
-    // sections.forEach(section => {
-    //     observer.observe(section);
-    // });
-
-
-
+    document.addEventListener(
+        "scroll",
+        function () {
+            var scrollTop =
+                document.documentElement["scrollTop"] || document.body["scrollTop"];
+            var scrollBottom =
+                (document.documentElement["scrollHeight"] ||
+                    document.body["scrollHeight"]) - document.documentElement.clientHeight;
+            scrollPercent = scrollTop / scrollBottom * 100 + "%";
+            document
+                .getElementById("_progress")
+                .style.setProperty("--scroll", scrollPercent);
+        },
+        { passive: true }
+    );
 
     // Handle ESC key (key code 27)
     document.addEventListener('keyup', function (e) {
@@ -110,7 +86,7 @@ $(document).ready(function () {
         // console.log(this.oldScroll > this.scrollY);
         // console.log(this.scrollY)
 
-        if (screen.width >= 768) {
+        if (screen.width > 800) {
             if (this.oldScroll > this.scrollY) {
                 topnav.classList.add('scrollup')
             } else {
@@ -137,11 +113,11 @@ $(document).ready(function () {
         }, 3000)
     });
 
-    
+
     $(window).scroll(function () {
         if ($(this).scrollTop() > 800) {
             $('#up').fadeIn();
-        } 
+        }
         else {
             $('#up').fadeOut();
         }

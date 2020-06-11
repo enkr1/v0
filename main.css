@@ -299,13 +299,7 @@ li {
     display: inline;
     text-shadow: -2px 1.5px 2px #000000;
 }
-/* .userposition {
-    position: absolute;
-    z-index: -1;
-    background: red;
-    transition: all .5s ease-in-out;
-    /* transform: scale(1.1); */
-} */
+
 .top-nav.open {
     right: 0;
     opacity: 1;
@@ -429,6 +423,21 @@ li {
     -o-transition: all 1s ease;
     transition: all 1s ease;
 }
+#_progress {
+    transform: translateY(7.9rem);
+    --scroll: 0%;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.6) var(--scroll), /* in js */
+      transparent 0
+    );
+    position: fixed;
+    width: 100%;
+    height: 1.5px;
+    top: 0px;
+    z-index: 100;
+  }
+
 /* End navigation bar */
 
 
@@ -1252,6 +1261,9 @@ ul.contact-social-media-ul li a {
     .nav-link {
         font-size: 1.8rem;
         letter-spacing: .1rem;
+    }
+    #_progress {
+        display: none;
     }
     .about-heading h1 {
         font-size: 8rem;
