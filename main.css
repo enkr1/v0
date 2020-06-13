@@ -201,7 +201,7 @@ img {
     font-weight: 300;
     position: relative;
     margin-bottom: 0.8rem; 
-    font-family: 'Lora', serif;
+    /* font-family: 'Lora', serif; */
     letter-spacing: 0.2rem;
 }
 .section-heading h6::before,
