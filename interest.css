@@ -104,14 +104,14 @@ body.interest-body {
     #svg-beatboxer {
         width: 30rem;
     }
+    .countdown {
+        font-size: 2rem;
+    }
 }
 
 @media screen and (max-width: 321px) {
     #svg-beatboxer {
         width: 26rem;
-    }
-    .countdown {
-        font-size: 2rem;
     }
 }
 /* main page  */
