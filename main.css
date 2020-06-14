@@ -737,7 +737,7 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 5rem 0; 
+    margin: 10rem 0; 
 }
 .profile-item:last-child {
     margin-bottom: 0;
