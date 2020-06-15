@@ -1,4 +1,5 @@
 /*Start global*/
+/* https://stackoverflow.com/questions/3468154/what-is-webkit-and-how-is-it-related-to-css */
 *{
     margin:0;
     padding: 0;
@@ -122,6 +123,10 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -47%);
+    -webkit-transform: translate(-50%, -47%);
+    -moz-transform: translate(-50%, -47%);
+    -ms-transform: translate(-50%, -47%);
+    -o-transform: translate(-50%, -47%);
 }
 .loading-leave { 
     position: absolute;
