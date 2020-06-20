@@ -479,6 +479,7 @@ li {
     align-items: center;
     justify-content: center;
     transform: translateY(700%);
+    opacity: .8;
     /* bottom: 0; */
 }
 .action-1, .action-2, .action-3 {
