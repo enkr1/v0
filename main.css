@@ -10,7 +10,7 @@
     background-color: var(--pri-color);
 }
 html {
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
     font-size: 10px;
     font-family: 'Alegreya Sans', sans-serif;
     font-family: 'Anonymous Pro', monospace;
@@ -460,18 +460,42 @@ li {
     user-select: none;
     margin: 0;
     position: absolute;
-    top: 46%;
+    /* top: 30%; */
     left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -55%); 
     user-select: none;
 }
 .landing-text h6 {
     font-family: monospace;
-    margin-top: 22%;
+    transform: translateY(16rem);
     font-size: 2.2rem;
     font-weight: 300;
     color: var(--background);
 }
+
+/* action buttons */
+.landing-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(700%);
+    /* bottom: 0; */
+}
+.action-1, .action-2, .action-3 {
+    height: 3rem;
+    width: 8%;
+    border: 1px solid var(--pri-color);
+    border-radius: 3rem;
+    margin: .4%;
+}
+.action-1 p, .action-2 p, .action-3 p {
+    transform: translateY(.34rem);
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+    color: var(--pri-color);
+}
+
+/* for javascript */
 .main-h6 {
     opacity: 0;
 }
@@ -1185,6 +1209,13 @@ ul.contact-social-media-ul li a {
 /* ------------------------------------------------------------------------------- */
 
 /*Start media queries*/
+@media screen and (max-width: 1440px) {
+    /* action buttons */
+    .action-1 p, .action-2 p, .action-3 p {
+        transform: translateY(.3rem);
+    }
+
+}
 @media screen and (max-width: 1281px) {    
     .loading-leave {
         /* width: 9rem;
@@ -1194,13 +1225,20 @@ ul.contact-social-media-ul li a {
     }
     .landing-text h6 { 
         font-size: 1.8rem;
+        transform: translateY(10rem);
     }
     .nav-link {
         font-size: 1.8em; 
         padding: 1.2rem;
     }
 }
-@media screen and (max-width: 1024px) {    
+@media screen and (max-width: 1024px) { 
+    /* action buttons */   
+    .action-1, .action-2, .action-3 {
+        width: 14%;
+        border-radius: 3rem;
+    }
+ 
     .timeline p, .timeline h1 {
         transform: translateX(1.2rem);
     }
@@ -1225,12 +1263,9 @@ ul.contact-social-media-ul li a {
     .cursor {
         display: none;   
     }
-    .landing-text h6 {
-        font-size: 1.7rem;
-        margin-top: 28%;
-    } 
     .landing-text h6 {  
         font-size: 1.5rem;
+        transform: translateY(8rem);
     }
     .hide {
         opacity: 1;
@@ -1428,6 +1463,26 @@ ul.contact-social-media-ul li a {
         top: 40%;
         left: 43%;
     }
+    .landing-text h6 {  
+        /* font-size: 1.5rem; */
+        transform: translateY(5rem);
+    }
+
+    /* action buttons */
+    .landing-action {
+        transform: translateY(300%);
+    }
+    .action-1, .action-2, .action-3 {
+        width: 26%;
+        border-radius: 2rem;
+        margin: 1%;
+    }
+    .action-1 p, .action-2 p, .action-3 p {
+        transform: translateY(.38rem);
+        font-size: 1.1rem;
+        letter-spacing: .2rem;
+    }    
+
     #svg-loading {
         width: 26%;
         transform: translate(-50%, -25%);

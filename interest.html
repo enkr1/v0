@@ -193,11 +193,12 @@
     </div>
 
     <section class="beatbox" id="beatbox">
-        <div class="container">
+        <div class="container beatbox-container">
             <div class="section-heading">
                 <h1>“Under Construction”</h1>
                 <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
             </div>
+
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nisi autem possimus neque consequatur?
                 Omnis voluptates incidunt suscipit exercitationem distinctio animi blanditiis velit quam aut. Fugiat ex
                 optio iste et?Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis natus error numquam
@@ -206,6 +207,7 @@
 
         </div>
     </section>
+
     <footer class="copyright">
 
         <div class="up" id="up">
@@ -222,37 +224,37 @@
         // from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_coming_soon_js
         // Set the date we're counting down to
         var countDownDate = new Date("August 1, 2020 00:00:00").getTime();
-        
+
         // Update the count down every 1 second
-        var countdownfunction = setInterval(function() {
-        
-          // Get todays date and time
-          var now = new Date().getTime();
-          
-          // Find the distance between now an the count down date
-          var distance = countDownDate - now;
-          
-          // Time calculations for days, hours, minutes and seconds
-          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-          
-          // Output the result in an element with id="demo"
-          document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-          + minutes + "m " + seconds + "s ";
-          
-          // If the count down is over, write some text 
-          if (distance < 0) {
-            clearInterval(countdownfunction);
-            document.getElementById("countdown").innerHTML = "EXPIRED";
-          }
+        var countdownfunction = setInterval(function () {
+
+            // Get todays date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now an the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(countdownfunction);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
         }, 1000);
     </script>
 
     <script>
         function bgChanger() {
-            if(this.scrollY > this.innerHeight / 1.2) {
+            if (this.scrollY > this.innerHeight / 1.2) {
                 document.body.classList.remove("interest-body");
             } else {
                 document.body.classList.add("interest-body");
