@@ -1,6 +1,6 @@
 /*Start global*/
 /* https://stackoverflow.com/questions/3468154/what-is-webkit-and-how-is-it-related-to-css */
-*{
+* {
     margin:0;
     padding: 0;
     box-sizing: border-box;
@@ -10,7 +10,6 @@
     background-color: var(--pri-color);
 }
 html {
-    scroll-behavior: smooth;
     font-size: 10px;
     font-family: 'Alegreya Sans', sans-serif;
     font-family: 'Anonymous Pro', monospace;
@@ -876,6 +875,35 @@ span {
 
 
 /*Start contact*/
+/* interactive anim, exp */
+.info-anim {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0);
+    top: 0;
+    left: 0;
+    border-radius: 1rem;
+    width: fit-content;
+}
+.info-anim-inner {
+    cursor: pointer;
+    background-color: var(--sec-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 100%;
+    clip-path: circle(10% at 10% 50%);
+    transition: all .5s ease-in-out;
+}
+.info-anim-inner:hover {
+    clip-path: circle(75%);
+    background-color: var(--background);
+}
+.info-anim-inner span {
+    float: left;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
 .typing-area {
     text-align: center;
     margin-top: -4rem;
