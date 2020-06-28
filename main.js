@@ -107,17 +107,34 @@ $(document).ready(function () {
         }
     }
 
+    // https://stackoverflow.com/questions/21561480/trigger-event-when-user-scroll-to-specific-element-with-jquery
+    // https://stackoverflow.com/questions/52220491/jquery-detecting-if-element-is-in-viewport
+    // https://stackoverflow.com/questions/45362236/isinview-not-working-correctly
     // detect scroll to
-    // $(window).scroll(function() {
-    //     var hT = $('#experience').offset().top,
-    //         hH = $('#experience').outerHeight(),
-    //         wH = $(window).height(),
-    //         wS = $(this).scrollTop();
-    //     if (wS > (hT+hH-wH)){
-    //         console.log('experience!');
-    //     }
-    //  });
+    $.fn.isInViewport = function () {
+        var elementTop = $(this).offset().top;
+        var elementBottom = elementTop + $(this).outerHeight();
 
+        var viewportTop = $(window).scrollTop();
+        var viewportBottom = viewportTop + $(window).height();
+
+        return elementBottom > viewportTop && elementTop < viewportBottom;
+    };
+    $(window).scroll(function () {
+        if ($('#home').isInViewport()) {
+            console.log('rched home.')
+        } else if ($('#about').isInViewport()) {
+            console.log('rched about.')
+        } else if ($('#specialization').isInViewport()) {
+            console.log('rched specialization.')
+        } else if ($('#portfolio').isInViewport()) {
+            console.log('rched portfolio.')
+        } else if ($('#experience').isInViewport()) {
+            console.log('rched experience.')
+        } else if ($('#contact').isInViewport()) {
+            console.log('rched contact.')
+        }
+    });
 
 
     $('#up').on('click', function () {
