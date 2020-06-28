@@ -1366,7 +1366,7 @@ ul.contact-social-media-ul li a {
 }
 @media screen and (max-width: 1024px) { 
     /* action buttons */   
-    .action-1, .action-2, .action-3 {
+    .action-btn {
         width: 14%;
         border-radius: 3rem;
     }
@@ -1604,12 +1604,12 @@ ul.contact-social-media-ul li a {
     .landing-action {
         transform: translateY(300%);
     }
-    .action-1, .action-2, .action-3 {
+    .action-btn {
         width: 26%;
         border-radius: 2rem;
         margin: 1%;
     }
-    .action-1 p, .action-2 p, .action-3 p {
+    .action-btn p {
         transform: translateY(.38rem);
         font-size: 1.1rem;
         letter-spacing: .2rem;
