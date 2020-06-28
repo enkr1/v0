@@ -107,6 +107,19 @@ $(document).ready(function () {
         }
     }
 
+    // detect scroll to
+    // $(window).scroll(function() {
+    //     var hT = $('#experience').offset().top,
+    //         hH = $('#experience').outerHeight(),
+    //         wH = $(window).height(),
+    //         wS = $(this).scrollTop();
+    //     if (wS > (hT+hH-wH)){
+    //         console.log('experience!');
+    //     }
+    //  });
+
+
+
     $('#up').on('click', function () {
         $('html, body').animate({
             scrollTop: 0
