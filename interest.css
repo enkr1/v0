@@ -31,48 +31,48 @@ body.interest-body {
 #svg-beatboxer path:nth-child(3) {
     stroke-dasharray: 555;
     stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards 1.5s;
+    animation: line-anime 4s ease forwards 1s;
 }
 #svg-beatboxer path:nth-child(4) {
     stroke-dasharray: 555;
     stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards 2s;
+    animation: line-anime 4s ease forwards 1s;
 }
 #svg-beatboxer path:nth-child(5) {
     stroke-dasharray: 555;
     stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards 2.5s;
+    animation: line-anime 4s ease forwards 1s;
 }
 #svg-beatboxer path:nth-child(6) {
     stroke-dasharray: 555;
     stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards 3s;
+    animation: line-anime 4s ease forwards 1s;
 }
 #svg-beatboxer path:nth-child(7) {
     stroke-dasharray: 555;
     stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards 3.5s;
+    animation: line-anime 4s ease forwards 1s;
 }
 #svg-beatboxer path:nth-child(8) {
     stroke-dasharray: 555;
     stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards 4s;
+    animation: line-anime 4s ease forwards 1s;
 }
 #svg-beatboxer path:nth-child(9) {
     stroke-dasharray: 555;
     stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards 4.5s;
+    animation: line-anime 4s ease forwards 1s;
 }
 #svg-beatboxer path:nth-child(10) {
     stroke-dasharray: 555;
     stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards 5s;
+    animation: line-anime 4s ease forwards 1s;
 }
 /* for the N of the coming sooN */
 #svg-beatboxer path:nth-child(11) {
     stroke-dasharray: 555;
     stroke-dashoffset: 555;
-    animation: line-anime 4s ease forwards 5.5s;
+    animation: line-anime 4s ease forwards 1s;
 }
 
 /* Start beatbox body */

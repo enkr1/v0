@@ -1185,9 +1185,11 @@ ul.contact-social-media-ul li a {
     font-size: 1.2rem;
 }
 .visitcount {
+    top: 0;
     margin-top: 1rem;
     transform: translate(0, 1%);
     pointer-events: none;
+    display: none;
 }
 /*End footer*/
 

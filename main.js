@@ -53,7 +53,7 @@ $(document).ready(function () {
     $('nav a[href*="#"]').on('click', function () {
         $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top - 100
-        }, 2000)
+        }, 1600)
     });
 
     let mouseCursor = document.querySelector(".cursor");
