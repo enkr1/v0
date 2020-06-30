@@ -485,9 +485,14 @@ li {
 .action-btn {
     height: 3rem;
     width: 8%;
-    border: 1px solid var(--pri-color);
+    /* border: 1px solid var(--pri-color); */
     border-radius: 3rem;
     margin: .4%;
+
+    /* Neumorphism */
+    -webkit-box-shadow: 0px 0px 10px var(--pri-color);
+    -moz-box-shadow: 0px 0px 10px var(--pri-color);
+    box-shadow: 0px 0px 10px 0px var(--pri-color);
     
 }
 .action-btn p {
