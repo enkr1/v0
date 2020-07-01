@@ -523,6 +523,9 @@ li {
 .explore-btn:hover ~ .scroll-down-anim {
     opacity: 1;
 }
+.explore-btn:hover {
+    /* might add some anim here */
+}
 .scroll-down-anim {
     position: absolute;
     top: 0;

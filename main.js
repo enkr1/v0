@@ -1,4 +1,8 @@
 $(document).ready(function () {
+
+    // footer
+    $('#footer').load('/footer.html');
+
     // preload
     setTimeout(function () {
         const preload = document.querySelector('.preload');
