@@ -13,9 +13,9 @@ $(document).ready(function () {
         // only when finish loading, add y scroll 
         var root = document.getElementsByTagName('html')[0]; // '0' to assign the first (and only `HTML` tag)
         root.classList.add('enablescroll');
-        // root.classList.remove('unablescroll');
     });
 
+    // menu bar 
     $('.menu-toggler').on('click', function () {
         $(this).toggleClass('open');
         $('.top-nav').toggleClass('open');
@@ -45,10 +45,10 @@ $(document).ready(function () {
     );
 
     // Handle ESC key (key code 27)
-    document.addEventListener('keyup', function (e) {
-        $('.menu-toggler').removeClass('open');
-        $('.top-nav').removeClass('open');
-    });
+    // document.addEventListener('keyup', function (e) {
+    //     $('.menu-toggler').removeClass('open');
+    //     $('.top-nav').removeClass('open');
+    // });
 
     $('nav a[href*="#"]').on('click', function () {
         $('html, body').animate({
@@ -122,17 +122,23 @@ $(document).ready(function () {
     };
     $(window).scroll(function () {
         if ($('#home').isInViewport()) {
-            console.log('rched home.')
+            console.log('rched home.');
+
         } else if ($('#about').isInViewport()) {
-            console.log('rched about.')
+            console.log('rched about.');
+            
         } else if ($('#specialization').isInViewport()) {
-            console.log('rched specialization.')
+            console.log('rched specialization.');
+
         } else if ($('#portfolio').isInViewport()) {
-            console.log('rched portfolio.')
+            console.log('rched portfolio.');
+
         } else if ($('#experience').isInViewport()) {
-            console.log('rched experience.')
+            console.log('rched experience.');
+
         } else if ($('#contact').isInViewport()) {
-            console.log('rched contact.')
+            console.log('rched contact.');
+
         }
     });
 
@@ -152,6 +158,7 @@ $(document).ready(function () {
             $('#up').fadeOut();
         }
     })
+
 
 
     AOS.init({
