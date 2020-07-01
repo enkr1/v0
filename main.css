@@ -295,6 +295,20 @@ li {
     padding: .6rem 2rem;
     color: aliceblue;
 }
+
+/* animation when hovering nav link */
+/* .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 1rem;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    opacity: 1;
+} */
 .nav-link:hover, 
 .nav-link:focus {
     background: var(--background);
@@ -303,6 +317,9 @@ li {
     display: inline;
     text-shadow: -2px 1.5px 2px #000000;
 }
+/* .nav-link:hover .nav-link::after {
+    opacity: 0;
+} */
 
 .top-nav.open {
     right: 0;
