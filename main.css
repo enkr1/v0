@@ -1348,14 +1348,14 @@ ul.contact-social-media-ul li a {
 /* ------------------------------------------------------------------------------- */
 
 /*Start media queries*/
-@media screen and (max-width: 1440px) {
+@media all and (max-width: 1440px) {
     /* action buttons */
     .action-1 p, .action-2 p, .action-3 p {
         transform: translateY(.3rem);
     }
 
 }
-@media screen and (max-width: 1281px) {    
+@media all and (max-width: 1281px) {    
     .loading-leave {
         /* width: 9rem;
         height: 9rem; */
@@ -1371,7 +1371,7 @@ ul.contact-social-media-ul li a {
         padding: 1.2rem;
     }
 }
-@media screen and (max-width: 1024px) { 
+@media all and (max-width: 1024px) { 
     /* action buttons */   
     .action-btn {
         width: 14%;
@@ -1389,7 +1389,7 @@ ul.contact-social-media-ul li a {
     }
 }
 /* tablet */
-@media screen and (max-width: 801px) {
+@media all and (max-width: 801px) {
     .loading-leave {
         width: 9rem;
         height: 9rem;
@@ -1595,7 +1595,7 @@ ul.contact-social-media-ul li a {
 }
 
 /* mobile  */
-@media screen and (max-width: 600px) {
+@media all and (max-width: 600px) {
     .loading-leave {
         width: 6rem;
         height: 6rem;
@@ -1798,7 +1798,7 @@ ul.contact-social-media-ul li a {
 
 }
 
-@media screen and (max-width: 321px) {
+@media all and (max-width: 321px) {
 
 }
 /*End media queries*/
