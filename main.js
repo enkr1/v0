@@ -25,51 +25,7 @@ $(document).ready(function () {
         root.classList.add('enablescroll');
     });
 
-
-    // https://medium.com/@nilayvishwakarma/build-a-scroll-progress-bar-with-vanilla-js-in-10-minutes-or-less-4ba07e2554f3
-    document.addEventListener(
-        "scroll",
-        function () {
-            var scrollTop =
-                document.documentElement["scrollTop"] || document.body["scrollTop"];
-            var scrollBottom =
-                (document.documentElement["scrollHeight"] ||
-                    document.body["scrollHeight"]) - document.documentElement.clientHeight;
-            scrollPercent = scrollTop / scrollBottom * 100 + "%";
-            document
-                .getElementById("_progress")
-                .style.setProperty("--scroll", scrollPercent);
-        },
-        { passive: true }
-    );
-
-    // Handle ESC key (key code 27)
-    // document.addEventListener('keyup', function (e) {
-    //     $('.menu-toggler').removeClass('open');
-    //     $('.top-nav').removeClass('open');
-    // });
-
-
-    let mouseCursor = document.querySelector(".cursor");
-    let words = document.querySelectorAll("img, .nav-link");
-    window.addEventListener('mousemove', cursor);
-
-    function cursor(e) {
-        mouseCursor.style.top = e.pageY + 'px';
-        mouseCursor.style.left = e.pageX + 'px';
-    }
-
-    words.forEach(word => {
-        word.addEventListener("mouseover", () => {
-            mouseCursor.classList.add("img-grow");
-            // image.classList.add("img-hover");
-        })
-        word.addEventListener("mouseleave", () => {
-            mouseCursor.classList.remove("img-grow");
-            // image.classList.add("img-hover");
-        })
-    });
-
+    
     // https://stackoverflow.com/questions/21561480/trigger-event-when-user-scroll-to-specific-element-with-jquery
     // https://stackoverflow.com/questions/52220491/jquery-detecting-if-element-is-in-viewport
     // https://stackoverflow.com/questions/45362236/isinview-not-working-correctly
@@ -105,6 +61,99 @@ $(document).ready(function () {
         }
     });
 
+
+    // https://medium.com/@nilayvishwakarma/build-a-scroll-progress-bar-with-vanilla-js-in-10-minutes-or-less-4ba07e2554f3
+    document.addEventListener(
+        "scroll",
+        function () {
+            var scrollTop =
+                document.documentElement["scrollTop"] || document.body["scrollTop"];
+            var scrollBottom =
+                (document.documentElement["scrollHeight"] ||
+                    document.body["scrollHeight"]) - document.documentElement.clientHeight;
+            scrollPercent = scrollTop / scrollBottom * 100 + "%";
+            document
+                .getElementById("_progress")
+                .style.setProperty("--scroll", scrollPercent);
+        },
+        { passive: true }
+    );
+
+
+    // Handle ESC key (key code 27)
+    // document.addEventListener('keyup', function (e) {
+    //     $('.menu-toggler').removeClass('open');
+    //     $('.top-nav').removeClass('open');
+    // });
+
+
+    let mouseCursor = document.querySelector(".cursor");
+    let words = document.querySelectorAll("img, .nav-link");
+    window.addEventListener('mousemove', cursor);
+
+    function cursor(e) {
+        mouseCursor.style.top = e.pageY + 'px';
+        mouseCursor.style.left = e.pageX + 'px';
+    }
+
+    words.forEach(word => {
+        word.addEventListener("mouseover", () => {
+            mouseCursor.classList.add("img-grow");
+            // image.classList.add("img-hover");
+        })
+        word.addEventListener("mouseleave", () => {
+            mouseCursor.classList.remove("img-grow");
+            // image.classList.add("img-hover");
+        })
+    });
+
+
+    // menu bar 
+    $('.menu-toggler').on('click', function () {
+        $(this).toggleClass('open');
+        $('.top-nav').toggleClass('open');
+    });
+
+    $('.top-nav .nav-link').on('click', function () {
+        $('.menu-toggler').removeClass('open');
+        $('.top-nav').removeClass('open');
+    });
+
+    $('nav a[href*="#"]').on('click', function () {
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top - 100
+        }, 1600)
+    });
+    
+    // scrolling detection
+    let topnav = document.querySelector('.top-nav');
+    let navlogo = document.querySelector('.nav-logo')
+
+    window.onscroll = function (e) {
+        // print "false" if direction is down and "true" if up
+        // console.log(this.oldScroll > this.scrollY);
+        // console.log(this.scrollY)
+
+        if (screen.width > 800) {
+            if (this.oldScroll > this.scrollY) {
+                topnav.classList.add('scrollup')
+            } else {
+                topnav.classList.remove('scrollup')
+                topnav.classList.add('startscrolling')
+                navlogo.classList.add('hide')
+            }
+
+            // leave top
+            if (this.scrollY == 0) {
+                topnav.classList.remove('startscrolling')
+                topnav.classList.remove('scrollup')
+                navlogo.classList.remove('hide')
+            }
+
+            this.oldScroll = this.scrollY;
+
+        }
+    }
 
 
     // plugins
