@@ -147,24 +147,8 @@ $(document).ready(function () {
     });
 
 
-    $('#up').on('click', function () {
-        $('html, body').animate({
-            scrollTop: 0
-        }, 3000)
-    });
 
-
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 800) {
-            $('#up').fadeIn();
-        }
-        else {
-            $('#up').fadeOut();
-        }
-    })
-
-
-
+    // plugins
     AOS.init({
         easing: 'ease',
         duration: 1800,

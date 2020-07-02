@@ -799,9 +799,11 @@ span {
 /*Start Specialization*/
 .my-skills {
     margin-top: 10rem;
+    
+    /* https://hankchizljaw.com/wrote/create-a-responsive-grid-layout-with-no-media-queries-using-css-grid/ */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-gap: 2.5rem;
+    grid-gap: 3rem;
     text-align: center;
 }
 .skill {
