@@ -316,6 +316,12 @@ li {
     -webkit-text-fill-color: transparent;
     display: inline;
     text-shadow: -2px 1.5px 2px #000000;
+
+    /* browser support */
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 /* .nav-link:hover .nav-link::after {
     opacity: 0;
@@ -533,12 +539,12 @@ li {
 .bg-slide-to-right:hover .action-text-1 {
     z-index: 1;
     color: var(--third-color);
-    transition: all .3s ease-in-out;
+    transition: all .1s ease-in-out;
 }
 
 /* explore button */ 
 .explore-btn:hover ~ .scroll-down-anim {
-    opacity: 1;
+    opacity: .6;
 }
 .explore-btn:hover {
     /* might add some anim here */
