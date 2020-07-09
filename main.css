@@ -35,6 +35,12 @@ body {
 section {
     padding: 6rem 0;
 }
+.one-page-section {
+    height: 100vh;
+}
+.one-page-container {
+    transform: translateY(10rem);
+}
 /* all links */
 a {
     text-decoration: none;
@@ -976,6 +982,9 @@ span {
 
 /*Start contact*/
 /* interactive anim, exp */
+.contact {
+    background-color: var(--third-color);
+}
 .info-anim {
     position: absolute;
     background-color: rgba(255, 255, 255, 0);
@@ -1016,10 +1025,6 @@ span {
     content: "|";
     position: absolute;
     animation: caret infinite 1s steps(1, end); 
-}
-
-.contact {
-    background-color: var(--third-color);
 }
 form {
     position: relative;
@@ -1415,6 +1420,12 @@ ul.contact-social-media-ul li a {
 }
 /* tablet */
 @media all and (max-width: 801px) {
+    .one-page-section {
+        height: auto;
+    }
+    .one-page-container {
+        transform: translateY(0rem);
+    }
     .loading-leave {
         width: 9rem;
         height: 9rem;
@@ -1686,6 +1697,9 @@ ul.contact-social-media-ul li a {
     .about .container {
         flex-direction: column;
     }
+    .profile-img {
+        margin: 0 0 7rem 0;
+    }
     .about-details p {
         text-align: center;
         line-height: 1.6;
@@ -1705,8 +1719,9 @@ ul.contact-social-media-ul li a {
     .icon-container i { 
         font-size: 4.5rem; 
     }
-    .profile-img {
-        margin: 0 0 7rem 0;
+    .has-margin-right {
+        margin-right: 0;
+        text-align: left;
     }
     .portfolio-item {
         flex-direction: column;
@@ -1720,7 +1735,7 @@ ul.contact-social-media-ul li a {
         order: 2;
     }
     .portfolio-description .cta { 
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
     }
     .timeline {
         margin: 0;
