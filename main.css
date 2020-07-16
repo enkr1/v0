@@ -1144,6 +1144,7 @@ input[type="submit"] {
     background-color: var(--third-color);
     padding: 0.8rem 3rem;
     border-radius: .9rem;
+
     /* Neumorphism */
     -webkit-box-shadow: 0px 0px 10px var(--pri-color);
     -moz-box-shadow: 0px 0px 10px var(--pri-color);
@@ -1153,10 +1154,7 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
     color: var(--third-color);
-    background-color: var(--pri-color);
-    -webkit-box-shadow: 0px 0px 10px 0px var(--pri-color);
-    -moz-box-shadow: 0px 0px 10px 0px  var(--pri-color);
-    box-shadow: 0px 0px 10px 0px  var(--pri-color);
+    background-color: var(--pri-color);    
 }
 ul.contact-social-media-ul {
     margin-top: 6%;
