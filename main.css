@@ -1632,7 +1632,7 @@ ul.contact-social-media-ul li a {
 
 }
 
-/* mobile  */
+/* mobile */
 @media all and (max-width: 600px) {
     .loading-leave {
         width: 6rem;
