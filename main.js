@@ -42,7 +42,6 @@ $(document).ready(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 800) {
             $('#up').fadeIn();
-            console.log('more than 800!!');
         } else {
             $('#up').fadeOut();
         }
