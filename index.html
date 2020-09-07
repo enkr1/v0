@@ -470,17 +470,24 @@
 
         </div>
 
-        <div id="footer"></div>
+
     </section>
 
 
+    <div id="footer"></div>
+    
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script defer src="main.js"></script>
+
     <script>
         // typing effects
-        const landingtexts =
-            ['i design websites, products, etc.',
-                'feel free to contact me',
-                'for collaboration or',
-                'any website services!'];
+        const landingtexts = ['i design websites, products, etc.',
+            'feel free to contact me',
+            'for collaboration or',
+            'any website services!'
+        ];
         let count = 0;
         let index = 0;
         let currentText = '';
@@ -535,18 +542,12 @@
                 return;
             }
         }
+
         function complete() {
             clearInterval(timer);
             timer = null;
         }
-
     </script>
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script defer src="main.js"></script>
 
 </body>
 

@@ -40,26 +40,50 @@ $(document).ready(function () {
         return elementBottom > viewportTop && elementTop < viewportBottom;
     };
     $(window).scroll(function () {
-        if ($('#home').isInViewport()) {
-            console.log('rched home.');
-
-        } else if ($('#about').isInViewport()) {
-            console.log('rched about.');
-
-        } else if ($('#specialization').isInViewport()) {
-            console.log('rched specialization.');
-
-        } else if ($('#portfolio').isInViewport()) {
-            console.log('rched portfolio.');
-
-        } else if ($('#experience').isInViewport()) {
-            console.log('rched experience.');
-
-        } else if ($('#contact').isInViewport()) {
-            console.log('rched contact.');
-
+        if ($(this).scrollTop() > 800) {
+            $('#up').fadeIn();
+            console.log('more than 800!!');
+        } else {
+            $('#up').fadeOut();
         }
+
+        // if ($('#home').isInViewport()) {
+        //     console.log('rched home.');
+
+        // } else if ($('#about').isInViewport()) {
+        //     console.log('rched about.');
+
+        // } else if ($('#specialization').isInViewport()) {
+        //     console.log('rched specialization.');
+
+        // } else if ($('#portfolio').isInViewport()) {
+        //     console.log('rched portfolio.');
+
+        // } else if ($('#experience').isInViewport()) {
+        //     console.log('rched experience.');
+
+        // } else if ($('#contact').isInViewport()) {
+        //     console.log('rched contact.');
+
+        // }
     });
+
+    
+    // Up button
+    $('#up').on('click', function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 3000)
+    });
+
+    // $(window).scroll(function () {
+    //     if ($(this).scrollTop() > 800) {
+    //         console.log('more than 800!!');
+    //         $('#up').fadeIn();
+    //     } else {
+    //         $('#up').fadeOut();
+    //     }
+    // })
 
 
     // https://medium.com/@nilayvishwakarma/build-a-scroll-progress-bar-with-vanilla-js-in-10-minutes-or-less-4ba07e2554f3
@@ -124,7 +148,9 @@ $(document).ready(function () {
             scrollTop: $($(this).attr('href')).offset().top - 100
         }, 1600)
     });
+
     
+    // Navigation bar
     // scrolling detection
     let topnav = document.querySelector('.top-nav');
     let navlogo = document.querySelector('.nav-logo')
@@ -135,6 +161,7 @@ $(document).ready(function () {
         // console.log(this.scrollY)
 
         if (screen.width > 800) {
+
             if (this.oldScroll > this.scrollY) {
                 topnav.classList.add('scrollup')
             } else {
