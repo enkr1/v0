@@ -1,4 +1,3 @@
-
 // GitHub: @enkr1
 // Instagram: @enkr1
 // :)
@@ -25,7 +24,7 @@ $(document).ready(function () {
         root.classList.add('enablescroll');
     });
 
-    
+
     // https://stackoverflow.com/questions/21561480/trigger-event-when-user-scroll-to-specific-element-with-jquery
     // https://stackoverflow.com/questions/52220491/jquery-detecting-if-element-is-in-viewport
     // https://stackoverflow.com/questions/45362236/isinview-not-working-correctly
@@ -67,7 +66,7 @@ $(document).ready(function () {
         // }
     });
 
-    
+
     // Up button
     $('#up').on('click', function () {
         $('html, body').animate({
@@ -98,8 +97,9 @@ $(document).ready(function () {
             document
                 .getElementById("_progress")
                 .style.setProperty("--scroll", scrollPercent);
-        },
-        { passive: true }
+        }, {
+            passive: true
+        }
     );
 
 
@@ -148,7 +148,7 @@ $(document).ready(function () {
         }, 1600)
     });
 
-    
+
     // Navigation bar
     // scrolling detection
     let topnav = document.querySelector('.top-nav');
