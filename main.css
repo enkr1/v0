@@ -822,17 +822,18 @@ span {
     margin: 60% 1rem 0 1rem;
     width: 5rem;
 } */
-/*  Neumorphism Theme */
 .about-social-media i {
+    font-size: 4rem;
+    transition: color 650ms;
+    margin: 60% 1rem 0 1rem;
+    
+    /*  Neumorphism Theme */
     -webkit-box-shadow: 
         0px 0px 32px 10px rgba(0,0,0,0.1);
     -moz-box-shadow: 
         0px 0px 32px 10px rgba(0,0,0,0.1);
     box-shadow: 
         0px 0px 32px 10px rgba(0,0,0,0.1);
-    font-size: 4rem;
-    transition: color 650ms;
-    margin: 60% 1rem 0 1rem;
 }
 .about-social-media i:hover {
     -webkit-box-shadow: 
@@ -1246,13 +1247,23 @@ input.contact-submit-btn {
 }
 
 input.contact-submit-btn:hover {
-    color: var(--pri-color);
+    color: var(--sec-color);
     /* background-color: var(--pri-color); */
 
     transform: scale(.99);
-    animation: press .3s;
-    animation-fill-mode: forwards; /* stop at last frame */
+    /* animation: press .3s; */
+    
+    /* stop at last frame */
+    /* animation-fill-mode: forwards;  */
 
+    
+    /* Neumorphism pulse */
+    -webkit-box-shadow: 
+        0px 0px 18px 0px var(--pri-color);
+    -moz-box-shadow: 
+        0px 0px 18px 0px var(--pri-color);
+    box-shadow: 
+        0px 0px 18px 0px var(--sec-color);
 }
 ul.contact-social-media-ul {
     margin-top: 6%;
@@ -1267,6 +1278,14 @@ ul.contact-social-media-ul li a {
     font-size: 4rem;
     transition: color 650ms;
     margin: 0 1rem;
+    
+    /*  Neumorphism Theme */
+    -webkit-box-shadow: 
+        0px 0px 32px 10px rgba(0,0,0,0.2);
+    -moz-box-shadow: 
+        0px 0px 32px 10px rgba(0,0,0,0.2);
+    box-shadow: 
+        0px 0px 32px 10px rgba(0,0,0,0.2);
 }
 .fa-github-square:hover {
     color: #211F1F;
