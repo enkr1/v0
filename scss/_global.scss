@@ -1,0 +1,84 @@
+/*Start global*/
+/* https://stackoverflow.com/questions/3468154/what-is-webkit-and-how-is-it-related-to-css */
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::selection {
+    color: var(--third-color);
+    background-color: var(--pri-color);
+}
+html {
+    font-size: 10px;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-family: 'Anonymous Pro', monospace;
+    font-family: 'Overpass Mono', monospace;
+    font-family: 'Radley', serif;
+    font-family: 'K2D', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Roboto Mono', monospace;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Source Serif Pro', serif;
+    font-family: 'Philosopher', sans-serif; */
+    color: #eee;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    /* background: url("images/sitebg.jpg") no-repeat center fixed; */
+
+    /*  Neumorphism Theme */
+    background: var(--background);
+    background-size: cover;
+    /* background-color: #131218; */
+
+    transition: all 1s ease-in-out;
+}
+section {
+    padding: 6rem 0;
+}
+/* all links */
+a {
+    text-decoration: none;
+    color: var(--pri-color);
+}
+/* all p/fonts */
+p {
+    font-size: 1.8rem;
+    font-weight: 100;
+    line-height: 1.6;
+    word-spacing: 0.2rem;
+    letter-spacing: 1px;
+    color: var(--main-p-color);
+    /* font-family: 'Lato', sans-serif; */
+}
+/* all image */
+img {
+    width: 100%; 
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+/* width */
+::-webkit-scrollbar {
+    /* display: none; */
+    width: .2rem;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--pri-color); 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--sec-color); 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--third-color); 
+}

@@ -1,0 +1,20 @@
+/**
+* 
+**/
+
+
+$theme-color: #A8CABA; // sec-color
+$theme-light-color: rgb(255, 255, 255); // pri-color
+$theme-dark-color: #44415d; // third-color
+$theme-font-color: #ddfff8; // main-p-color
+
+
+// --background
+$theme-background: linear-gradient(0deg, var(--sec-color), var(--third-color)) no-repeat center fixed; 
+// --mobile-bar-color
+$theme-mobile-bar-color: linear-gradient(45deg, var(--third-color), var(--sec-color), var(--pri-color));
+// --mobile-bar-bg
+$theme-mobile-bar-bg: linear-gradient(45deg, var(--third-color), var(--sec-color));
+
+
+

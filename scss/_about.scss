@@ -1,0 +1,118 @@
+
+.about-section {
+    height: 100vh;
+}
+
+.about .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-heading {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 0;
+    margin-bottom: 6rem;
+    color: var(--sec-color);
+}
+.about-heading h1 {
+    font-size: 10rem;
+
+    /* Green Theme */
+    /* opacity: .3; */
+
+    /* Neumorphism Theme */
+    opacity: .2;
+}
+.about-heading h6 {
+    font-family: monospace;
+    color: var(--main-p-color);
+    font-size: 3rem;
+    font-weight: 300;
+    margin-top: .45rem;
+}
+.profile-img {
+    flex: 1;
+    margin-right: 5rem;
+    /* animation: pulse 2s infinite; */
+    z-index: 2;
+}
+.profile-img img {
+    transform: scale(.7);
+    /*  Neumorphism Theme */
+    -webkit-box-shadow: 0px 0px 29px -5px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 29px -5px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 29px -5px rgba(0,0,0,0.5);
+}
+/* .profile-img a img:hover {
+    transition: all 0.7s ease; 
+    transform: scale(1.02); 
+} */
+.about-details {
+    flex: 1;
+}
+.about-details p {
+    font-weight: 300;
+}
+/* Green Theme */
+/* .about-social-media img { 
+    margin: 60% 1rem 0 1rem;
+    width: 5rem;
+} */
+.about-social-media i {
+    font-size: 4rem;
+    transition: color 650ms;
+    margin: 60% 1rem 0 1rem;
+    opacity: .8;
+    
+    /*  Neumorphism Theme */
+    -webkit-box-shadow: 
+        0px 0px 32px 10px rgba(0,0,0,0.1);
+    -moz-box-shadow: 
+        0px 0px 32px 10px rgba(0,0,0,0.1);
+    box-shadow: 
+        0px 0px 32px 10px rgba(0,0,0,0.1);
+}
+.about-social-media i:hover {
+    opacity: 1;
+    -webkit-box-shadow: 
+        0 0 rgba(0, 0, 0, 0);
+    -moz-box-shadow: 
+        0 0 rgba(0, 0, 0, 0);
+    box-shadow: 
+        0 0 rgba(0, 0, 0, 0);
+    transition: all 0.7s ease-in-out; 
+    transform: scale(1.1);
+}
+.myskills-button { 
+    cursor: pointer;
+    text-align: center;
+    bottom: 0;
+    margin: 0 auto;
+    height: 4rem;
+    border-radius: 40rem;
+    width: 30%;
+    transform: translate(0, 150%);
+    background: var(--background);
+    opacity: .5;
+
+}
+.myskills-button a p {
+    color: var(--third-color);
+    font-size: 1.5rem;
+    transform: translate(0, 35%);
+}
+.myskills-button:hover {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    -webkit-box-shadow: 
+        0px 0px 8px 0px var(--pri-color);
+    -moz-box-shadow: 
+        0px 0px 8px 0px var(--pri-color);
+    box-shadow: 
+        0px 0px 8px 0px var(--pri-color);
+}
+.myskills-button:hover p {
+    transition: all 0.3s ease-in-out;
+    color: var(--pri-color);
+}
