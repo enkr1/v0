@@ -5,7 +5,10 @@
 
 $(document).ready(function () {
     // load parts
+    $('#start-of-the-page').load('/start.html');
     $('#footer').load('/footer.html');
+    $('#end-of-the-page').load('/end.html');
+
     // $('#navbar').load('/navbar.html');
 
     // preload

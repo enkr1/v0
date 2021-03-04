@@ -11,13 +11,13 @@
 }
 
 *::-moz-selection {
-  color: var(--third-color);
-  background-color: var(--pri-color);
+  color: #44415d;
+  background-color: white;
 }
 
 *::selection {
-  color: var(--third-color);
-  background-color: var(--pri-color);
+  color: #44415d;
+  background-color: white;
 }
 
 html {
@@ -42,9 +42,9 @@ body {
   height: 100vh;
   /* background: url("images/sitebg.jpg") no-repeat center fixed; */
   /*  Neumorphism Theme */
-  background: var(--background);
+  background: -webkit-gradient(linear, left bottom, left top, from(#A8CABA), to(#44415d)) no-repeat center fixed;
+  background: linear-gradient(0deg, #A8CABA, #44415d) no-repeat center fixed;
   background-size: cover;
-  /* background-color: #131218; */
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
@@ -56,7 +56,7 @@ section {
 /* all links */
 a {
   text-decoration: none;
-  color: var(--pri-color);
+  color: white;
 }
 
 /* all p/fonts */
@@ -66,7 +66,7 @@ p {
   line-height: 1.6;
   word-spacing: 0.2rem;
   letter-spacing: 1px;
-  color: var(--main-p-color);
+  color: #ddfff8;
   /* font-family: 'Lato', sans-serif; */
 }
 
@@ -89,17 +89,17 @@ img {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--pri-color);
+  background: white;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--sec-color);
+  background: #A8CABA;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--third-color);
+  background: #44415d;
 }
 
 .moveup {
@@ -140,7 +140,7 @@ img {
 
 .section-heading h1 {
   font-size: 3.5rem;
-  color: var(--pri-color);
+  color: white;
   opacity: 0.8;
   text-transform: uppercase;
   font-weight: 300;
@@ -181,7 +181,7 @@ img {
           transform: translateY(-30%);
   font-size: 1.6rem;
   font-weight: 300;
-  color: var(--main-p-color);
+  color: #ddfff8;
   letter-spacing: 1px;
 }
 
@@ -315,7 +315,7 @@ header {
     z-index: 900;
     background-color: var(--third-color); */
 /* border-bottom-left-radius: 100%; */
-    /* transition: all 800ms cubic-bezier(1, 0, 0, 1);
+/* transition: all 800ms cubic-bezier(1, 0, 0, 1);
     opacity: 0;
 } */
 .nav-list,
@@ -386,7 +386,7 @@ li {
   display: inline;
   /* text-shadow: -2px 1.5px 2px #000000; */
   /*  Neumorphism Theme */
-  text-shadow: var(--pri-color) 0px 0px 1rem;
+  text-shadow: white 0px 0px 1rem;
   /* browser support */
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
@@ -431,12 +431,12 @@ li {
 }
 
 .bar {
-  background: var(--mobile-bar-color);
+  background: linear-gradient(45deg, #44415d, #A8CABA, white);
   width: 100%;
   height: 3px;
   border-radius: .8rem;
-  -webkit-box-shadow: 0px 0px 12px 0px var(--third-color);
-  box-shadow: 0px 0px 12px 0px var(--third-color);
+  -webkit-box-shadow: 0px 0px 12px 0px #44415d;
+          box-shadow: 0px 0px 12px 0px #44415d;
 }
 
 .bar.half {
@@ -904,7 +904,7 @@ span {
   text-transform: uppercase;
   line-height: 0;
   margin-bottom: 6rem;
-  color: var(--sec-color);
+  color: #A8CABA;
 }
 
 .about-heading h1 {
@@ -917,7 +917,7 @@ span {
 
 .about-heading h6 {
   font-family: monospace;
-  color: var(--main-p-color);
+  color: #ddfff8;
   font-size: 3rem;
   font-weight: 300;
   margin-top: .45rem;
@@ -990,12 +990,13 @@ span {
   width: 30%;
   -webkit-transform: translate(0, 150%);
           transform: translate(0, 150%);
-  background: var(--background);
+  background: -webkit-gradient(linear, left bottom, left top, from(#A8CABA), to(#44415d)) no-repeat center fixed;
+  background: linear-gradient(0deg, #A8CABA, #44415d) no-repeat center fixed;
   opacity: .5;
 }
 
 .myskills-button a p {
-  color: var(--third-color);
+  color: #44415d;
   font-size: 1.5rem;
   -webkit-transform: translate(0, 35%);
           transform: translate(0, 35%);
@@ -1005,12 +1006,12 @@ span {
   opacity: 1;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  -webkit-box-shadow: 0px 0px 8px 0px var(--pri-color);
-  box-shadow: 0px 0px 8px 0px var(--pri-color);
+  -webkit-box-shadow: 0px 0px 8px 0px white;
+          box-shadow: 0px 0px 8px 0px white;
 }
 
 .myskills-button:hover p {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  color: var(--pri-color);
+  color: white;
 }
