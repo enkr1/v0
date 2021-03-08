@@ -1,0 +1,65 @@
+/*Start Specialization*/
+.my-skills {
+    margin-top: 10rem;
+
+    /* https://hankchizljaw.com/wrote/create-a-responsive-grid-layout-with-no-media-queries-using-css-grid/ */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 3rem;
+    text-align: center;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.skill:hover .icon-container {
+    transition: all 2s ease;
+    transform: scale(1.05);
+}
+
+.skill h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 4rem -2px 2rem 0;
+    color: $theme-light-color;
+}
+
+.icon-container {
+    width: 14rem;
+    height: 14rem;
+    border: 2px solid $theme-light-color;
+    margin-bottom: 2rem;
+    display: flex;
+    transform: rotate(0deg);
+    box-shadow:
+        0px 0px 22px 0px $theme-light-color;
+}
+
+.icon-container::after {
+    position: absolute;
+    content: '';
+    width: 13.1rem;
+    height: 13.1rem;
+    border: 2px solid $theme-light-color;
+    display: flex;
+    transform: rotate(45deg);
+    box-shadow:
+        0px 0px 22px 0px $theme-light-color;
+    opacity: 0.8;
+}
+
+.icon-container i {
+    position: relative;
+    color: $theme-light-color;
+    font-size: 5rem;
+    margin: auto;
+}
+
+/*End Specialization*/

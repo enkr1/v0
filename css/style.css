@@ -102,6 +102,19 @@ img {
   background: #44415d;
 }
 
+#_progress {
+  -webkit-transform: translateY(7.9rem);
+          transform: translateY(7.9rem);
+  --scroll: 0%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.6)), color-stop(0, transparent));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.6) var(--scroll), transparent 0);
+  position: fixed;
+  width: 100%;
+  height: 1.5px;
+  top: 0px;
+  z-index: 100;
+}
+
 .moveup {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
@@ -322,7 +335,6 @@ header {
 .nav-link-container {
   list-style: none;
   width: 100%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -551,19 +563,6 @@ li {
   transition: all 1s ease;
 }
 
-#_progress {
-  -webkit-transform: translateY(7.9rem);
-          transform: translateY(7.9rem);
-  --scroll: 0%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.6)), color-stop(0, transparent));
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.6) var(--scroll), transparent 0);
-  position: fixed;
-  width: 100%;
-  height: 1.5px;
-  top: 0px;
-  z-index: 100;
-}
-
 .landing-text {
   position: absolute;
   top: 50%;
@@ -595,7 +594,7 @@ li {
           transform: translateY(18rem);
   font-size: 2.2rem;
   font-weight: 300;
-  color: var(--background);
+  color: linear-gradient(0deg, #A8CABA, #44415d) no-repeat center fixed;
 }
 
 /* action buttons */
@@ -639,14 +638,14 @@ li {
           transform: translateY(0.34rem);
   font-size: 1.3rem;
   letter-spacing: .1rem;
-  color: var(--pri-color);
+  color: white;
 }
 
 /* from https://codepen.io/kay8/pen/azKbjN */
 /* github button */
 .bg-slide-to-right {
-  background: -webkit-gradient(linear, left top, right top, color-stop(10%, var(--third-color)), color-stop(50%, rgba(255, 255, 255, 0)));
-  background: linear-gradient(to right, var(--third-color) 10%, rgba(255, 255, 255, 0) 50%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #44415d), color-stop(50%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, #44415d 10%, rgba(255, 255, 255, 0) 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   -webkit-transition: all .5s ease-in-out;
@@ -659,7 +658,7 @@ li {
 
 .bg-slide-to-right:hover .action-text-1 {
   z-index: 1;
-  color: var(--pri-color);
+  color: white;
   -webkit-transition: all .1s ease-in-out;
   transition: all .1s ease-in-out;
 }
@@ -681,7 +680,7 @@ li {
   height: 5rem;
   -webkit-transform: translate(-1.5rem, 8rem);
           transform: translate(-1.5rem, 8rem);
-  border: 2px solid var(--third-color);
+  border: 2px solid #44415d;
   border-radius: 2rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -698,7 +697,7 @@ li {
   width: .6rem;
   height: .6rem;
   margin-left: -.3rem;
-  background-color: var(--third-color);
+  background-color: #44415d;
   border-radius: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -708,8 +707,8 @@ li {
 
 /* portfolio button */
 .bg-slide-to-left {
-  background: -webkit-gradient(linear, right top, left top, color-stop(10%, var(--third-color)), color-stop(50%, rgba(255, 255, 255, 0)));
-  background: linear-gradient(to left, var(--third-color) 10%, rgba(255, 255, 255, 0) 50%);
+  background: -webkit-gradient(linear, right top, left top, color-stop(10%, #44415d), color-stop(50%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(to left, #44415d 10%, rgba(255, 255, 255, 0) 50%);
   background-size: 200% 100%;
   background-position: left bottom;
   -webkit-transition: all .5s ease-in-out;
@@ -722,7 +721,7 @@ li {
 
 .bg-slide-to-left:hover .action-text-3 {
   z-index: 1;
-  color: var(--pri-color);
+  color: white;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
@@ -740,12 +739,12 @@ span {
   opacity: 0.6;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
-  color: var(--sec-color);
+  color: #A8CABA;
 }
 
 .main-h6-anim {
   opacity: 1;
-  color: var(--main-p-color);
+  color: #ddfff8;
 }
 
 .leaves {
@@ -854,7 +853,7 @@ span {
 .cursor {
   width: 3rem;
   height: 3rem;
-  border: 0 solid var(--pri-color);
+  border: 0 solid white;
   border-radius: 50%;
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
@@ -870,8 +869,8 @@ span {
   transition-property: background, transform;
   transition-property: background, transform, -webkit-transform;
   /* transition: all 0.1s ease; */
-  -webkit-box-shadow: 0px 0px 22px 0px var(--pri-color);
-  box-shadow: 0px 0px 22px 0px var(--pri-color);
+  -webkit-box-shadow: 0px 0px 22px 0px white;
+          box-shadow: 0px 0px 22px 0px white;
   -webkit-backdrop-filter: sepia(100%);
           backdrop-filter: sepia(100%);
   /* backdrop-filter: invert(30%); */
@@ -1015,3 +1014,85 @@ span {
   transition: all 0.3s ease-in-out;
   color: white;
 }
+
+/*Start Specialization*/
+.my-skills {
+  margin-top: 10rem;
+  /* https://hankchizljaw.com/wrote/create-a-responsive-grid-layout-with-no-media-queries-using-css-grid/ */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 3rem;
+  text-align: center;
+}
+
+.skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+.skill:hover .icon-container {
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.skill h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 4rem -2px 2rem 0;
+  color: white;
+}
+
+.icon-container {
+  width: 14rem;
+  height: 14rem;
+  border: 2px solid white;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-box-shadow: 0px 0px 22px 0px white;
+          box-shadow: 0px 0px 22px 0px white;
+}
+
+.icon-container::after {
+  position: absolute;
+  content: '';
+  width: 13.1rem;
+  height: 13.1rem;
+  border: 2px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-box-shadow: 0px 0px 22px 0px white;
+          box-shadow: 0px 0px 22px 0px white;
+  opacity: 0.8;
+}
+
+.icon-container i {
+  position: relative;
+  color: white;
+  font-size: 5rem;
+  margin: auto;
+}
+
+/*End Specialization*/
