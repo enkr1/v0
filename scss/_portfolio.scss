@@ -1,0 +1,67 @@
+/*Start portfolio*/
+.portfolio {
+    height: fit-content;
+}
+.portfolio-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem 0;
+}
+
+.profile-item:last-child {
+    margin-bottom: 0;
+}
+
+.portfolio-img-div {
+    flex: 1;
+    transition: all 2s ease;
+}
+
+.portfolio-img-div img {
+    width: 100%;
+
+    /*  Neumorphism Theme */
+    // TODO: Set to variable
+    box-shadow: 0px 0px 29px -5px rgba(0, 0, 0, 0.5);
+}
+
+.portfolio-description {
+    flex: 1;
+}
+
+.portfolio-description h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 1rem 0;
+}
+
+.portfolio-description h6 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    opacity: .3;
+}
+
+.portfolio-description .cta,
+.cta {
+    display: inline-block;
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: $theme-light-color;
+    transition: color 650ms;
+}
+
+.portfolio-description .cta:hover,
+.cta:hover {
+    color: $theme-color;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*End portfolio*/
