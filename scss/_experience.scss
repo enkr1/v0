@@ -1,6 +1,7 @@
 /*Start timeline*/
 .experience {
-    height:  100vh;
+    height: 100vh;
+
     @media only screen and (max-width: $screen_md_1) {
         height: fit-content;
     }
@@ -8,6 +9,12 @@
     .timeline {
         margin-left: 22rem;
         margin-bottom: 8rem;
+
+        @media all and (max-width: $screen_sm) {
+            margin: 0;
+            padding: 0;
+            margin-left: 12rem;
+        }
 
         ul {
             border-left: 4px solid $theme-light-color;
@@ -17,6 +24,17 @@
             text-align: left;
             width: 100%;
             padding: 2rem 0 2rem 1rem;
+
+            @media all and (max-width: $screen_md_2) {
+                /* padding: 2rem 0 2rem 1rem; */
+                padding: 1rem 0 3rem 4.3rem;
+                margin: 0 0 0 auto;
+            }
+
+            @media all and (max-width: $screen_sm) {
+                padding: 0 auto;
+                margin: 0 auto;
+            }
 
             .date {
                 border-bottom: 2px solid rgba(0, 0, 0, 0.1);
@@ -43,6 +61,19 @@
                     min-width: 12rem;
                     font-size: 2rem;
                     transform: translate(-20rem, -70%);
+
+                    @media all and (max-width: $screen_md_1) {
+                        transform: translate(-140%, -70%);
+                    }
+
+                    @media all and (max-width: $screen_md_2) {
+                        transform: translate(-22rem, -100%);
+                    }
+
+                    @media all and (max-width: $screen_sm) {
+                        font-size: 1.6rem;
+                        transform: translate(-19rem, -110%);
+                    }
                 }
 
                 &::after {
@@ -53,6 +84,18 @@
                     width: 1.5rem;
                     transform: translate(-166%, -80%);
                     background-color: $theme-dark-color;
+
+                    @media all and (max-width: $screen_md_1) {
+                        transform: translate(-140%, -70%);
+                    }
+
+                    @media all and (max-width: $screen_md_2) {
+                        transform: translate(-355%, -110%);
+                    }
+
+                    @media all and (max-width: $screen_sm) {
+                        /* transform: translateX(-355%);  */
+                    }
                 }
             }
 
@@ -67,9 +110,27 @@
             p,
             h1 {
                 transform: translateX(2.6rem);
+
+                @media all and (max-width: $screen_md_1) {
+                    transform: translateX(1.2rem);
+                }
+
+                @media all and (max-width: $screen_md_2) {
+                    transform: translateX(0);
+                    width: 95%;
+                }
+
+                @media all and (max-width: $screen_sm) {
+                    transform: translateX(-2.4rem);
+                }
+            }
+
+            p {
+                @media all and (max-width: $screen_sm) {
+                    font-size: 1.4rem;
+                }
             }
         }
     }
-}
 
-/*End timeline*/
+    /*End timeline*/

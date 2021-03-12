@@ -3,11 +3,16 @@
     height: fit-content;
     padding-bottom: 10em;
 }
+
 .portfolio-item {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 10rem 0;
+
+    @media all and (max-width: $screen_sm) {
+        flex-direction: column;
+    }
 }
 
 .profile-item:last-child {
@@ -29,6 +34,19 @@
 
 .portfolio-description {
     flex: 1;
+
+    @media all and (max-width: $screen_md_2) {
+
+        /* this is the second item  */
+        &.has-margin-right {
+            text-align: left;
+        }
+    }
+
+    @media all and (max-width: $screen_sm) {
+        margin: 0;
+        order: 2;
+    }
 }
 
 .portfolio-description h1 {
@@ -52,6 +70,10 @@
     text-transform: uppercase;
     color: $theme-light-color;
     transition: color 650ms;
+
+    @media all and (max-width: $screen_sm) {
+        margin-bottom: 2rem;
+    }
 }
 
 .portfolio-description .cta:hover,

@@ -29,6 +29,16 @@
         font-size: 1.8rem;
         transform: translateY(10rem);
     }
+
+    @media all and (max-width: $screen_md_2) {
+        font-size: 1.5rem;
+        transform: translateY(8rem);
+    }
+
+    @media all and (max-width: $screen_sm) {
+        font-size: 1.2rem;
+        transform: translateY(5rem);
+    }
 }
 
 /* action buttons */
@@ -41,6 +51,10 @@
     height: 100%;
     transform: translateY(700%);
     /* opacity: .8; */
+
+    @media all and (max-width: $screen_sm) {
+        transform: translateY(300%);
+    }
 }
 
 .action-btn {
@@ -49,7 +63,6 @@
     /* border: 1px solid var(--pri-color); */
     border-radius: 3rem;
     margin: .4% 1.4%;
-
     /* Neumorphism */
     /* -webkit-box-shadow: 
         0px 0px 10px 0px var(--pri-color);
@@ -61,14 +74,32 @@
     -webkit-box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 0px 30px -5px rgba(0, 0, 0, 0.5);
-}
 
-.action-btn p {
-    transform: translateY(.34rem);
-    font-size: 1.3rem;
-    letter-spacing: .1rem;
-    color: $theme-light-color;
-    text-transform: uppercase;
+
+    @media all and (max-width: $screen_md_1) {
+        width: 14%;
+        border-radius: 3rem; // SAME THO?
+    }
+
+    @media all and (max-width: $screen_sm) {
+        width: 26%;
+        border-radius: 2rem;
+        margin: 1%;
+    }
+
+    p {
+        transform: translateY(.34rem);
+        font-size: 1.3rem;
+        letter-spacing: .1rem;
+        color: $theme-light-color;
+        text-transform: uppercase;
+
+        @media all and (max-width: $screen_sm) {
+            transform: translateY(.63rem);
+            font-size: 1.1rem;
+            letter-spacing: .2rem;
+        }
+    }
 }
 
 @media all and (max-width: $screen_xl) {
@@ -272,6 +303,7 @@ span {
     animation-delay: 6.4s;
 }
 
+// TODO: This is global
 .cursor {
     width: 3rem;
     height: 3rem;
@@ -289,7 +321,11 @@ span {
         0px 0px 22px 0px $theme-light-color;
 
     backdrop-filter: sepia(100%);
+
     /* backdrop-filter: invert(30%); */
+    @media all and (max-width: $screen_md_2) {
+        display: none;
+    }
 }
 
 /* apply to js */

@@ -40,6 +40,10 @@
     margin-bottom: 0.8rem;
     /* font-family: 'Lora', serif; */
     letter-spacing: 0.2rem;
+
+    @media all and (max-width: $screen_md_2) {
+        font-size: 3rem;
+    }
 }
 
 .section-heading h6::before,
@@ -64,7 +68,12 @@
     width: 8rem;
     height: 2px;
     border-radius: 0.8rem;
+
+    @media all and (max-width: $screen_sm) {
+        bottom: -.5rem;
+    }
 }
+
 
 .section-heading h6 {
     /* margin-top: -0.1em; */
@@ -73,6 +82,14 @@
     font-weight: 300;
     color: $theme-font-color;
     letter-spacing: 1px;
+
+    @media all and (max-width: $screen_md_2) {
+        font-size: 1.6rem;
+    }
+
+    @media all and (max-width: $screen_sm) {
+        font-size: 1.4rem;
+    }
 }
 
 .has-margin-right {

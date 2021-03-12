@@ -2,6 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media all and (max-width: $screen_sm) {
+        flex-direction: column;
+    }
 }
 
 .about-heading {
@@ -20,6 +24,10 @@
 
     /* Neumorphism Theme */
     opacity: .2;
+
+    @media all and (max-width: $screen_md_2) {
+        font-size: 8rem;
+    }
 }
 
 .about-heading h6 {
@@ -28,6 +36,11 @@
     font-size: 3rem;
     font-weight: 300;
     margin-top: .45rem;
+
+    @media all and (max-width: $screen_md_2) {
+        margin-top: .3rem;
+
+    }
 }
 
 .profile-img {
@@ -35,15 +48,20 @@
     margin-right: 5rem;
     /* animation: pulse 2s infinite; */
     z-index: 2;
-}
 
-.profile-img img {
-    transform: scale(.7);
-    // TODO: Check is the webkit here redundant 
-    /*  Neumorphism Theme */
-    -webkit-box-shadow: 0px 0px 29px -5px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0px 0px 29px -5px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 0px 29px -5px rgba(0, 0, 0, 0.5);
+    @media all and (max-width: $screen_sm) {
+        margin: 0 0 7rem 0;
+    }
+
+    img {
+        transform: scale(.7);
+        /*  Neumorphism Theme */
+        box-shadow: 0px 0px 29px -5px rgba(0, 0, 0, 0.5);
+
+        @media all and (max-width: $screen_md_1) {
+            transform: scale(1.06);
+        }
+    }
 }
 
 /* .profile-img a img:hover {
@@ -53,12 +71,30 @@
 
 .about-details {
     flex: 1;
+
+    // TODO: NEED TO DOUBLE CHECK
+    @media all and (max-width: $screen_md_2) {
+        .nav-list {
+            flex-direction: row;
+        }
+
+        li {
+            margin: 0 2rem;
+        }
+    }
+
+    p {
+        text-align: justify;
+        font-weight: 300;
+
+        @media all and (max-width: $screen_sm) {
+            text-align: center;
+            line-height: 1.6;
+            padding: 0 auto;
+        }
+    }
 }
 
-.about-details p {
-    text-align: justify;
-    font-weight: 300;
-}
 
 /* Green Theme */
 /* .about-social-media img { 
@@ -72,12 +108,14 @@
     opacity: .8;
 
     /*  Neumorphism Theme */
-    -webkit-box-shadow:
-        0px 0px 32px 10px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow:
-        0px 0px 32px 10px rgba(0, 0, 0, 0.1);
     box-shadow:
         0px 0px 32px 10px rgba(0, 0, 0, 0.1);
+
+    @media all and (max-width: $screen_sm) {
+        /* margin-top: 100%; */
+        margin: 100% 0 0 0;
+        /* width: 4rem; */
+    }
 }
 
 .about-social-media i:hover {
@@ -104,6 +142,15 @@
     background: $theme-background;
     opacity: .5;
 
+    @media all and (max-width: $screen_md_2) {
+        width: 40%;
+        opacity: .7;
+    }
+
+    @media all and (max-width: $screen_sm) {
+        opacity: .8;
+        transform: translate(0, 80%);
+    }
 }
 
 .myskills-button a p {
