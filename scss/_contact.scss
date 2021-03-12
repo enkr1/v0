@@ -7,8 +7,11 @@
     border-top-left-radius: 4rem;
     border-top-right-radius: 4rem;
     box-shadow: 0px 0px 69px -1rem rgba(255, 255, 255, 1);
+    height: fit-content;
 
     .container {
+        padding-top: 4rem;
+
         .section-heading {
             box-shadow: unset;
         }

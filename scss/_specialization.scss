@@ -1,4 +1,11 @@
 /*Start Specialization*/
+.specialization {
+
+    @media only screen and (max-width: $screen_md_1) {
+        height: fit-content;
+    }
+}
+
 .my-skills {
     margin-top: 10rem;
 

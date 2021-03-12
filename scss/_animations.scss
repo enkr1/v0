@@ -1,7 +1,7 @@
 /*Start animations*/
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 0 0 var(--pri-color);
+        box-shadow: 0 0 0 0 $theme-light-color;
     }
 
     50% {
@@ -16,22 +16,14 @@
 @keyframes press {
     0% {
         /* Neumorphism */
-        -webkit-box-shadow:
-            inset 0px 0px 0px 0px var(--pri-color);
-        -moz-box-shadow:
-            inset 0px 0px 0px 0px var(--pri-color);
         box-shadow:
-            inset 0px 0px 0px 0px var(--pri-color);
+            inset 0px 0px 0px 0px $theme-light-color;
     }
 
     100% {
         /* Neumorphism */
-        -webkit-box-shadow:
-            inset 0px 0px 9px 0px var(--pri-color);
-        -moz-box-shadow:
-            inset 0px 0px 9px 0px var(--pri-color);
         box-shadow:
-            inset 0px 0px 9px 0px var(--pri-color);
+            inset 0px 0px 9px 0px $theme-light-color;
     }
 }
 
@@ -115,7 +107,7 @@
     }
 
     100% {
-        fill: var(--pri-color);
+        fill: $theme-light-color;
         stroke-dashoffset: 0;
     }
 }

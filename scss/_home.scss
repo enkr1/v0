@@ -24,6 +24,11 @@
     font-size: 2.2rem;
     font-weight: 300;
     color: $theme-background;
+
+    @media all and (max-width: $screen_lg) {
+        font-size: 1.8rem;
+        transform: translateY(10rem);
+    }
 }
 
 /* action buttons */
@@ -63,6 +68,18 @@
     font-size: 1.3rem;
     letter-spacing: .1rem;
     color: $theme-light-color;
+    text-transform: uppercase;
+}
+
+@media all and (max-width: $screen_xl) {
+
+    /* action buttons */
+    .action-text-1 p,
+    .action-text-2 p,
+    .action-text-3 p {
+        transform: translateY(.3rem);
+    }
+
 }
 
 /* from https://codepen.io/kay8/pen/azKbjN */
@@ -150,12 +167,14 @@
     opacity: 1;
 }
 
+// Before 
 span {
     opacity: 0.6;
     transition: all .3s ease;
-    color: $theme-color;
+    color: $theme-dark-color;
 }
 
+// After 
 .main-h6-anim {
     opacity: 1;
     color: $theme-font-color;

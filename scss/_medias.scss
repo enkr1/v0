@@ -1,23 +1,7 @@
 
 /*Start media queries*/
-@media all and (max-width: 1440px) {
-    /* action buttons */
-    .action-1 p, .action-2 p, .action-3 p {
-        transform: translateY(.3rem);
-    }
 
-}
-@media all and (max-width: 1281px) {    
-    .loading-leave {
-        /* width: 9rem;
-        height: 9rem; */
-        top: 36%;
-        left: 47%;
-    }
-    .landing-text h6 { 
-        font-size: 1.8rem;
-        transform: translateY(10rem);
-    }
+@media all and (max-width: $screen_lg) {   
     .nav-link {
         font-size: 1.8em; 
         padding: 1.2rem;
