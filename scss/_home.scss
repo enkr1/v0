@@ -23,7 +23,7 @@
     transform: translateY(18rem);
     font-size: 2.2rem;
     font-weight: 300;
-    color: $theme-background;
+    color: $theme-font-color;
 
     @media all and (max-width: $screen_lg) {
         font-size: 1.8rem;
@@ -91,7 +91,7 @@
         transform: translateY(.34rem);
         font-size: 1.3rem;
         letter-spacing: .1rem;
-        color: $theme-light-color;
+        color: $theme-font-color;
         text-transform: uppercase;
 
         @media all and (max-width: $screen_sm) {

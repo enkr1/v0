@@ -6,20 +6,26 @@
 $screen_xl: 1440px;
 $screen_lg: 1281px;
 $screen_md_1: 1024px;
-$screen_md_2: 992px; /* tablet */
+$screen_md_2: 992px;
+/* tablet */
 $screen_sm: 768px;
 $screen_xs: 480px;
 $screen_xxs: 320px;
 
 // sec-color
-$theme-color: #A8CABA; 
+$theme-color: #9796f0; // OLD A8CABA
 // pri-color
-$theme-light-color: rgb(255, 255, 255); 
+$theme-light-color: #e0cde4; // OLD rgb(255, 255, 255)
 // third-color
-$theme-dark-color: #44415d; 
+$theme-dark-color: #242449; // OLD 44415d
 // main-p-color
-$theme-font-color: #ddfff8; 
+$theme-font-color: #dedef5; // OLD ddfff8
+//#BE93C5
 
+// Currently is the ENKR text, <a>
+$logo-color: $theme-light-color;
+
+$media-icon-color: #e0e0f7;
 
 // --background
 $theme-background: linear-gradient(0deg, $theme-color, $theme-dark-color) no-repeat center fixed;

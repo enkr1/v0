@@ -31,12 +31,22 @@ html {
 body {
     width: 100%;
     height: 100%;
-    /* background: url("images/sitebg.jpg") no-repeat center fixed; */
+
+    /* scroll-snap-type: y mandatory;
+    overflow-y: scroll; */
+    background: url("../images/bg-img-desktop-1.jpg") no-repeat center fixed;
+
+    @media screen and (max-width: $screen_xs) {
+        background: url("../images/bg-img-mobile-1.jpg") no-repeat center fixed;
+    }
+
+    /* This will be displayed if it is loading for too long */
+    background-color: #131218;
 
     /*  Neumorphism Theme */
-    background: $theme-background;
-    background-size: cover;
-    // background-color: #131218; 
+    // background: $theme-background;
+
+    background-size: cover !important;
 
     transition: all 1s ease-in-out;
 }
@@ -87,19 +97,19 @@ img {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: $theme-color;
+    background: $theme-dark-color;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: $theme-dark-color;
+    background: $theme-color;
 }
 
 #_progress {
     transform: translateY(7.9rem);
     --scroll: 0%;
     background: linear-gradient(to right,
-            rgba(255, 255, 255, 0.6) var(--scroll),
+            $theme-color var(--scroll),
             /* in js */
             transparent 0);
     position: fixed;

@@ -79,16 +79,16 @@ li {
     letter-spacing: .1rem;
     font-size: 1.4rem;
     padding: .6rem 2rem;
-    color: aliceblue;
+    color: $theme-font-color;
 
     @media all and (max-width: $screen_lg) {
         font-size: 1.8em;
         padding: 1.2rem;
     }
 
-    @media all and (max-width: $screen_md_2) {
-        color: $theme-light-color;
-    }
+    // @media all and (max-width: $screen_md_2) {
+    //     color: $theme-font-color;
+    // }
 
     @media all and (max-width: $screen_sm) {
         font-size: 1.2rem;
@@ -247,14 +247,15 @@ li {
     @media all and (max-width: $screen_md_2) {
         display: none;
     }
+
+    a {
+        /* need to find a better font fam */
+        /* font-family: monospace; */
+        font-weight: 100;
+        color: $logo-color;
+    }
 }
 
-.nav-logo a {
-    /* need to find a better font fam */
-    /* font-family: monospace; */
-    font-weight: 100;
-    color: aliceblue;
-}
 
 .top-nav {
     width: 100%;
