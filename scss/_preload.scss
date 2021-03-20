@@ -1,4 +1,3 @@
-
 .preload {
     position: fixed;
     top: 0;
@@ -7,83 +6,126 @@
     width: 100%;
     transition: all 1s ease-in-out;
 }
+
 .preload-top {
-    top: 0; 
+    top: 0;
     height: 50%;
-    background-color: var(--third-color);
+    background-color: $theme-dark-color;
     width: 100vw;
 }
+
 .preload-bot {
-    bottom: 0; 
+    bottom: 0;
     height: 50%;
-    background-color: var(--third-color);
+    background-color: $theme-dark-color;
     width: 100vw;
 }
+
 #svg-loading {
     width: 10%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -47%);
+    // TODO: Remove?
     -webkit-transform: translate(-50%, -47%);
     -moz-transform: translate(-50%, -47%);
     -ms-transform: translate(-50%, -47%);
     -o-transform: translate(-50%, -47%);
+
+    @media all and (max-width: $screen_md_2) {
+        width: 16%;
+    }
+
+    @media all and (max-width: $screen_sm) {
+        width: 26%;
+        transform: translate(-50%, -25%);
+    }
 }
-.loading-leave { 
+
+.loading-leave {
     position: absolute;
     width: 8rem;
     height: 8rem;
     background: #ffffff20;
     border-bottom-right-radius: 100%;
-    border-top-left-radius: 100%; 
+    border-top-left-radius: 100%;
     top: 37%;
     left: 48%;
     transform: translate(-50%, -100%);
-	-webkit-animation: preload-anim 2s linear infinite alternate;
-	        animation: preload-anim 2s linear infinite alternate;
+    -webkit-animation: preload-anim 2s linear infinite alternate;
+    animation: preload-anim 2s linear infinite alternate;
+
+    @media all and (max-width: $screen_lg) {
+        top: 36%;
+        left: 47%;
+    }
+
+    @media all and (max-width: $screen_md_2) {
+        width: 9rem;
+        height: 9rem;
+        top: 36%;
+        left: 45%;
+    }
+
+    @media all and (max-width: $screen_sm) {
+        width: 6rem;
+        height: 6rem;
+        top: 40%;
+        left: 43%;
+    }
 }
+
 #svg-loading path:nth-child(1) {
     stroke-dasharray: 555;
     stroke-dashoffset: 555;
     animation: line-anime 2s ease forwards .2s;
 }
+
 #svg-loading path:nth-child(2) {
     stroke-dasharray: 555;
     stroke-dashoffset: 555;
     animation: line-anime 2s ease forwards .2s;
 }
+
 #svg-loading path:nth-child(3) {
     stroke-dasharray: 555;
     stroke-dashoffset: 555;
     animation: line-anime 2s ease forwards .2s;
 }
+
 #svg-loading path:nth-child(4) {
     stroke-dasharray: 555;
     stroke-dashoffset: 555;
     animation: line-anime 2s ease forwards .2s;
 }
+
 #svg-loading path:nth-child(5) {
     stroke-dasharray: 555;
     stroke-dashoffset: 555;
     animation: line-anime 2s ease forwards .2s;
 }
+
 #svg-loading path:nth-child(6) {
     stroke-dasharray: 555;
     stroke-dashoffset: 555;
     animation: line-anime 2s ease forwards .2s;
 }
+
 #svg-loading path:nth-child(7) {
     stroke-dasharray: 555;
     stroke-dashoffset: 555;
     animation: line-anime 2s ease forwards .2s;
 }
+
 .preload-finish {
     opacity: 0;
     pointer-events: none;
 }
+
 .loading-finish {
     opacity: 0;
     transition: all 0s ease-in-out;
 }
+
 /*End global*/

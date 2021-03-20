@@ -5,7 +5,11 @@
 
 $(document).ready(function () {
     // load parts
+    $('#start-of-the-page').load('/start.html');
     $('#footer').load('/footer.html');
+    $('#end-of-the-page').load('/end.html');
+    $('#construction').load('/construction.html');
+
     // $('#navbar').load('/navbar.html');
 
     // preload
@@ -140,12 +144,6 @@ $(document).ready(function () {
     $('.top-nav .nav-link').on('click', function () {
         $('.menu-toggler').removeClass('open');
         $('.top-nav').removeClass('open');
-    });
-
-    $('nav a[href*="#"]').on('click', function () {
-        $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top - 100
-        }, 1600)
     });
 
 
