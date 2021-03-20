@@ -1,13 +1,29 @@
+#about, #specialization {
+    scroll-margin-top: -2rem;
+}
+
 .about .container {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    max-width: unset; // Previously was 80vw
+    height: 100vh;
+
+    padding: 0 20vw;
+
+    background: url("../images/4.jpg") no-repeat center fixed;
+    background-size: cover !important; // TODO: Uncomment this
+    // border-radius: 10rem;
 
     @media all and (max-width: $screen_sm) {
         flex-direction: column;
     }
 
     .profile-img {
+        // TODO: REMOVE TESTING
+        display: none;
+
         flex: 1;
         margin-right: 5rem;
         /* animation: pulse 2s infinite; */

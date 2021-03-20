@@ -18,14 +18,26 @@ $theme-color: #9796f0; // OLD A8CABA
 $theme-light-color: #e0cde4; // OLD rgb(255, 255, 255)
 // third-color
 $theme-dark-color: #242449; // OLD 44415d
+
+// --- Text scheme ---
 // main-p-color
 $theme-font-color: #dedef5; // OLD ddfff8
 //#BE93C5
+$theme-title-color: #8d8da8;
 
 // Currently is the ENKR text, <a>
 $logo-color: $theme-light-color;
 
 $media-icon-color: #e0e0f7;
+
+// https://css-tricks.com/almanac/properties/b/box-shadow/
+$neumorphism-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.044),
+0 6.7px 5.3px rgba(0, 0, 0, 0.058),
+0 12.5px 10px rgba(0, 0, 0, 0.07),
+0 22.3px 17.9px rgba(0, 0, 0, 0.082),
+0 41.8px 33.4px rgba(0, 0, 0, 0.096),
+0 100px 80px rgba(0, 0, 0, 0.22);
+
 
 // --background
 $theme-background: linear-gradient(0deg, $theme-color, $theme-dark-color) no-repeat center fixed;

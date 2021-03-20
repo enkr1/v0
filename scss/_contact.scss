@@ -4,9 +4,9 @@
     background-color: $theme-dark-color;
     margin: 0 !important;
     /*  Neumorphism Theme */
-    border-top-left-radius: 4rem;
-    border-top-right-radius: 4rem;
-    box-shadow: 0px 0px 69px -1rem rgba(255, 255, 255, 1);
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    box-shadow: 0px 0px 3rem -1rem $theme-color;
     height: fit-content;
 
     @media all and (max-width: $screen_sm) {
@@ -204,13 +204,14 @@ input.contact-submit-btn {
     cursor: pointer;
 
     /* Neumorphism pulse */
-    box-shadow:
-        0px 0px 10px 0px $theme-light-color;
+    // box-shadow:
+    //     0px 0px 10px 0px $theme-light-color;
+    box-shadow: $neumorphism-box-shadow;
     transition: all .3s ease-in-out;
 }
 
 input.contact-submit-btn:hover {
-    color: $theme-color;
+    color: $theme-dark-color;
     /* background-color: var(--pri-color); */
 
     transform: scale(.99);
@@ -220,8 +221,23 @@ input.contact-submit-btn:hover {
     /* animation-fill-mode: forwards;  */
 
     /* Neumorphism pulse */
-    box-shadow:
-        0px 0px 18px 0px $theme-color;
+    // box-shadow:
+    //     0px 0px 18px 0px $theme-color;
+    box-shadow: inset $neumorphism-box-shadow;
+    // box-shadow: unset;
+}
+
+// USE FOR CONTACT 
+
+.bg-slide-to-top {
+    background: linear-gradient(to right, $theme-light-color 50%, rgba(255, 255, 255, 0) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-in-out;
+}
+
+.bg-slide-to-top:hover {
+    background-position: left bottom;
 }
 
 ul.contact-social-media-ul {
