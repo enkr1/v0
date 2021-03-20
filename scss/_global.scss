@@ -29,7 +29,8 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+body,
+body.portfolio-body {
     width: 100%;
     height: 100%;
 
@@ -55,11 +56,30 @@ body {
 
 section {
     height: 100vh;
-    padding: 2rem 0 6rem 0;
+    padding: 0 0 6rem 0;
+}
+
+// TODO: CONSTRUCTION
+#construction {
+    h1 {
+        @media screen and (max-width: $screen_sm) {
+            font-size: 3rem;
+        }
+    }
+
+    p {
+        text-align: justify;
+    }
 }
 
 h1 {
     color: $theme-title-color;
+}
+
+// Common 
+h1,
+h6 {
+    user-select: none;
 }
 
 /* all links */

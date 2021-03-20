@@ -240,70 +240,23 @@ input.contact-submit-btn:hover {
     background-position: left bottom;
 }
 
-ul.contact-social-media-ul {
-    margin: 0 auto 2% auto;
-
-    @media all and (max-width: $screen_md_2) {
-        text-align: center;
-        display: table;
-    }
-
-    li {
-        @media all and (max-width: $screen_md_2) {
-            display: inline-block;
-        }
-
-        a {
-            color: $theme-color;
-
-            @media all and (max-width: $screen_md_2) {
-                margin: 0 2rem;
-            }
-        }
-    }
-}
-
 .contact-social-media {
     margin-top: 5rem;
 
     i {
-        font-size: 4rem;
+        font-size: 3rem;
         transition: color 650ms;
         margin: 0 1rem;
 
-        /*  Neumorphism Theme */
-        box-shadow:
-            0px 0px 32px 10px rgba(0, 0, 0, 0.2);
+        // /*  Neumorphism Theme */
+        // box-shadow:
+        //     0px 0px 32px 10px rgba(0, 0, 0, 0.2);
 
         @media all and (max-width: $screen_sm) {
             font-size: 3rem;
             margin: 0 -0.6rem;
         }
     }
-}
-
-.fa-github-square:hover {
-    color: #211F1F;
-}
-
-.fa-linkedin:hover {
-    color: #0e76a8;
-}
-
-.fa-youtube-square:hover {
-    color: #c4302b;
-}
-
-.fa-facebook-square:hover {
-    color: #4267B2;
-}
-
-.fa-envelope:hover {
-    color: #D92F25;
-}
-
-.fa-soundcloud:hover {
-    color: #ff7700;
 }
 
 /*End contact*/

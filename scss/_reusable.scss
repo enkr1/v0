@@ -22,10 +22,10 @@
 
 .section-heading {
     text-align: center;
-    margin-bottom: 10rem;
+    margin-bottom: 6rem;
 
     /*  Neumorphism Theme */
-    padding: 3rem 1rem 4rem 1rem;
+    padding: 10rem 0 4rem 0;
     border-radius: 1rem;
     // box-shadow: 0px 00px 30px -5px rgba(0, 0, 0, 0.5);
 }
@@ -95,4 +95,53 @@
 .has-margin-right {
     margin-right: 5rem;
     text-align: right;
+}
+
+// ICON 
+
+ul.contact-social-media-ul {
+    margin: 0 auto 2% auto;
+
+    @media all and (max-width: $screen_md_2) {
+        text-align: center;
+        display: table;
+    }
+
+    li {
+        @media all and (max-width: $screen_md_2) {
+            display: inline-block;
+        }
+
+        a {
+            color: $theme-color;
+
+            @media all and (max-width: $screen_md_2) {
+                margin: 0 2rem;
+            }
+        }
+    }
+}
+
+.fa-github-square:hover {
+    color: #211F1F;
+}
+
+.fa-linkedin:hover {
+    color: #0e76a8;
+}
+
+.fa-youtube-square:hover {
+    color: #c4302b;
+}
+
+.fa-facebook-square:hover {
+    color: #4267B2;
+}
+
+.fa-envelope:hover {
+    color: #D92F25;
+}
+
+.fa-soundcloud:hover {
+    color: #ff7700;
 }

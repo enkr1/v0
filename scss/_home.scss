@@ -19,7 +19,7 @@
 
     h6 {
         font-family: monospace;
-        transform: translateY(18rem);
+        transform: translateY(12rem);
         font-size: 2.2rem;
         font-weight: 300;
         color: $theme-font-color;
@@ -48,7 +48,7 @@
         justify-content: center;
         width: 100%;
         height: 100%;
-        transform: translateY(700%);
+        transform: translateY(14rem);
         /* opacity: .8; */
 
         @media all and (max-width: $screen_sm) {
@@ -114,7 +114,7 @@
 /* from https://codepen.io/kay8/pen/azKbjN */
 /* github button */
 .bg-slide-to-right {
-    background: linear-gradient(to right, $theme-dark-color 10%, rgba(255, 255, 255, 0) 50%);
+    background: linear-gradient(to right, $theme-light-color 10%, rgba(255, 255, 255, 0) 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all .5s ease-in-out;
@@ -126,8 +126,8 @@
 
 .bg-slide-to-right:hover .action-text-1 {
     z-index: 1;
-    color: $theme-light-color;
-    transition: all .1s ease-in-out;
+    color: $theme-dark-color !important;
+    transition: all .1s ease-in-out !important;
 }
 
 /* explore button */
@@ -141,7 +141,7 @@
 
 .scroll-down-anim {
     position: absolute;
-    top: 0;
+    top: -2rem;
     left: 50%;
     width: 3rem;
     height: 5rem;
@@ -171,7 +171,7 @@
 
 /* portfolio button */
 .bg-slide-to-left {
-    background: linear-gradient(to left, $theme-dark-color 10%, rgba(255, 255, 255, 0) 50%);
+    background: linear-gradient(to left, $theme-light-color 10%, rgba(255, 255, 255, 0) 50%);
     background-size: 200% 100%;
     background-position: left bottom;
     transition: all .5s ease-in-out;
@@ -183,6 +183,6 @@
 
 .bg-slide-to-left:hover .action-text-3 {
     z-index: 1;
-    color: $theme-light-color;
-    transition: all .3s ease-in-out;
+    color: $theme-dark-color !important;
+    transition: all .1s ease-in-out !important;
 }
