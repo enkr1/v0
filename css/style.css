@@ -2063,6 +2063,7 @@ box-shadow:
   font-size: 2rem;
   font-weight: bold;
   color: white;
+  color: #dbcde4;
 }
 
 .typing-area {
@@ -2153,6 +2154,11 @@ select:-webkit-autofill:focus {
   height: 100%;
   pointer-events: none;
   border-bottom: 1px solid #9796f0;
+}
+.name-section label span,
+.email-section label span,
+.message-section label span {
+  color: #dedef5;
 }
 
 .name-section label::after,

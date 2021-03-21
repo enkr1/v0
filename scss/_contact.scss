@@ -52,6 +52,7 @@
     font-size: 2rem;
     font-weight: bold;
     color: white;
+    color: $theme-light-color;
 }
 
 .typing-area {
@@ -140,6 +141,9 @@ select:-webkit-autofill:focus {
     height: 100%;
     pointer-events: none;
     border-bottom: 1px solid $theme-color;
+    span {
+        color: $theme-font-color;
+    }
 }
 
 .name-section label::after,
