@@ -1,12 +1,12 @@
 /*Start contact*/
 /* interactive anim, exp */
 .contact {
-    background-color: $theme-dark-color;
+    // background-color: $theme-dark-color;
     margin: 0 !important;
     /*  Neumorphism Theme */
-    border-top-left-radius: 3rem;
-    border-top-right-radius: 3rem;
-    box-shadow: 0px 0px 3rem -1rem $theme-color;
+    // border-top-left-radius: 3rem;
+    // border-top-right-radius: 3rem;
+    // box-shadow: 0px 0px 3rem -1rem $theme-color;
     height: fit-content;
 
     @media all and (max-width: $screen_sm) {
@@ -16,6 +16,8 @@
 
     .container {
         padding-top: 4rem;
+        box-shadow: $neumorphism-box-shadow;
+        border-radius: 3rem;
 
         .section-heading {
             box-shadow: unset;
@@ -75,6 +77,7 @@ form {
     position: relative;
     width: 78%;
     margin: 0 auto;
+    padding: 0 0 4rem 0;
     text-align: center;
 }
 
@@ -120,7 +123,8 @@ select:-webkit-autofill:focus {
     height: 100%;
     padding-top: 2.6rem;
     border: none;
-    background-color: $theme-dark-color;
+    // background-color: $theme-dark-color;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .message-section textarea {
@@ -128,7 +132,8 @@ select:-webkit-autofill:focus {
     height: 100%;
     padding-top: 3.6rem;
     border: none;
-    background-color: $theme-dark-color;
+    // background-color: $theme-dark-color;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .name-section label,
@@ -141,6 +146,7 @@ select:-webkit-autofill:focus {
     height: 100%;
     pointer-events: none;
     border-bottom: 1px solid $theme-color;
+
     span {
         color: $theme-font-color;
     }

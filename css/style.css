@@ -2004,13 +2004,8 @@ box-shadow:
 /*Start contact*/
 /* interactive anim, exp */
 .contact {
-  background-color: #242449;
   margin: 0 !important;
   /*  Neumorphism Theme */
-  border-top-left-radius: 3rem;
-  border-top-right-radius: 3rem;
-  -webkit-box-shadow: 0px 0px 3rem -1rem #9796f0;
-          box-shadow: 0px 0px 3rem -1rem #9796f0;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -2023,6 +2018,9 @@ box-shadow:
 }
 .contact .container {
   padding-top: 4rem;
+  -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.044), 0 6.7px 5.3px rgba(0, 0, 0, 0.058), 0 12.5px 10px rgba(0, 0, 0, 0.07), 0 22.3px 17.9px rgba(0, 0, 0, 0.082), 0 41.8px 33.4px rgba(0, 0, 0, 0.096), 0 100px 80px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.044), 0 6.7px 5.3px rgba(0, 0, 0, 0.058), 0 12.5px 10px rgba(0, 0, 0, 0.07), 0 22.3px 17.9px rgba(0, 0, 0, 0.082), 0 41.8px 33.4px rgba(0, 0, 0, 0.096), 0 100px 80px rgba(0, 0, 0, 0.22);
+  border-radius: 3rem;
 }
 .contact .container .section-heading {
   -webkit-box-shadow: unset;
@@ -2087,6 +2085,7 @@ form {
   position: relative;
   width: 78%;
   margin: 0 auto;
+  padding: 0 0 4rem 0;
   text-align: center;
 }
 
@@ -2133,7 +2132,7 @@ select:-webkit-autofill:focus {
   height: 100%;
   padding-top: 2.6rem;
   border: none;
-  background-color: #242449;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .message-section textarea {
@@ -2141,7 +2140,7 @@ select:-webkit-autofill:focus {
   height: 100%;
   padding-top: 3.6rem;
   border: none;
-  background-color: #242449;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .name-section label,
