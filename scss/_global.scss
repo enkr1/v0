@@ -12,7 +12,8 @@
 }
 
 html {
-    font-size: 10px;
+    // font-size: 10px;
+    font-size: 62.5%;
     font-family: 'Alegreya Sans', sans-serif;
     font-family: 'Anonymous Pro', monospace;
     font-family: 'Overpass Mono', monospace;
@@ -23,10 +24,25 @@ html {
     font-family: 'Heebo', sans-serif;
     font-family: 'Source Serif Pro', serif;
     font-family: 'Philosopher', sans-serif; */
-    color: #eee;
+    color: $theme-font-color;
     overflow-x: hidden;
     overflow-y: hidden;
     scroll-behavior: smooth;
+}
+
+input,
+textarea {
+    // font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    color: $theme-font-color;
+    font-size: 1.8rem;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-family: 'Anonymous Pro', monospace;
+    font-family: 'Overpass Mono', monospace;
+    font-family: 'Radley', serif;
+    font-family: 'K2D', sans-serif;
 }
 
 body,

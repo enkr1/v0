@@ -21,74 +21,59 @@
 
         .section-heading {
             box-shadow: unset;
+
+            h1 {
+                // ...
+            }
+
+            h6 {
+                // ...
+            }
+        }
+
+        .typing-area {
+            text-align: center;
+            margin-top: -4rem;
+        }
+
+        .typing {
+            display: inline-block;
+            position: relative;
+        }
+
+        .typing::after {
+            content: "|";
+            position: absolute;
+            animation: caret infinite 1s steps(1, end);
+        }
+
+        form.contact-form {
+            position: relative;
+            width: 78%;
+            margin: 0 auto;
+            padding: 0 0 4rem 0;
+            text-align: center;
+
+
+            .name-section,
+            .email-section,
+            .message-section {
+                font-size: 1.8rem;
+                color: $theme-color;
+                width: 100%;
+                position: relative;
+                height: 6rem;
+                overflow: hidden;
+                margin: 2rem auto;
+            }
+
+
+            // 
         }
     }
 }
 
-.info-anim {
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0);
-    top: 0;
-    left: 0;
-    border-radius: 1rem;
-    width: fit-content;
-}
 
-.info-anim-inner {
-    cursor: pointer;
-    background-color: $theme-color;
-    padding: 1rem;
-    border-radius: 1rem;
-    width: 100%;
-    clip-path: circle(10% at 10% 50%);
-    transition: all .5s ease-in-out;
-}
-
-.info-anim-inner:hover {
-    clip-path: circle(75%);
-    background-color: $theme-background;
-}
-
-.info-anim-inner span {
-    float: left;
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
-    color: $theme-light-color;
-}
-
-.typing-area {
-    text-align: center;
-    margin-top: -4rem;
-}
-
-.typing {
-    display: inline-block;
-    position: relative;
-}
-
-.typing::after {
-    content: "|";
-    position: absolute;
-    animation: caret infinite 1s steps(1, end);
-}
-
-form {
-    position: relative;
-    width: 78%;
-    margin: 0 auto;
-    padding: 0 0 4rem 0;
-    text-align: center;
-}
-
-input,
-textarea {
-    font-family: 'Roboto', sans-serif;
-    width: 100%;
-    height: 100%;
-    outline: none;
-    color: #eee;
-}
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -103,18 +88,6 @@ select:-webkit-autofill:focus {
     -webkit-text-fill-color: #eee;
     -webkit-box-shadow: $theme-dark-color;
     transition: background-color 5000s ease-in-out 0s;
-}
-
-.name-section,
-.email-section,
-.message-section {
-    font-size: 1.8rem;
-    color: $theme-color;
-    width: 100%;
-    position: relative;
-    height: 6rem;
-    overflow: hidden;
-    margin: 2rem auto;
 }
 
 .name-section input,
@@ -268,5 +241,40 @@ input.contact-submit-btn:hover {
         }
     }
 }
+
+// --- TESTING ---
+.info-anim {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0);
+    top: 0;
+    left: 0;
+    border-radius: 1rem;
+    width: fit-content;
+}
+
+.info-anim-inner {
+    cursor: pointer;
+    background-color: $theme-color;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 100%;
+    clip-path: circle(10% at 10% 50%);
+    transition: all .5s ease-in-out;
+}
+
+.info-anim-inner:hover {
+    clip-path: circle(75%);
+    background-color: $theme-background;
+}
+
+.info-anim-inner span {
+    float: left;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    color: $theme-light-color;
+}
+
+// --- TESTING ---
 
 /*End contact*/

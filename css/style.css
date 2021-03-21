@@ -314,7 +314,7 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 62.5%;
   font-family: 'Alegreya Sans', sans-serif;
   font-family: 'Anonymous Pro', monospace;
   font-family: 'Overpass Mono', monospace;
@@ -325,10 +325,24 @@ html {
   font-family: 'Heebo', sans-serif;
   font-family: 'Source Serif Pro', serif;
   font-family: 'Philosopher', sans-serif; */
-  color: #eee;
+  color: #dedef5;
   overflow-x: hidden;
   overflow-y: hidden;
   scroll-behavior: smooth;
+}
+
+input,
+textarea {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  color: #dedef5;
+  font-size: 1.8rem;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Anonymous Pro', monospace;
+  font-family: 'Overpass Mono', monospace;
+  font-family: 'Radley', serif;
+  font-family: 'K2D', sans-serif;
 }
 
 body,
@@ -2026,76 +2040,37 @@ box-shadow:
   -webkit-box-shadow: unset;
           box-shadow: unset;
 }
-
-.info-anim {
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0);
-  top: 0;
-  left: 0;
-  border-radius: 1rem;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.info-anim-inner {
-  cursor: pointer;
-  background-color: #9796f0;
-  padding: 1rem;
-  border-radius: 1rem;
-  width: 100%;
-  -webkit-clip-path: circle(10% at 10% 50%);
-          clip-path: circle(10% at 10% 50%);
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-}
-
-.info-anim-inner:hover {
-  -webkit-clip-path: circle(75%);
-          clip-path: circle(75%);
-  background-color: linear-gradient(0deg, #9796f0, #242449) no-repeat center fixed;
-}
-
-.info-anim-inner span {
-  float: left;
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
-  color: #dbcde4;
-}
-
-.typing-area {
+.contact .container .typing-area {
   text-align: center;
   margin-top: -4rem;
 }
-
-.typing {
+.contact .container .typing {
   display: inline-block;
   position: relative;
 }
-
-.typing::after {
+.contact .container .typing::after {
   content: "|";
   position: absolute;
   -webkit-animation: caret infinite 1s steps(1, end);
           animation: caret infinite 1s steps(1, end);
 }
-
-form {
+.contact .container form.contact-form {
   position: relative;
   width: 78%;
   margin: 0 auto;
   padding: 0 0 4rem 0;
   text-align: center;
 }
-
-input,
-textarea {
-  font-family: 'Roboto', sans-serif;
+.contact .container form.contact-form .name-section,
+.contact .container form.contact-form .email-section,
+.contact .container form.contact-form .message-section {
+  font-size: 1.8rem;
+  color: #9796f0;
   width: 100%;
-  height: 100%;
-  outline: none;
-  color: #eee;
+  position: relative;
+  height: 6rem;
+  overflow: hidden;
+  margin: 2rem auto;
 }
 
 input:-webkit-autofill,
@@ -2112,18 +2087,6 @@ select:-webkit-autofill:focus {
   -webkit-box-shadow: #242449;
   -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;
-}
-
-.name-section,
-.email-section,
-.message-section {
-  font-size: 1.8rem;
-  color: #9796f0;
-  width: 100%;
-  position: relative;
-  height: 6rem;
-  overflow: hidden;
-  margin: 2rem auto;
 }
 
 .name-section input,
@@ -2276,6 +2239,43 @@ input.contact-submit-btn:hover {
     font-size: 3rem;
     margin: 0 -0.6rem;
   }
+}
+
+.info-anim {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  top: 0;
+  left: 0;
+  border-radius: 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.info-anim-inner {
+  cursor: pointer;
+  background-color: #9796f0;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 100%;
+  -webkit-clip-path: circle(10% at 10% 50%);
+          clip-path: circle(10% at 10% 50%);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.info-anim-inner:hover {
+  -webkit-clip-path: circle(75%);
+          clip-path: circle(75%);
+  background-color: linear-gradient(0deg, #9796f0, #242449) no-repeat center fixed;
+}
+
+.info-anim-inner span {
+  float: left;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  color: #dbcde4;
 }
 
 /*End contact*/

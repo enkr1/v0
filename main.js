@@ -8,7 +8,7 @@ $(document).ready(function () {
     $('#start-of-the-page').load('/start.html');
     $('#footer').load('/footer.html');
     $('#end-of-the-page').load('/end.html');
-    $('#construction').load('/construction.html');
+    $('#construction').load('/_construction.html');
 
     // $('#navbar').load('/navbar.html');
 
