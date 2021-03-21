@@ -71,23 +71,6 @@ $(document).ready(function () {
     });
 
 
-    // Up button
-    $('#up').on('click', function () {
-        $('html, body').animate({
-            scrollTop: 0
-        }, 3000)
-    });
-
-    // $(window).scroll(function () {
-    //     if ($(this).scrollTop() > 800) {
-    //         console.log('more than 800!!');
-    //         $('#up').fadeIn();
-    //     } else {
-    //         $('#up').fadeOut();
-    //     }
-    // })
-
-
     // https://medium.com/@nilayvishwakarma/build-a-scroll-progress-bar-with-vanilla-js-in-10-minutes-or-less-4ba07e2554f3
     document.addEventListener(
         "scroll",

@@ -33,7 +33,7 @@
         </ul>
     </div>
 
-    <div class="up" id="up">
+    <div class="up" id="up" onclick="topFunction()">
         <i class="fas fa-chevron-up"></i>
     </div>
 
@@ -58,18 +58,24 @@
 
 
 <script>
-     $('#up').on('click', function () {
-        $('html, body').animate({
-            scrollTop: 0
-        }, 3000)
-    });
+    //  $('#up').on('click', function () {
+    //     $('html, body').animate({
+    //         scrollTop: 0
+    //     }, 3000)
+    // });
 
     $(window).scroll(function () {
         if ($(this).scrollTop() > 800) {
-            $('#up').fadeIn();
+            $('.up').fadeIn();
         }
         else {
-            $('#up').fadeOut();
+            $('.up').fadeOut();
         }
-    })
+    });
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
 </script>
