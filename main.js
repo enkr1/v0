@@ -5,6 +5,7 @@
 
 $(document).ready(function () {
     // load parts
+    // $('#preload').load('/_preload.html');
     $('#start-of-the-page').load('/start.html');
     $('#footer').load('/footer.html');
     $('#end-of-the-page').load('/end.html');
@@ -12,6 +13,7 @@ $(document).ready(function () {
 
     // $('#navbar').load('/navbar.html');
 
+    // /*
     // preload
     setTimeout(function () {
         const preload = document.querySelector('.preload');
@@ -26,7 +28,8 @@ $(document).ready(function () {
         // only when finish loading, add y scroll 
         var root = document.getElementsByTagName('html')[0]; // '0' to assign the first (and only `HTML` tag)
         root.classList.add('enablescroll');
-    });
+    }); 
+    // */
 
 
     // https://stackoverflow.com/questions/21561480/trigger-event-when-user-scroll-to-specific-element-with-jquery
