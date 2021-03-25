@@ -1039,10 +1039,9 @@ li {
   display: inline;
   /* text-shadow: -2px 1.5px 2px #000000; */
   /*  Neumorphism Theme */
-  text-shadow: #dbcde4 0px 0px 1rem;
-  /* browser support */
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
+  color: #9796f0;
 }
 
 /* .nav-link:hover .nav-link::after {

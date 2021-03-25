@@ -9,7 +9,8 @@ $(document).ready(function () {
     // IDEA!! 
     $("#interest-nav-item").on("click", function () {
         const xhr = new XMLHttpRequest();
-        const landing_section = document.getElementById("landing-section");
+        // const landing_section = document.getElementById("landing-section");
+        const landing_section = document.getElementById("index-body");
 
         xhr.onload = function () {
             if (200 === this.status) {
