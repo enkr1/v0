@@ -4,32 +4,27 @@
 
 
 $(document).ready(function () {
+
+    /*
+    // IDEA!! 
+    $("#interest-nav-item").on("click", function () {
+        const xhr = new XMLHttpRequest();
+        const landing_section = document.getElementById("landing-section");
+
+        xhr.onload = function () {
+            if (200 === this.status) {
+                landing_section.innerHTML = xhr.responseText;
+            } else {
+                console.warn("NOT 200");
+            }
+        }
+        xhr.open("get", "_interest.html")
+        xhr.send();
+    });
+    */
+
     // load parts
-    // $('#preload').load('/_preload.html');
-    $('#start-of-the-page').load('/start.html');
-    $('#footer').load('/footer.html');
-    $('#end-of-the-page').load('/end.html');
-    $('#construction').load('/_construction.html');
-
     // $('#navbar').load('/navbar.html');
-
-    // /*
-    // preload
-    setTimeout(function () {
-        const preload = document.querySelector('.preload');
-        const preloadTop = document.querySelector('.preload-top');
-        const preloadBot = document.querySelector('.preload-bot');
-        const svgLoading = document.querySelector('.svg-loading');
-        svgLoading.classList.add('loading-finish');
-        preload.classList.add('preload-finish');
-        preloadTop.classList.add('moveup');
-        preloadBot.classList.add('movedown');
-
-        // only when finish loading, add y scroll 
-        var root = document.getElementsByTagName('html')[0]; // '0' to assign the first (and only `HTML` tag)
-        root.classList.add('enablescroll');
-    }); 
-    // */
 
 
     // https://stackoverflow.com/questions/21561480/trigger-event-when-user-scroll-to-specific-element-with-jquery
