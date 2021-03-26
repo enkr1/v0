@@ -2,10 +2,21 @@
 // Instagram: @enkr1
 // :)
 
+// https://stackoverflow.com/questions/9899372/pure-javascript-equivalent-of-jquerys-ready-how-to-call-a-function-when-t
+function docReady(fn) {
+    // see if DOM is already available
+    if (document.readyState === "complete" || document.readyState === "interactive") {
+        // call on next available tick
+        setTimeout(fn, 1);
+    } else {
+        document.addEventListener("DOMContentLoaded", fn);
+    }
+}
 
 $(document).ready(function () {
 
-    /*
+    // /*
+    // https://www.w3schools.com/xml/ajax_intro.asp
     // IDEA!! 
     $("#interest-nav-item").on("click", function () {
         const xhr = new XMLHttpRequest();
@@ -22,7 +33,8 @@ $(document).ready(function () {
         xhr.open("get", "_interest.html")
         xhr.send();
     });
-    */
+    // */
+
 
     // load parts
     // $('#navbar').load('/navbar.html');
