@@ -43,6 +43,18 @@ header {
     @media all and (max-width: $screen_md_2) {
         flex-direction: column;
     }
+
+    // NEW
+    .hide-nav-bar {
+        position: absolute;
+        right: 2em;
+        height: 3px;
+        width: 3rem;
+        border-radius: 2rem;
+        background: $theme-mobile-bar-bg;
+        box-shadow: $neumorphism-box-shadow;
+        cursor: pointer;
+    }
 }
 
 .nav-list p {

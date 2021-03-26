@@ -60,6 +60,13 @@ $(document).ready(function () {
             $('#up').fadeOut();
         }
 
+        // if ($('#experience').isInViewport()) {
+        //     console.log('rched experience.');
+        //     document.body.classList.add("blur-body");
+        // } else {
+        //     document.body.classList.remove("blur-body");
+        // }
+
         // if ($('#home').isInViewport()) {
         //     console.log('rched home.');
 

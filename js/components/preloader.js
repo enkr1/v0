@@ -28,24 +28,6 @@ class Preloader extends HTMLElement {
 
 customElements.define('preloader-component', Preloader);
 
-// preload
-// setTimeout(function () {
-//     const preload = document.querySelector('.preload');
-//     const preloadTop = document.querySelector('.preload-top');
-//     const preloadBot = document.querySelector('.preload-bot');
-//     const svgLoading = document.querySelector('.svg-loading');
-//     // svgLoading.classList.add('loading-finish');
-//     // preload.classList.add('preload-finish');
-//     // preloadTop.classList.add('moveup');
-//     // preloadBot.classList.add('movedown');
-
-//     // only when finish loading, add y scroll 
-//     var root = document.getElementsByTagName('html')[0]; // '0' to assign the first (and only `HTML` tag)
-//     root.classList.add('enablescroll');
-// }, 000);
-
-
-
 docReady(function () {
     // DOM is loaded and ready for manipulation here
     const preload = document.querySelector('.preload');
