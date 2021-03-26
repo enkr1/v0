@@ -44,8 +44,7 @@ body.interest-body {
         width: 26rem;
     }
 
-
-    & path:nth-child(2) {
+    path:nth-child(2) {
         stroke-dasharray: 555;
         stroke-dashoffset: 555;
         animation: line-anime 4s ease forwards .6s;
