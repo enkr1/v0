@@ -8,29 +8,30 @@
 
     .preload-top {
         top: 0;
-        height: 50%;
+        height: 50vh;
         background-color: $theme-dark-color;
         width: 100vw;
-        transform-origin: top left;
-        transform-style: preserve-3D;
+        // transform-origin: top left;
+        // transform-style: preserve-3D;
     }
 
     .preload-bot {
         bottom: 0;
-        height: 50%;
+        height: 50vh;
         background-color: $theme-dark-color;
         width: 100vw;
-        transform-origin: bottom right;
-        transform-style: preserve-3D;
+        // transform-origin: bottom right;
+        // transform-style: preserve-3D;
     }
 
     // NEW
-    .preload-box {
-        height: 100vh;
-        width: 100vw;
-        backdrop-filter: blur(3rem);
-        // background-color: rgba(255, 255, 255, 0.384);
-    }
+    // .preload-box {
+    //     top: 0;
+    //     height: 100vh;
+    //     width: 100vw;
+    //     backdrop-filter: blur(4rem);
+    //     // background-color: rgba(255, 255, 255, 0.384);
+    // }
 
     #svg-loading {
         width: 10%;
@@ -136,15 +137,15 @@
 
 .moveup {
     transform: translateY(-100%);
-    transition: all 10s ease-in-out;
+    transition: all 1s ease-in-out;
     // transform-origin: 50% 50%;
     // transform: translate(0%, 50vh) rotate(180deg);
     // transform: rotate(90deg);
 }
 
 .movedown {
-    transform: translateY(100%); 
-    transition: all 10s ease-in-out;
+    transform: translateY(100%);
+    transition: all 1s ease-in-out;
     // transform: rotate(90deg);
     // transform: translate(100%, -100%) rotate(180deg);
 }

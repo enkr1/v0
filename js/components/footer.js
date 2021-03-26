@@ -110,7 +110,7 @@ class Footer extends HTMLElement {
         <i class="fas fa-chevron-up"></i>
     </div>
 
-    <p>&copy; Copyright 2020</p>
+    <p>&copy; 2020 - 2021 ENKR. All rights reserved.</p>
     <p>Developed and designed by ENKR</p>
 
 </footer>
