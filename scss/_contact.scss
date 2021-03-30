@@ -9,15 +9,21 @@
     // box-shadow: 0px 0px 3rem -1rem $theme-color;
     height: fit-content;
 
+    // As the # might change location too
     @media all and (max-width: $screen_sm) {
-        border-top-left-radius: 2rem;
-        border-top-right-radius: 2rem;
+        #contact {
+            border-radius: 1rem !important;
+        }
     }
 
     .container {
         padding-top: 4rem;
         box-shadow: $neumorphism-box-shadow;
         border-radius: 3rem;
+
+        @media all and (max-width: $screen_sm) {
+            max-width: 90vw;
+        }
 
         .section-heading {
             box-shadow: unset;
@@ -54,6 +60,9 @@
             padding: 0 0 4rem 0;
             text-align: center;
 
+            @media all and (max-width: $screen_sm) {
+                width: 90%;
+            }
 
             .name-section,
             .email-section,
@@ -65,6 +74,10 @@
                 height: 6rem;
                 overflow: hidden;
                 margin: 2rem auto;
+
+                @media all and (max-width: $screen_sm) {
+                    font-size: 1.6rem;
+                }
             }
 
 
@@ -74,7 +87,7 @@
 }
 
 
-
+// TODO: Code below too complicated as they are from CSS
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
