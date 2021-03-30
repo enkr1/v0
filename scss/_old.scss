@@ -1,26 +1,4 @@
 @media all and (max-width: $screen_md_2) {
-    // TODO: MOVE TO RESPECTIVE FILES
-    .about-section {
-        height: auto;
-    }
-
-    .one-page-container {
-        transform: translateY(0rem);
-    }
-
-    // TODO: WTF TOO GENERIC 
-    li {
-        margin: 2rem 0;
-    }
-
-    #_progress {
-        display: none;
-    }
-
-    // TODO: IDK WHERE
-    .emailme a {
-        font-size: 18rem;
-    }
 
     /* need to move to the correct css */
     .back a img {
@@ -54,12 +32,6 @@
 
 /* mobile */
 @media all and (max-width: $screen_sm) {
-
-
-    // TODO: ????
-    form {
-        width: 100%;
-    }
 
     /* need to move to the correct css */
     .back a img {

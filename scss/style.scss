@@ -1,13 +1,16 @@
+/*
+GitHub: @enkr1, Instagram: @enkr1
+*/
 
-
+// Variables
 @import "variables";
 
-
+// Global and reusable 
 @import "animations";
 @import "global";
 @import "reusable";
 
-
+// Sections
 @import "preload";
 @import "header";
 @import "home";
@@ -17,5 +20,7 @@
 @import "portfolio";
 @import "contact";
 @import "footer";
-@import "medias";
+@import "old";
 @import "interest";
+
+// ...
