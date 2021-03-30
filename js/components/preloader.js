@@ -16,11 +16,12 @@ class Preloader extends HTMLElement {
     // stroke="white" stroke-opacity="0.3" stroke-width="1.5" />
     // </svg>
     // <div class="preload-box"></div>
+    // <div class="preload-top"></div>
+    // <div class="preload-bot"></div>
     connectedCallback() {
         this.innerHTML = `
 <div class="preload">
-    <div class="preload-top"></div>
-    <div class="preload-bot"></div>
+    <div class="preload-box"></div>
 </div>
         `;
     }
@@ -31,14 +32,15 @@ customElements.define('preloader-component', Preloader);
 docReady(function () {
     // DOM is loaded and ready for manipulation here
     const preload = document.querySelector('.preload');
-    const preloadTop = document.querySelector('.preload-top');
-    const preloadBot = document.querySelector('.preload-bot');
+    // const preloadTop = document.querySelector('.preload-top');
+    // const preloadBot = document.querySelector('.preload-bot');
     // const svgLoading = document.querySelector('.svg-loading');
-    // const preloadBox = document.querySelector('.preload-box');
+    const preloadBox = document.querySelector('.preload-box');
+
     // svgLoading.classList.add('loading-finish');
     preload.classList.add('preload-finish');
-    preloadTop.classList.add('moveup');
-    preloadBot.classList.add('movedown');
+    // preloadTop.classList.add('moveup');
+    // preloadBot.classList.add('movedown');
     // preloadBox.classList.add('clear-blur');
 
     // REMOVE THE HIDE CLASS FROM BODY

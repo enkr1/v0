@@ -802,6 +802,13 @@ ul.contact-social-media-ul li a {
   background-color: #242449;
   width: 100vw;
 }
+.preload .preload-box {
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #242449;
+  opacity: .8;
+}
 .preload #svg-loading {
   width: 10%;
   position: absolute;
@@ -910,7 +917,10 @@ ul.contact-social-media-ul li a {
 }
 
 .preload-finish {
+  opacity: 0;
   pointer-events: none;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .loading-finish {
@@ -932,10 +942,10 @@ ul.contact-social-media-ul li a {
 }
 
 .clear-blur {
-  -webkit-backdrop-filter: unset !important;
-          backdrop-filter: unset !important;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  -webkit-backdrop-filter: blur(0) !important;
+          backdrop-filter: blur(0) !important;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
 }
 
 /*End global*/
