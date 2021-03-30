@@ -35,7 +35,7 @@ docReady(function () {
     // const preloadTop = document.querySelector('.preload-top');
     // const preloadBot = document.querySelector('.preload-bot');
     // const svgLoading = document.querySelector('.svg-loading');
-    const preloadBox = document.querySelector('.preload-box');
+    // const preloadBox = document.querySelector('.preload-box');
 
     // svgLoading.classList.add('loading-finish');
     preload.classList.add('preload-finish');
