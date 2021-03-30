@@ -112,6 +112,14 @@ p {
     letter-spacing: 1px;
     color: $theme-font-color;
     /* font-family: 'Lato', sans-serif; */
+
+
+    @media all and (max-width: $screen_sm) {
+        font-size: 1.6rem;
+        line-height: 1.6;
+        word-spacing: 0;
+        letter-spacing: 0;
+    }
 }
 
 /* all image */

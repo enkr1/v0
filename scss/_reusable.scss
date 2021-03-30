@@ -1,4 +1,3 @@
-
 .enablescroll {
     overflow-y: visible;
 }
@@ -86,6 +85,11 @@
 .has-margin-right {
     margin-right: 5rem;
     text-align: right;
+
+    @media all and (max-width: $screen_sm) {
+        margin-right: 0;
+        text-align: left;
+    }
 }
 
 // ICON 

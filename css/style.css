@@ -410,6 +410,14 @@ p {
   color: #dedef5;
   /* font-family: 'Lato', sans-serif; */
 }
+@media all and (max-width: 768px) {
+  p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    word-spacing: 0;
+    letter-spacing: 0;
+  }
+}
 
 /* all image */
 img {
@@ -706,6 +714,12 @@ span {
 .has-margin-right {
   margin-right: 5rem;
   text-align: right;
+}
+@media all and (max-width: 768px) {
+  .has-margin-right {
+    margin-right: 0;
+    text-align: left;
+  }
 }
 
 ul.contact-social-media-ul {
@@ -2423,18 +2437,6 @@ input.contact-submit-btn:hover {
 }
 /* mobile */
 @media all and (max-width: 768px) {
-  p {
-    font-size: 1.6rem;
-    line-height: 1.6;
-    word-spacing: 0;
-    letter-spacing: 0;
-  }
-
-  .has-margin-right {
-    margin-right: 0;
-    text-align: left;
-  }
-
   .portfolio-img {
     margin: 0 0 2rem 0;
     -webkit-box-ordinal-group: 2;

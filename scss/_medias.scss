@@ -54,17 +54,7 @@
 
 /* mobile */
 @media all and (max-width: $screen_sm) {
-    p {
-        font-size: 1.6rem;
-        line-height: 1.6;
-        word-spacing: 0;
-        letter-spacing: 0;
-    }
 
-    .has-margin-right {
-        margin-right: 0;
-        text-align: left;
-    }
 
     // TODO: ??? CANT FIND WTF
     .portfolio-img {
