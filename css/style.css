@@ -401,6 +401,11 @@ h6 {
 a {
   text-decoration: none;
   color: #dbcde4;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+a:hover {
+  color: #242449;
 }
 
 /* all p/fonts */
@@ -1221,6 +1226,10 @@ li {
   font-size: 2rem;
   height: 50%;
   padding-bottom: 1rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 @media all and (max-width: 992px) {
   .nav-logo {
@@ -1696,17 +1705,91 @@ box-shadow:
     height: fit-content;
   }
 }
-
-.my-skills {
-  margin-top: 10rem;
+@media only screen and (min-width: 1440px) {
+  .specialization {
+    overflow: hidden;
+  }
+  .specialization .section-heading {
+    position: absolute;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    z-index: -1;
+  }
+  .specialization .section-heading h1 {
+    font-size: 28rem;
+    color: rgba(255, 255, 255, 0.2);
+    -webkit-transform: translateY(-70%);
+            transform: translateY(-70%);
+  }
+  .specialization .section-heading h1::after {
+    content: "specialization";
+    position: absolute;
+    -webkit-transform: translate(0, 190%);
+            transform: translate(0, 190%);
+    left: -24rem;
+  }
+}
+.specialization .icon-container {
+  width: 14rem;
+  height: 14rem;
+  border: 2px solid #9796f0;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-box-shadow: 0px 0px 22px 0px #dbcde4;
+          box-shadow: 0px 0px 22px 0px #dbcde4;
+}
+@media all and (max-width: 992px) {
+  .specialization .icon-container {
+    font-size: 3.5rem;
+  }
+}
+.specialization .icon-container i {
+  position: relative;
+  color: #dbcde4;
+  font-size: 5rem;
+  margin: auto;
+}
+@media all and (max-width: 768px) {
+  .specialization .icon-container i {
+    font-size: 4.5rem;
+  }
+}
+.specialization .icon-container::after {
+  position: absolute;
+  content: '';
+  width: 13.1rem;
+  height: 13.1rem;
+  border: 2px solid #9796f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-box-shadow: 0px 0px 22px 0px #dbcde4;
+          box-shadow: 0px 0px 22px 0px #dbcde4;
+  opacity: 0.8;
+}
+@media only screen and (min-width: 1440px) {
+  .specialization .skills-container {
+    height: 100vh;
+    -webkit-transform: translate(0, 30vh);
+            transform: translate(0, 30vh);
+  }
+}
+.specialization .my-skills {
   /* https://hankchizljaw.com/wrote/create-a-responsive-grid-layout-with-no-media-queries-using-css-grid/ */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 3rem;
   text-align: center;
 }
-
-.skill {
+.specialization .my-skills .skill {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1722,67 +1805,13 @@ box-shadow:
           align-items: center;
   padding: 2rem;
 }
-
-.skill:hover .icon-container {
-  -webkit-transition: all 2s ease;
-  transition: all 2s ease;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
-.skill h1 {
+.specialization .my-skills .skill h1 {
   font-size: 2rem;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 4rem -2px 2rem 0;
   color: #dbcde4;
-}
-
-.icon-container {
-  width: 14rem;
-  height: 14rem;
-  border: 2px solid #9796f0;
-  margin-bottom: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-  -webkit-box-shadow: 0px 0px 22px 0px #dbcde4;
-          box-shadow: 0px 0px 22px 0px #dbcde4;
-}
-@media all and (max-width: 992px) {
-  .icon-container {
-    font-size: 3.5rem;
-  }
-}
-.icon-container i {
-  position: relative;
-  color: #dbcde4;
-  font-size: 5rem;
-  margin: auto;
-}
-@media all and (max-width: 768px) {
-  .icon-container i {
-    font-size: 4.5rem;
-  }
-}
-
-.icon-container::after {
-  position: absolute;
-  content: '';
-  width: 13.1rem;
-  height: 13.1rem;
-  border: 2px solid #9796f0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  -webkit-box-shadow: 0px 0px 22px 0px #dbcde4;
-          box-shadow: 0px 0px 22px 0px #dbcde4;
-  opacity: 0.8;
 }
 
 /*End Specialization*/
