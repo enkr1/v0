@@ -41,6 +41,9 @@ docReady(function () {
     preloadBot.classList.add('movedown');
     // preloadBox.classList.add('clear-blur');
 
+    // REMOVE THE HIDE CLASS FROM BODY
+    document.body.classList.remove("hide-all-in-body");
+
     // only when finish loading, add y scroll 
     var root = document.getElementsByTagName('html')[0]; // '0' to assign the first (and only `HTML` tag)
     root.classList.add('enablescroll');

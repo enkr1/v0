@@ -361,8 +361,8 @@ body.portfolio-body {
   background-color: #131218;
   /*  Neumorphism Theme */
   background-size: cover !important;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
 }
 @media screen and (max-width: 480px) {
   body,
@@ -630,6 +630,10 @@ span {
 .img-grow {
   -webkit-transform: scale(3);
           transform: scale(3);
+}
+
+.hide-all-in-body {
+  opacity: 0;
 }
 
 .enablescroll {
