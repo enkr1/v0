@@ -95,29 +95,6 @@
 
 // ICON 
 
-ul.contact-social-media-ul {
-    margin: 0 auto 2% auto;
-
-    @media all and (max-width: $screen_md_2) {
-        text-align: center;
-        display: table;
-    }
-
-    li {
-        @media all and (max-width: $screen_md_2) {
-            display: inline-block;
-        }
-
-        a {
-            color: $theme-color;
-
-            @media all and (max-width: $screen_md_2) {
-                margin: 0 2rem;
-            }
-        }
-    }
-}
-
 .fa-github-square:hover {
     color: #211F1F;
 }
@@ -126,12 +103,16 @@ ul.contact-social-media-ul {
     color: #0e76a8;
 }
 
-.fa-youtube-square:hover {
-    color: #c4302b;
-}
-
 .fa-facebook-square:hover {
     color: #4267B2;
+}
+
+.fa-instagram:hover {
+    color: #8a3ab9;
+}
+
+.fa-youtube-square:hover {
+    color: #c4302b;
 }
 
 .fa-envelope:hover {

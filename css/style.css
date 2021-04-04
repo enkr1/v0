@@ -732,29 +732,6 @@ span {
   }
 }
 
-ul.contact-social-media-ul {
-  margin: 0 auto 2% auto;
-}
-@media all and (max-width: 992px) {
-  ul.contact-social-media-ul {
-    text-align: center;
-    display: table;
-  }
-}
-@media all and (max-width: 992px) {
-  ul.contact-social-media-ul li {
-    display: inline-block;
-  }
-}
-ul.contact-social-media-ul li a {
-  color: #9796f0;
-}
-@media all and (max-width: 992px) {
-  ul.contact-social-media-ul li a {
-    margin: 0 2rem;
-  }
-}
-
 .fa-github-square:hover {
   color: #211F1F;
 }
@@ -763,12 +740,16 @@ ul.contact-social-media-ul li a {
   color: #0e76a8;
 }
 
-.fa-youtube-square:hover {
-  color: #c4302b;
-}
-
 .fa-facebook-square:hover {
   color: #4267B2;
+}
+
+.fa-instagram:hover {
+  color: #8a3ab9;
+}
+
+.fa-youtube-square:hover {
+  color: #c4302b;
 }
 
 .fa-envelope:hover {
@@ -2358,14 +2339,36 @@ input.contact-submit-btn:hover {
 .contact-social-media {
   margin-top: 5rem;
 }
-.contact-social-media i {
+.contact-social-media ul.contact-social-media-ul {
+  margin: 0 auto 2% auto;
+}
+@media all and (max-width: 992px) {
+  .contact-social-media ul.contact-social-media-ul {
+    text-align: center;
+    display: table;
+  }
+}
+@media all and (max-width: 992px) {
+  .contact-social-media ul.contact-social-media-ul li {
+    display: inline-block;
+  }
+}
+.contact-social-media ul.contact-social-media-ul li a {
+  color: #9796f0;
+}
+@media all and (max-width: 992px) {
+  .contact-social-media ul.contact-social-media-ul li a {
+    margin: 0 2rem;
+  }
+}
+.contact-social-media ul.contact-social-media-ul li a i {
   font-size: 3rem;
   -webkit-transition: color 650ms;
   transition: color 650ms;
   margin: 0 1rem;
 }
 @media all and (max-width: 768px) {
-  .contact-social-media i {
+  .contact-social-media ul.contact-social-media-ul li a i {
     font-size: 3rem;
     margin: 0 -0.6rem;
   }
