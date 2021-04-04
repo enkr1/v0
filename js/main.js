@@ -114,7 +114,8 @@ $(document).ready(function () {
     //     $('.top-nav').removeClass('open');
     // });
 
-
+    // NOT USING THE MOUSE EFFECT NOW 
+    /*
     let mouseCursor = document.querySelector(".cursor");
     let words = document.querySelectorAll("img, .nav-link");
     window.addEventListener('mousemove', cursor);
@@ -134,6 +135,7 @@ $(document).ready(function () {
             // image.classList.add("img-hover");
         })
     });
+    */
 
 
     // menu bar 
