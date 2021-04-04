@@ -2444,121 +2444,6 @@ input.contact-submit-btn:hover {
 }
 
 /*End footer*/
-@media all and (max-width: 992px) {
-  /* need to move to the correct css */
-  .back a img {
-    top: 2.5rem;
-  }
-
-  .rotating-box {
-    margin: auto;
-    margin-top: -6rem;
-  }
-
-  .more-button {
-    stroke-dasharray: 8;
-    stroke-dashoffset: 555;
-    -webkit-animation: line-anime 8s ease forwards;
-            animation: line-anime 8s ease forwards;
-    -webkit-transform: translate(-50%, 500%);
-            transform: translate(-50%, 500%);
-  }
-
-  .more-button a p {
-    font-size: 1.5rem;
-    bottom: 0;
-    padding: 2rem;
-    left: 2rem;
-    z-index: 2;
-  }
-
-  .more-button #arrow-svg {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-}
-/* mobile */
-@media all and (max-width: 768px) {
-  /* need to move to the correct css */
-  .back a img {
-    height: 2.3rem;
-    width: 2.5rem;
-    top: 2rem;
-    left: 0.6rem;
-  }
-
-  .rotating-box {
-    width: 20rem;
-    height: 20rem;
-    margin: auto;
-    margin-top: -7rem;
-  }
-
-  .single-rb img {
-    width: 20rem;
-    height: 20rem;
-  }
-
-  .font-side {
-    -webkit-transform: translateZ(10rem);
-            transform: translateZ(10rem);
-  }
-
-  .back-side {
-    -webkit-transform: rotateY(180deg) translateZ(10rem);
-            transform: rotateY(180deg) translateZ(10rem);
-  }
-
-  .left-side {
-    -webkit-transform: rotateY(-90deg) translateX(-10rem);
-            transform: rotateY(-90deg) translateX(-10rem);
-    -webkit-transform-origin: left;
-            transform-origin: left;
-  }
-
-  .right-side {
-    -webkit-transform: rotateY(90deg) translateX(10rem);
-            transform: rotateY(90deg) translateX(10rem);
-    -webkit-transform-origin: right;
-            transform-origin: right;
-  }
-
-  .top-side {
-    -webkit-transform: rotateX(-90deg) translateY(-10rem);
-            transform: rotateX(-90deg) translateY(-10rem);
-    -webkit-transform-origin: top;
-            transform-origin: top;
-  }
-
-  .bottom-side {
-    -webkit-transform: rotateX(90deg) translateY(10rem);
-            transform: rotateX(90deg) translateY(10rem);
-    -webkit-transform-origin: bottom;
-            transform-origin: bottom;
-  }
-
-  .more-button {
-    stroke-dasharray: 8;
-    stroke-dashoffset: 700;
-    -webkit-animation: line-anime 8s ease forwards;
-            animation: line-anime 8s ease forwards;
-    -webkit-transform: translate(-50%, 350%);
-            transform: translate(-50%, 350%);
-  }
-
-  .more-button a p {
-    font-size: 1.2rem;
-    bottom: 0.3rem;
-    padding: 2rem;
-    left: 3.5rem;
-  }
-
-  .more-button #arrow-svg {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-}
-/*End media queries*/
 /* Interest page  */
 #interest-header,
 section {
@@ -2698,3 +2583,12 @@ iframe {
   }
 }
 /* main page  */
+.bbx-achievements .container .section-heading h1::after {
+  content: "achivements";
+  position: absolute;
+  -webkit-transform: translate(0, 97.5vh);
+  transform: translate(-50%, -35%);
+  left: 50%;
+  opacity: 0.1;
+  font-size: 3em;
+}
