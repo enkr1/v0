@@ -2348,7 +2348,7 @@ input.contact-submit-btn:hover {
   }
 }
 .main-footer .contact-social-media {
-  margin-top: 5rem;
+  margin: 5rem 0;
 }
 .main-footer .contact-social-media ul.contact-social-media-ul {
   margin: 0 auto 2% auto;
