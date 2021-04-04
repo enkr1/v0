@@ -18,12 +18,15 @@
             h1 {
                 font-size: 28rem;
                 color: $theme-h1-color;
-                transform: translateY(-70%);
+                transform: translate(.6em, -1em);
 
                 &::after {
                     content: "specialization";
                     position: absolute;
-                    transform: translate(0, 190%);
+                    // Using vh as the bottom one might 
+                    // mess up if the screen height changes
+                    transform: translate(0, 97.5vh);
+                    // transform: translate(0, 3.9em);
                     left: -24rem;
                 }
             }
