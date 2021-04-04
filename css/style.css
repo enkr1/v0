@@ -1949,6 +1949,11 @@ box-shadow:
   height: fit-content;
   padding-bottom: 10em;
 }
+@media all and (max-width: 768px) {
+  .portfolio .section-heading {
+    padding-bottom: 0 !important;
+  }
+}
 
 .portfolio-item {
   display: -webkit-box;
@@ -2011,6 +2016,12 @@ box-shadow:
             order: 2;
   }
 }
+@media all and (max-width: 768px) {
+  .portfolio-description p {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
 
 .portfolio-description h1 {
   font-size: 3rem;
@@ -2032,8 +2043,6 @@ box-shadow:
   font-size: 1.5rem;
   text-transform: uppercase;
   color: #dbcde4;
-  -webkit-transition: color 650ms;
-  transition: color 650ms;
 }
 @media all and (max-width: 768px) {
   .portfolio-description .cta,
@@ -2057,6 +2066,18 @@ box-shadow:
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: color 650ms;
+  transition: color 650ms;
+}
+.cta.view-more-btn {
+  -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.044), 0 6.7px 5.3px rgba(0, 0, 0, 0.058), 0 12.5px 10px rgba(0, 0, 0, 0.07), 0 22.3px 17.9px rgba(0, 0, 0, 0.082), 0 41.8px 33.4px rgba(0, 0, 0, 0.096), 0 100px 80px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.044), 0 6.7px 5.3px rgba(0, 0, 0, 0.058), 0 12.5px 10px rgba(0, 0, 0, 0.07), 0 22.3px 17.9px rgba(0, 0, 0, 0.082), 0 41.8px 33.4px rgba(0, 0, 0, 0.096), 0 100px 80px rgba(0, 0, 0, 0.22);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  margin: auto;
 }
 
 /*End portfolio*/

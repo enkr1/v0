@@ -2,6 +2,12 @@
 .portfolio {
     height: fit-content;
     padding-bottom: 10em;
+
+    @media all and (max-width: $screen_sm) {
+        .section-heading {
+            padding-bottom: 0 !important;
+        }
+    }
 }
 
 .portfolio-item {
@@ -47,6 +53,13 @@
         margin: 0;
         order: 2;
     }
+
+    p {
+        @media all and (max-width: $screen_sm) {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+    }
 }
 
 .portfolio-description h1 {
@@ -69,7 +82,6 @@
     font-size: 1.5rem;
     text-transform: uppercase;
     color: $theme-light-color;
-    transition: color 650ms;
 
     @media all and (max-width: $screen_sm) {
         margin-bottom: 2rem;
@@ -85,6 +97,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: color 650ms;
+
+    &.view-more-btn {
+        box-shadow: $neumorphism-box-shadow;
+        width: fit-content;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        margin: auto;
+    }
 }
+
 
 /*End portfolio*/
