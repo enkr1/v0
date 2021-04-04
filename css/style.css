@@ -1581,8 +1581,8 @@ box-shadow:
 }
 .about-details .about-social-media i {
   font-size: 3rem;
-  -webkit-transition: color 650ms;
-  transition: color 650ms;
+  -webkit-transition: color .2s;
+  transition: color .2s;
   margin: 60% 1rem 0 1rem;
   opacity: .6;
   color: #e0e0f7;
@@ -2288,44 +2288,6 @@ input.contact-submit-btn:hover {
   background-position: left bottom;
 }
 
-.contact-social-media {
-  margin-top: 5rem;
-}
-.contact-social-media ul.contact-social-media-ul {
-  margin: 0 auto 2% auto;
-}
-@media all and (max-width: 992px) {
-  .contact-social-media ul.contact-social-media-ul {
-    text-align: center;
-    display: table;
-  }
-}
-@media all and (max-width: 992px) {
-  .contact-social-media ul.contact-social-media-ul li {
-    display: inline-block;
-  }
-}
-.contact-social-media ul.contact-social-media-ul li a {
-  color: #9796f0;
-}
-@media all and (max-width: 992px) {
-  .contact-social-media ul.contact-social-media-ul li a {
-    margin: 0 2rem;
-  }
-}
-.contact-social-media ul.contact-social-media-ul li a i {
-  font-size: 3rem;
-  -webkit-transition: color 650ms;
-  transition: color 650ms;
-  margin: 0 1rem;
-}
-@media all and (max-width: 768px) {
-  .contact-social-media ul.contact-social-media-ul li a i {
-    font-size: 3rem;
-    margin: 0 -0.6rem;
-  }
-}
-
 .info-anim {
   position: absolute;
   background-color: rgba(255, 255, 255, 0);
@@ -2380,6 +2342,43 @@ input.contact-submit-btn:hover {
 @media all and (max-width: 992px) {
   .main-footer {
     padding-bottom: 6.6rem;
+  }
+}
+.main-footer .contact-social-media {
+  margin-top: 5rem;
+}
+.main-footer .contact-social-media ul.contact-social-media-ul {
+  margin: 0 auto 2% auto;
+}
+@media all and (max-width: 992px) {
+  .main-footer .contact-social-media ul.contact-social-media-ul {
+    text-align: center;
+    display: table;
+  }
+}
+@media all and (max-width: 992px) {
+  .main-footer .contact-social-media ul.contact-social-media-ul li {
+    display: inline-block;
+  }
+}
+.main-footer .contact-social-media ul.contact-social-media-ul li a {
+  color: #9796f0;
+}
+@media all and (max-width: 992px) {
+  .main-footer .contact-social-media ul.contact-social-media-ul li a {
+    margin: 0 2rem;
+  }
+}
+.main-footer .contact-social-media ul.contact-social-media-ul li a i {
+  font-size: 3rem;
+  -webkit-transition: color 650ms;
+  transition: color 650ms;
+  margin: 0 1rem;
+}
+@media all and (max-width: 768px) {
+  .main-footer .contact-social-media ul.contact-social-media-ul li a i {
+    font-size: 3rem;
+    margin: 0 -0.6rem;
   }
 }
 
