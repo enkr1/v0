@@ -1836,7 +1836,7 @@ box-shadow:
 /*End Specialization*/
 /*Start timeline*/
 .experience {
-  height: 150vh;
+  height: 100vh;
 }
 @media only screen and (max-width: 1024px) {
   .experience {
