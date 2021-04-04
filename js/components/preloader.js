@@ -37,16 +37,18 @@ docReady(function () {
     // const svgLoading = document.querySelector('.svg-loading');
     // const preloadBox = document.querySelector('.preload-box');
 
-    // svgLoading.classList.add('loading-finish');
-    preload.classList.add('preload-finish');
-    // preloadTop.classList.add('moveup');
-    // preloadBot.classList.add('movedown');
-    // preloadBox.classList.add('clear-blur');
-
-    // REMOVE THE HIDE CLASS FROM BODY
     document.body.classList.remove("hide-all-in-body");
+    setTimeout(function () {
+        // svgLoading.classList.add('loading-finish');
+        preload.classList.add('preload-finish');
+        // preloadTop.classList.add('moveup');
+        // preloadBot.classList.add('movedown');
+        // preloadBox.classList.add('clear-blur');
+        // REMOVE THE HIDE CLASS FROM BODY
 
-    // only when finish loading, add y scroll 
-    var root = document.getElementsByTagName('html')[0]; // '0' to assign the first (and only `HTML` tag)
-    root.classList.add('enablescroll');
+        // only when finish loading, add y scroll 
+        var root = document.getElementsByTagName('html')[0]; // '0' to assign the first (and only `HTML` tag)
+        root.classList.add('enablescroll');
+    }, 800);
+
 });

@@ -91,7 +91,7 @@
     <nav class="top-nav">
       <ul class="nav-list top-nav-list">
         <div class="nav-logo">
-          <a href="https://enkr1.github.io/web/">ENKR</a>
+          <a href="/">ENKR</a>
         </div>
         <div class="nav-link-container">
           <li><a href="#home" class="nav-link">Home</a></li>
@@ -165,7 +165,8 @@
         </div>
         <p>
           <!-- BIO -->
-          A software engineer, web developer at <a href="https://pixiumdigital.com/" target="_blank">Pixium Digital</a> since 2021,
+          A software engineer, web developer at <a href="https://pixiumdigital.com/" target="_blank">Pixium Digital</a>
+          since 2021,
           with a
           strong passion for developing web application, database management
           system, and designing. Recently completed a Diploma in Information
@@ -459,34 +460,36 @@
       }
     })();
 
-    // https://www.youtube.com/watch?v=GUEB9FogoP8&t=173s vanilla
-    const text = document.querySelector(".main-h6");
-    const strText = text.textContent;
-    const splitText = strText.split("");
-    text.textContent = "";
-    text.classList.add("show");
+    setTimeout(function () {
+      // https://www.youtube.com/watch?v=GUEB9FogoP8&t=173s vanilla
+      const text = document.querySelector(".main-h6");
+      const strText = text.textContent;
+      const splitText = strText.split("");
+      text.textContent = "";
+      text.classList.add("show");
 
-    for (let i = 0; i < splitText.length; i++) {
-      text.innerHTML += "<span>" + splitText[i] + "</span>";
-    }
-
-    let char = 0;
-    let timer = setInterval(onTick, 50);
-
-    function onTick() {
-      const span = text.querySelectorAll("span")[char];
-      span.classList.add("main-h6-anim");
-      char++;
-      if (char === splitText.length) {
-        complete();
-        return;
+      for (let i = 0; i < splitText.length; i++) {
+        text.innerHTML += "<span>" + splitText[i] + "</span>";
       }
-    }
 
-    function complete() {
-      clearInterval(timer);
-      timer = null;
-    }
+      let char = 0;
+      let timer = setInterval(onTick, 80);
+
+      function onTick() {
+        const span = text.querySelectorAll("span")[char];
+        span.classList.add("main-h6-anim");
+        char++;
+        if (char === splitText.length) {
+          complete();
+          return;
+        }
+      }
+
+      function complete() {
+        clearInterval(timer);
+        timer = null;
+      }
+    }, 800);
   </script>
 
 </body>

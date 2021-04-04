@@ -35,11 +35,12 @@
     }
 
     #svg-loading {
-        width: 10%;
+        width: 100%;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        z-index: 3;
 
         @media all and (max-width: $screen_md_2) {
             width: 16%;
@@ -85,48 +86,7 @@
     }
 }
 
-#svg-loading path:nth-child(1) {
-    stroke-dasharray: 555;
-    stroke-dashoffset: 555;
-    animation: line-anime 2s ease forwards .2s;
-}
-
-#svg-loading path:nth-child(2) {
-    stroke-dasharray: 555;
-    stroke-dashoffset: 555;
-    animation: line-anime 2s ease forwards .2s;
-}
-
-#svg-loading path:nth-child(3) {
-    stroke-dasharray: 555;
-    stroke-dashoffset: 555;
-    animation: line-anime 2s ease forwards .2s;
-}
-
-#svg-loading path:nth-child(4) {
-    stroke-dasharray: 555;
-    stroke-dashoffset: 555;
-    animation: line-anime 2s ease forwards .2s;
-}
-
-#svg-loading path:nth-child(5) {
-    stroke-dasharray: 555;
-    stroke-dashoffset: 555;
-    animation: line-anime 2s ease forwards .2s;
-}
-
-#svg-loading path:nth-child(6) {
-    stroke-dasharray: 555;
-    stroke-dashoffset: 555;
-    animation: line-anime 2s ease forwards .2s;
-}
-
-#svg-loading path:nth-child(7) {
-    stroke-dasharray: 555;
-    stroke-dashoffset: 555;
-    animation: line-anime 2s ease forwards .2s;
-}
-
+// FINISH CLASSES
 .preload-finish {
     opacity: 0;
     pointer-events: none;
