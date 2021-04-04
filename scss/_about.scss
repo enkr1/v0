@@ -74,7 +74,7 @@
             font-size: 28rem;
             /* Neumorphism Theme */
             // TODO:  make the color like the curse
-            color: rgba(255, 255, 255, 0.2);
+            color: $theme-h1-color;
 
             // https://stackoverflow.com/questions/58133329/how-to-use-css-backdrop-filter-on-text
             // backdrop-filter: grayscale(1);

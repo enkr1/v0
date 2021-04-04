@@ -1,10 +1,49 @@
 /*Start timeline*/
 .experience {
-    height: 100vh;
+    height: 150vh;
 
     @media only screen and (max-width: $screen_md_1) {
         height: fit-content;
     }
+
+    // TODO: WIP THE NEW DESIGN 
+    // @media only screen and (min-width: $screen_xl) {
+    //     overflow: hidden;
+
+    //     .section-heading {
+    //         position: absolute;
+    //         user-select: none;
+    //         z-index: -1;
+    //         top: 0;
+
+    //         h1 {
+    //             font-size: 28rem;
+    //             color: $theme-h1-color;
+    //             transform: translateY(-10%);
+
+    //             // &::after {
+    //             //     content: "experience";
+    //             //     position: absolute;
+    //             //     transform: translate(0, 190%);
+    //             //     left: -24rem;
+    //             // }
+    //         }
+
+    //         h6 {
+    //             display: none;
+    //         }
+    //     }
+    // }
+
+    // // TODO: WIP THE NEW DESIGN 
+    // @media only screen and (min-width: $screen_xl) {
+    //     .journey-container {
+    //         // ...    
+    //         height: 100vh;
+    //         transform: translate(0, 20vh);
+    //     }
+    // }
+
 
     .timeline {
         margin-left: 22rem;

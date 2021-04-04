@@ -7,17 +7,35 @@
     text-align: center;
     z-index: 1;
 
+    $home-landing-logo-width: 100em;
+
     .logo {
-        width: 80%;
+        width: $home-landing-logo-width;
         user-select: none;
         margin: 0;
         position: absolute;
         /* top: 30%; */
         left: 50%;
         transform: translate(-50%, -55%);
+
+        @media all and (max-width: $screen_lg) {
+            width: $home-landing-logo-width - 10em;
+        }
+
+        @media all and (max-width: $screen_md_2) {
+            width: $home-landing-logo-width - 30em;
+        }
+
+        @media all and (max-width: $screen_sm) {
+            width: $home-landing-logo-width - 50em;
+        }
+
+        @media all and (max-width: $screen_xs) {
+            width: $home-landing-logo-width - 70em;
+        }
     }
 
-    h6 {
+    h6.main-h6 {
         font-family: monospace;
         transform: translateY(12rem);
         font-size: 2.2rem;
@@ -26,7 +44,7 @@
 
         @media all and (max-width: $screen_lg) {
             font-size: 1.8rem;
-            transform: translateY(10rem);
+            transform: translateY(11rem);
         }
 
         @media all and (max-width: $screen_md_2) {
@@ -48,7 +66,7 @@
         justify-content: center;
         width: 100%;
         height: 100%;
-        transform: translateY(14rem);
+        transform: translateY(28em);
         /* opacity: .8; */
 
         @media all and (max-width: $screen_sm) {
