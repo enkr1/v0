@@ -137,16 +137,24 @@ $(document).ready(function () {
     });
     */
 
+    // COPIED FROM PRELOAD
+    var root = document.getElementsByTagName('html')[0]; // '0' to assign the first (and only `HTML` tag)
 
     // menu bar 
     $('.menu-toggler').on('click', function () {
         $(this).toggleClass('open');
         $('.top-nav').toggleClass('open');
+
+        // Scrolling in menu 
+        root.classList.toggle('enablescroll');
     });
 
     $('.top-nav .nav-link').on('click', function () {
         $('.menu-toggler').removeClass('open');
         $('.top-nav').removeClass('open');
+
+        // Scrolling in menu 
+        root.classList.toggle('enablescroll');
     });
 
 
