@@ -260,6 +260,7 @@ li {
     font-size: 2rem;
     height: 50%;
     padding-bottom: 1rem;
+    // user-select: none;
 
     @media all and (max-width: $screen_md_2) {
         display: none;
