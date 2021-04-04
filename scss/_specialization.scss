@@ -27,6 +27,19 @@
                     left: -24rem;
                 }
             }
+
+            h6 {
+                display: none;
+            }
+        }
+    }
+
+    // TODO: WIP THE NEW DESIGN 
+    @media only screen and (min-width: $screen_xl) {
+        .skills-container {
+            // ...    
+            height: 100vh;
+            transform: translate(0, 30vh);
         }
     }
 
@@ -67,15 +80,6 @@
             box-shadow:
                 0px 0px 22px 0px $theme-light-color;
             opacity: 0.8;
-        }
-    }
-
-    // TODO: WIP THE NEW DESIGN 
-    @media only screen and (min-width: $screen_xl) {
-        .skills-container {
-            // ...    
-            height: 100vh;
-            transform: translate(0, 30vh);
         }
     }
 

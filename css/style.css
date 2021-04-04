@@ -1226,10 +1226,6 @@ li {
   font-size: 2rem;
   height: 50%;
   padding-bottom: 1rem;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 @media all and (max-width: 992px) {
   .nav-logo {
@@ -1730,6 +1726,16 @@ box-shadow:
             transform: translate(0, 190%);
     left: -24rem;
   }
+  .specialization .section-heading h6 {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .specialization .skills-container {
+    height: 100vh;
+    -webkit-transform: translate(0, 30vh);
+            transform: translate(0, 30vh);
+  }
 }
 .specialization .icon-container {
   width: 14rem;
@@ -1775,13 +1781,6 @@ box-shadow:
           box-shadow: 0px 0px 22px 0px #dbcde4;
   opacity: 0.8;
 }
-@media only screen and (min-width: 1440px) {
-  .specialization .skills-container {
-    height: 100vh;
-    -webkit-transform: translate(0, 30vh);
-            transform: translate(0, 30vh);
-  }
-}
 .specialization .my-skills {
   /* https://hankchizljaw.com/wrote/create-a-responsive-grid-layout-with-no-media-queries-using-css-grid/ */
   display: grid;
@@ -1817,7 +1816,7 @@ box-shadow:
 /*End Specialization*/
 /*Start timeline*/
 .experience {
-  height: 100vh;
+  height: 150vh;
 }
 @media only screen and (max-width: 1024px) {
   .experience {
