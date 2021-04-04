@@ -49,6 +49,6 @@ docReady(function () {
         // only when finish loading, add y scroll 
         var root = document.getElementsByTagName('html')[0]; // '0' to assign the first (and only `HTML` tag)
         root.classList.add('enablescroll');
-    }, 800);
+    }, 000);
 
 });
