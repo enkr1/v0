@@ -41,9 +41,9 @@ docReady(function () {
         padding: .4rem 1.2rem;
         margin: 1rem;
         `);
-        console.log(
-            `%c🌍 Follow me on social media:\nGitHub:\t\t\t https://github.com/enkr1 \nInstagram:\t\t https://www.instagram.com/enkr1/ \nFacebook:\t\t\t https://www.facebook.com/enkrbeatbox`,
-            `
+    console.log(
+        `%c🌍 Follow me on social media:\nGitHub:\t\t\t https://github.com/enkr1 \nInstagram:\t\t https://www.instagram.com/enkr1/ \nFacebook:\t\t\t https://www.facebook.com/enkrbeatbox`,
+        `
             color: black;
 
             font-family: Trebuchet MS; 
@@ -208,6 +208,19 @@ docReady(function () {
         root.classList.toggle('enablescroll');
     });
 
+    let secNav = document.querySelector(".secondary-desktop-nav-bar");
+
+    // Secondary menu bar 
+    $('.secondary-desktop-nav-bar').on('click', function () {
+        // Toggle up or down of the nav
+        $(".top-nav").toggleClass("nav-up");
+        // Hide the button
+        // $(this).toggleClass("display");
+        // Hide left logo
+        $(".nav-logo-left").toggleClass("fade-left");
+
+    });
+
 
     // Navigation bar
     // scrolling detection
@@ -226,14 +239,12 @@ docReady(function () {
             } else {
                 topnav.classList.remove('scrollup')
                 topnav.classList.add('startscrolling')
-                navlogo.classList.add('hide')
             }
 
             // leave top
             if (this.scrollY == 0) {
                 topnav.classList.remove('startscrolling')
                 topnav.classList.remove('scrollup')
-                navlogo.classList.remove('hide')
             }
 
             this.oldScroll = this.scrollY;

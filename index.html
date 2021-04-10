@@ -74,21 +74,27 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 </head>
-
+<!-- TODO: THE EXPLORE NEED TO CHANGE TO THE SCROLLING AFTER HOVER -->
 <preloader-component></preloader-component>
 
 <body id="index-body" class="hide-all-in-body">
 
   <header id="home">
 
-    <!-- <div id="navbar"></div> -->
-    <div class="menu-toggler hide">
-      <div class="bar half start"></div>
-      <div class="bar half middle"></div>
-      <div class="bar half end"></div>
+    <div class="toggle-nav-bar">
+      <div class="menu-toggler">
+        <div class="bar half start"></div>
+        <div class="bar half middle"></div>
+        <div class="bar half end"></div>
+      </div>
     </div>
 
-    <nav class="top-nav">
+    <div class="nav-logo-left">
+      <a href="/">ENKR</a>
+    </div>
+
+    <nav class="top-nav nav-up">
+
       <ul class="nav-list top-nav-list">
         <div class="nav-logo">
           <a href="/">ENKR</a>
@@ -107,11 +113,13 @@
           <!-- <li><a href="#" class="nav-link" id="interest-nav-item">Interest</a></li> -->
           <!-- <li><a href="pdf/PangJingHui_Resume.pdf" class="nav-link" target="_blank">My Resume</a></li> -->
           <p class="designedby">Designed and developed by ENKR</p>
-          <!-- <div class="hide-nav-bar"></div> -->
         </div>
       </ul>
+
       <div id="_progress"></div>
     </nav>
+
+    <div class="secondary-desktop-nav-bar"></div>
 
     <div id="landing-section" class="landing-section">
       <div class="logo">

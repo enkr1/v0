@@ -27,8 +27,11 @@ $theme-h1-color: rgba(255, 255, 255, 0.2);
 
 $theme-small-title-color: #8d8da8;
 
+// LOGO TEXT ATTRIBUTES
 // Currently is the ENKR text, <a>
 $logo-color: $theme-light-color;
+$logo-text-font-size: 2rem;
+$logo-text-letter-spacing: .6rem;
 
 $media-icon-color: #e0e0f7;
 
@@ -48,3 +51,4 @@ $theme-background: linear-gradient(0deg, $theme-color, $theme-dark-color) no-rep
 $theme-mobile-bar-color: linear-gradient(45deg, $theme-dark-color, $theme-color, $theme-light-color);
 // --mobile-bar-bg
 $theme-mobile-bar-bg: linear-gradient(45deg, $theme-dark-color, $theme-color);
+$desktop-secondary-nav-bar-color: linear-gradient(45deg, $theme-light-color, $theme-color);

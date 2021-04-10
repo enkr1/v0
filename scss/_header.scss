@@ -1,3 +1,48 @@
+// NEW
+// Navigation bar 
+// ONLY AVAILABLE ON WEB
+@media all and (min-width: $screen_md_2 + 1px) {
+    .nav-up {
+        transform: translateY(-100%);
+    }
+
+    .nav-logo-left,
+    .secondary-desktop-nav-bar {
+        // margin: 0 1rem;
+        // transform: translateY(.3em);
+        z-index: 999;
+    }
+
+    .nav-logo-left {
+        position: fixed;
+        text-align: center;
+        letter-spacing: $logo-text-letter-spacing;
+        font-size: $logo-text-font-size;
+        margin: 0 1rem;
+        transform: translate(0, $nav-logo-left-y);
+        transition: all 0.6s ease-in-out;
+
+        a:hover {
+            color: $theme-light-color;
+        }
+    }
+
+    .secondary-desktop-nav-bar {
+        // display: none;
+        position: fixed;
+        right: 2em;
+        height: 1.6em;
+        width: 1.6em;
+        border-radius: 2rem;
+        // background: $theme-mobile-bar-bg;
+        background: $desktop-secondary-nav-bar-color;
+        box-shadow: $neumorphism-box-shadow;
+        cursor: pointer;
+        transform: translateY(1em);
+    }
+}
+
+// OLD
 header {
     width: 100%;
     height: 100vh;
@@ -44,17 +89,6 @@ header {
         flex-direction: column;
     }
 
-    // NEW
-    .hide-nav-bar {
-        position: absolute;
-        right: 2em;
-        height: 3px;
-        width: 3rem;
-        border-radius: 2rem;
-        background: $theme-mobile-bar-bg;
-        box-shadow: $neumorphism-box-shadow;
-        cursor: pointer;
-    }
 }
 
 .nav-list p {
@@ -157,24 +191,34 @@ li {
     border-radius: initial;
 }
 
-.menu-toggler {
-    position: fixed;
-    top: 3rem;
-    right: 3rem;
-    width: 4rem;
-    height: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* cursor: pointer; */
-    z-index: 999;
-    transition: transform 500ms ease-out;
+.toggle-nav-bar {
+    // ...
+    display: none;
 
-    @media all and (max-width: $screen_sm) {
-        top: 2rem;
-        right: 2rem;
-        width: 3rem;
-        height: 2rem;
+    @media all and (max-width: $screen_md_2) {
+        // opacity: 1;
+        display: block;
+    }
+
+    .menu-toggler {
+        position: fixed;
+        top: 3rem;
+        right: 3rem;
+        width: 4rem;
+        height: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* cursor: pointer; */
+        z-index: 999;
+        transition: transform 500ms ease-out;
+
+        @media all and (max-width: $screen_sm) {
+            top: 2rem;
+            right: 2rem;
+            width: 3rem;
+            height: 2rem;
+        }
     }
 }
 
@@ -237,27 +281,10 @@ li {
     transform: rotate(-450deg) translateX(0rem);
 }
 
-/* Start navigation bar  */
-.hide {
-    opacity: 0;
-    /* cant use hidden cuz will affect the mobile view  */
-    /* overflow: hidden; */
-
-    /* browser support */
-    /* -webkit-transition: all .1s ease-in-out;
-    -moz-transition: all .1s ease-in-out;
-    -o-transition: all .1s ease-in-out;
-    transition: all .1s ease-in-out; */
-
-    @media all and (max-width: $screen_md_2) {
-        opacity: 1;
-    }
-}
-
 .nav-logo {
     text-align: center;
-    letter-spacing: .6rem;
-    font-size: 2rem;
+    letter-spacing: $logo-text-letter-spacing;
+    font-size: $logo-text-font-size;
     height: 50%;
     padding-bottom: 1rem;
     // user-select: none;

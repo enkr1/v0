@@ -332,3 +332,14 @@ span {
 .hide-all-in-body {
     opacity: 0;
 }
+
+$nav-logo-left-y: .3em;
+// FOR NEW NAVIGATION
+.fade-left {
+    transform: translate(-150%, $nav-logo-left-y) !important;
+}
+
+// NOT USED NOW
+.display {
+    display: block !important;
+}

@@ -36,18 +36,25 @@
 
 </head>
 
+<preloader-component></preloader-component>
+
 <body class="portfolio-body">
     <header>
 
-        <preloader-component></preloader-component>
-
-        <div class="menu-toggler hide">
-            <div class="bar half start"></div>
-            <div class="bar half middle"></div>
-            <div class="bar half end"></div>
+        <div class="toggle-nav-bar">
+            <div class="menu-toggler">
+                <div class="bar half start"></div>
+                <div class="bar half middle"></div>
+                <div class="bar half end"></div>
+            </div>
         </div>
 
-        <nav class="top-nav">
+        <div class="nav-logo-left">
+            <a href="/">ENKR</a>
+        </div>
+
+        <nav class="top-nav nav-up">
+
             <ul class="nav-list top-nav-list">
                 <div class="nav-logo">
                     <a href="/">ENKR</a>
@@ -63,8 +70,11 @@
                     <p class="designedby">Designed and developed by ENKR</p>
                 </div>
             </ul>
+
             <div id="_progress"></div>
         </nav>
+
+        <div class="secondary-desktop-nav-bar"></div>
 
         <construction-component></construction-component>
 

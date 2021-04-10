@@ -34,18 +34,25 @@
   <script type="text/javascript" defer src="js/components/footer.js"></script>
 </head>
 
+<preloader-component></preloader-component>
+
 <body class="interest-body">
   <header id="interest-header">
 
-    <preloader-component></preloader-component>
-
-    <div class="menu-toggler hide">
-      <div class="bar half start"></div>
-      <div class="bar half middle"></div>
-      <div class="bar half end"></div>
+    <div class="toggle-nav-bar">
+      <div class="menu-toggler">
+        <div class="bar half start"></div>
+        <div class="bar half middle"></div>
+        <div class="bar half end"></div>
+      </div>
     </div>
 
-    <nav class="top-nav">
+    <div class="nav-logo-left">
+      <a href="/">ENKR</a>
+    </div>
+
+    <nav class="top-nav nav-up">
+
       <ul class="nav-list top-nav-list">
         <div class="nav-logo">
           <a href="/">ENKR</a>
@@ -63,8 +70,11 @@
           <p class="designedby">Designed and developed by ENKR</p>
         </div>
       </ul>
+
       <div id="_progress"></div>
     </nav>
+
+    <div class="secondary-desktop-nav-bar"></div>
 
     <!-- id="svg-beatbox" -->
     <svg id="svg-beatbox" width="1639" height="190" viewBox="0 0 1639 190" fill="none"
