@@ -13,7 +13,61 @@ function docReady(fn) {
     }
 }
 
-$(document).ready(function () {
+docReady(function () {
+    console.log(
+        "%cPang Jing Hui, https://github.com/enkr1",
+        `
+        // cursor: none;
+        color: black; 
+
+        font-family: Trebuchet MS; 
+        // font-family: cursive;
+        // font-family: "Gill Sans", sans-serif;
+        // font-family: Georgia, serif;
+        // font-family: "Open Sans", sans-serif;
+        // font-family: "Consolas", monospace;
+
+        font-weight: 100;
+
+        font-size: 1.6em; 
+        text-shadow: whitegrey 1px 1px;
+        // background-color: white;
+
+        // background-image: $theme-background;
+        background-image: linear-gradient(0deg, #9796f0, #dbcde4);
+        
+        border-radius: 1.8rem;
+        
+        padding: .4rem 1.2rem;
+        margin: 1rem;
+        `);
+        console.log(
+            "%cFollow me on social media, Instagram: https://www.instagram.com/enkr1/, Facebook: https://www.facebook.com/enkrbeatbox",
+            `
+            // cursor: none;
+            color: white; 
+    
+            font-family: Trebuchet MS; 
+            // font-family: cursive;
+            // font-family: "Gill Sans", sans-serif;
+            // font-family: Georgia, serif;
+            // font-family: "Open Sans", sans-serif;
+            // font-family: "Consolas", monospace;
+    
+            // font-weight: 100;
+    
+            font-size: 1.2em; 
+            // text-shadow: whitegrey 1px 1px;
+            // background-color: white;
+    
+            // background-image: $theme-background;
+            // background-image: linear-gradient(0deg, #9796f0, #dbcde4);
+            
+            // border-radius: 1.8rem;
+            
+            // padding: .4rem 1.2rem;
+            margin: .6rem;
+            `);
 
     // /*
     // https://www.w3schools.com/xml/ajax_intro.asp

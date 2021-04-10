@@ -40,6 +40,7 @@ $neumorphism-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.044),
 0 41.8px 33.4px rgba(0, 0, 0, 0.096),
 0 100px 80px rgba(0, 0, 0, 0.22);
 
+$theme-gradient: linear-gradient(0deg, $theme-color, $theme-dark-color);
 
 // --background
 $theme-background: linear-gradient(0deg, $theme-color, $theme-dark-color) no-repeat center fixed;
