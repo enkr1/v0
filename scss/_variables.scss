@@ -51,4 +51,5 @@ $theme-background: linear-gradient(0deg, $theme-color, $theme-dark-color) no-rep
 $theme-mobile-bar-color: linear-gradient(45deg, $theme-dark-color, $theme-color, $theme-light-color);
 // --mobile-bar-bg
 $theme-mobile-bar-bg: linear-gradient(45deg, $theme-dark-color, $theme-color);
-$desktop-secondary-nav-bar-color: linear-gradient(45deg, $theme-light-color, $theme-color);
+$desktop-secondary-nav-bar-color-light: linear-gradient(45deg, $theme-light-color, $theme-color);
+$desktop-secondary-nav-bar-color-dark: linear-gradient(90deg, $theme-dark-color, $theme-color);

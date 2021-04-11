@@ -215,7 +215,7 @@ docReady(function () {
         // Toggle up or down of the nav
         $(".top-nav").toggleClass("nav-up");
         // Hide the button
-        // $(this).toggleClass("display");
+        $(this).toggleClass("switch-color");
         // Hide left logo
         $(".nav-logo-left").toggleClass("fade-left");
 

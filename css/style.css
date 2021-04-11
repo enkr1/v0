@@ -639,8 +639,9 @@ span {
           transform: translate(-150%, 0.3em) !important;
 }
 
-.display {
-  display: block !important;
+.switch-color {
+  background: -webkit-gradient(linear, left top, right top, from(#242449), to(#9796f0)) !important;
+  background: linear-gradient(90deg, #242449, #9796f0) !important;
 }
 
 .enablescroll {
@@ -927,6 +928,20 @@ span {
     cursor: pointer;
     -webkit-transform: translateY(1em);
             transform: translateY(1em);
+  }
+  .secondary-desktop-nav-bar:hover {
+    -webkit-transform: translateY(1em) scale(1.1);
+            transform: translateY(1em) scale(1.1);
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+  }
+  .secondary-desktop-nav-bar:active {
+    -webkit-transform: translateY(1.2em) scale(0.9);
+            transform: translateY(1.2em) scale(0.9);
+    -webkit-transition: all .6s;
+    transition: all .6s;
   }
 }
 header {
