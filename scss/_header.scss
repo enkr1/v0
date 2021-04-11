@@ -40,9 +40,32 @@
         cursor: pointer;
         transform: translateY(1em);
 
+        // For the animation to go back
+        &::after {
+            position: absolute;
+            transform: translateY(1em);
+            top: .6em;
+            right: 0;
+            color: $theme-font-color;
+            opacity: 0;            
+            content: "Menu Toggle";
+            white-space: nowrap;
+            transition: all .4s;
+            user-select: none;
+            font-size: 1px;
+            font-style: italic;
+        }
+
         &:hover {
             transform: translateY(1em) scale(1.1);
             transition: transform .2s;
+
+            &::after {
+                // transform: translateY(1em);
+                opacity: .5;
+                font-size: 1.2rem;
+                // transition: all .4s;
+            }
         }
 
         &:active {

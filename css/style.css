@@ -929,6 +929,25 @@ span {
     -webkit-transform: translateY(1em);
             transform: translateY(1em);
   }
+  .secondary-desktop-nav-bar::after {
+    position: absolute;
+    -webkit-transform: translateY(1em);
+            transform: translateY(1em);
+    top: .6em;
+    right: 0;
+    color: #dedef5;
+    opacity: 0;
+    content: "Menu Toggle";
+    white-space: nowrap;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    font-size: 1px;
+    font-style: italic;
+  }
   .secondary-desktop-nav-bar:hover {
     -webkit-transform: translateY(1em) scale(1.1);
             transform: translateY(1em) scale(1.1);
@@ -936,6 +955,10 @@ span {
     transition: -webkit-transform .2s;
     transition: transform .2s;
     transition: transform .2s, -webkit-transform .2s;
+  }
+  .secondary-desktop-nav-bar:hover::after {
+    opacity: .5;
+    font-size: 1.2rem;
   }
   .secondary-desktop-nav-bar:active {
     -webkit-transform: translateY(1.2em) scale(0.9);
