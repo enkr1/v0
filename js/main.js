@@ -14,6 +14,7 @@ function docReady(fn) {
 }
 
 docReady(function () {
+    let startAt = performance.now();
     console.log(
         `%c🌍 Follow me on social media:\nGitHub:\t\t\t https://github.com/enkr1 \nInstagram:\t\t https://www.instagram.com/enkr1/ \nFacebook:\t\t\t https://www.facebook.com/enkrbeatbox`,
         `
@@ -263,4 +264,7 @@ docReady(function () {
         once: true
     });
 
+    let endAt = performance.now();
+
+    // console.log(`The time spent to load: ${(endAt - startAt)/1000} second(s).`);
 });
