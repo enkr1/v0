@@ -72,11 +72,14 @@ docReady(function () {
     $("#interest-nav-item").on("click", function () {
         const xhr = new XMLHttpRequest();
         // const landing_section = document.getElementById("landing-section");
-        const landing_section = document.getElementById("index-body");
+        // const landing_section = document.getElementById("index-body");
+        // const all_sections = document.getElementById("all-sections");
+        const landing_section = document.getElementById("landing-section");
 
         xhr.onload = function () {
             if (200 === this.status) {
                 landing_section.innerHTML = xhr.responseText;
+                // all_sections.innerHTML = xhr.responseText;
             } else {
                 console.warn("NOT 200");
             }
