@@ -1,270 +1,484 @@
-// GitHub: @enkr1
-// Instagram: @enkr1
-// :)
-
-// https://stackoverflow.com/questions/9899372/pure-javascript-equivalent-of-jquerys-ready-how-to-call-a-function-when-t
-function docReady(fn) {
-    // see if DOM is already available
-    if (document.readyState === "complete" || document.readyState === "interactive") {
-        // call on next available tick
-        setTimeout(fn, 1);
-    } else {
-        document.addEventListener("DOMContentLoaded", fn);
+var _0x579a = [
+    'documentEl',
+    '\x20Pang\x20Jing',
+    'height',
+    '104327jhFxqh',
+    'as\x22,\x20monos',
+    'nigts',
+    'g,\x20#9796f0',
+    'scrollHeig',
+    'GKdFt',
+    '\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20',
+    'mage:\x20line',
+    '\x09\x20https://',
+    'sByTagName',
+    '\x20\x20\x20\x20\x20\x20',
+    'send',
+    'switch-col',
+    'Jemob',
+    'nGHSw',
+    ':\x20white;\x0a\x20',
+    'mily:\x20Treb',
+    'EZWyI',
+    'dDpby',
+    'font-famil',
+    'ling',
+    'interactiv',
+    '883982HOWVJR',
+    'black;\x0a\x0a\x20\x20',
+    'em;\x0a\x20\x20\x20\x20\x20\x20',
+    'ackground-',
+    '.menu-togg',
+    'ddedC',
+    '/enkr1\x20\x0aIn',
+    't-family:\x20',
+    '\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20',
+    'nav-up',
+    'readyState',
+    'DOMContent',
+    'ound-image',
+    'zJWCc',
+    'log',
+    '--scroll',
+    'ease',
+    'xtqMx',
+    '882569QSGtrE',
+    'onscroll',
+    '-weight:\x201',
+    ';\x0a\x20\x20\x20\x20\x20\x20\x20\x20',
+    '1WwlGss',
+    'ar-gradien',
+    'av-bar',
+    'XXBre',
+    ',\x20#dbcde4)',
+    '-serif;\x0a\x20\x20',
+    'complete',
+    'ial\x20media:',
+    'init',
+    'iipDw',
+    'margin:\x201r',
+    '\x20\x20\x20\x20\x20paddi',
+    'isInViewpo',
+    'pace;\x0a\x20\x20\x20\x20',
+    '\x20https://w',
+    '\x20\x20\x20font-fa',
+    'px;\x0a\x20\x20\x20\x20\x20\x20',
+    'ckground-i',
+    'eme-backgr',
+    'now',
+    'eous,\x20I\x20am',
+    'padding:\x20.',
+    'ans-serif;',
+    'TKFcE',
+    'open',
+    'AjWHs',
+    '\x20Hui!\x20Nice',
+    'om/enkrbea',
+    'tbox',
+    '\x20\x20\x20\x20\x20\x20\x20//\x20',
+    'stener',
+    'l\x20Sans\x22,\x20s',
+    '.nav-logo',
+    'remove',
+    ':\x201.8rem;\x0a',
+    '-desktop-n',
+    'tor',
+    'status',
+    'et\x20MS;\x20\x0a\x20\x20',
+    'toggleClas',
+    'n:\x20.6rem;\x0a',
+    '\x22,\x20sans-se',
+    '-family:\x20G',
+    '415757gnAYcN',
+    'setPropert',
+    '\x20\x20\x20//\x20font',
+    '#up',
+    'color:\x20whi',
+    ':\x201.6em;\x20\x0a',
+    'left',
+    '_progress',
+    'scroll',
+    'svOEk',
+    'lKkdu',
+    'am.com/enk',
+    '.nav-logo-',
+    '\x20\x20\x20\x20\x20\x20\x20\x20ba',
+    '796f0,\x20#db',
+    'udynk',
+    'swcpg',
+    '4|1|3|0|2',
+    'fadeOut',
+    'mily:\x20\x22Gil',
+    'dow:\x20white',
+    'width',
+    'ound;\x0a\x20\x20\x20\x20',
+    'querySelec',
+    'GBKde',
+    'DMnyb',
+    'click',
+    '\x22Open\x20Sans',
+    'ound-color',
+    'kcJGW',
+    'ook:\x09\x09\x09\x20ht',
+    'der-radius',
+    'm;\x0a\x20\x20\x20\x20\x20\x20\x20',
+    'ou\x20🥰',
+    '\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20',
+    '3KzyYVy',
+    'lack;\x0a\x20\x20\x20\x20',
+    'grey\x201px\x201',
+    '\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20',
+    'ze:\x201.2em;',
+    '\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20',
+    'r1/\x20\x0aFaceb',
+    'oldScroll',
+    '\x20linear-gr',
+    'SWyml',
+    '4QSkZJr',
+    '.top-nav\x20.',
+    '\x20\x20border-r',
+    'ackground;',
+    'adient(0de',
+    'uchet\x20MS;\x20',
+    '\x20\x20\x20\x20\x20\x20//\x20b',
+    'y:\x20Trebuch',
+    'RBZSB',
+    'Ixsjq',
+    'landing-se',
+    'NNIWw',
+    'whitegrey\x20',
+    'scrollup',
+    'ction',
+    'outerHeigh',
+    'rif;\x0a\x20\x20\x20\x20\x20',
+    'fade-left',
+    '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a',
+    '1px\x201px;\x0a\x20',
+    'body',
+    '571111AVcJxg',
+    'or:\x20none;\x0a',
+    'startscrol',
+    'xyGwu',
+    'ursive;\x0a\x20\x20',
+    'wFaVW',
+    'warn',
+    'mily:\x20\x22Con',
+    '\x20\x20\x20\x20//\x20fon',
+    'DWyaR',
+    'cvteE',
+    'und-image:',
+    'OOHnK',
+    'plewo',
+    'pOTQU',
+    'nav-item',
+    'VjUZY',
+    '3hQLchk',
+    'mQmXZ',
+    '#interest-',
+    'TpzTs',
+    '\x20\x20\x20\x20\x20margi',
+    'te;\x0a\x20\x20\x20\x20\x0a\x20',
+    'add',
+    'adius:\x201.8',
+    'tps://www.',
+    'NOT\x20200',
+    'onload',
+    'github.com',
+    ':\x20$theme-b',
+    'ById',
+    '1236893uZSLvN',
+    '\x0aGitHub:\x09\x09',
+    'y:\x20\x22Gill\x20S',
+    '\x20\x20color:\x20b',
+    '\x20font-size',
+    '\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20',
+    'stagram:\x09\x09',
+    'sYVeK',
+    '\x20\x20\x20\x20\x20\x20\x20bor',
+    'ler',
+    'top',
+    'split',
+    'MTxwI',
+    't-shadow:\x20',
+    'uQDdc',
+    'PMunb',
+    'style',
+    'Loaded',
+    '\x20\x20\x20//\x20curs',
+    'nav-link',
+    '1.2rem;\x0a\x20\x20',
+    'y:\x20\x22Open\x20S',
+    '00;\x0a\x20\x20\x20\x20\x0a\x20',
+    'eorgia,\x20se',
+    '\x20\x20\x20\x20\x20\x20font',
+    'mily:\x20curs',
+    'scrollY',
+    'gsLWZ',
+    '%c🌍\x20Follow',
+    'solas\x22,\x20mo',
+    'mily:\x20Geor',
+    'ement',
+    'JeRwx',
+    '\x20//\x20backgr',
+    'offset',
+    'scrollTop',
+    'responseTe',
+    'fadeIn',
+    '.top-nav',
+    'ww.instagr',
+    '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20',
+    'suiDR',
+    '%cHey\x20gorg',
+    '\x20\x20\x20\x20//\x20tex',
+    'LijkA',
+    'JPgUH',
+    '\x20to\x20meet\x20y',
+    '\x20\x20\x20backgro',
+    'Jejnj',
+    'classList',
+    'LRUpr',
+    'clientHeig',
+    'aXhZG',
+    'rem;\x0a\x20\x20\x20\x20\x20',
+    'SCySy',
+    'iArWJ',
+    'facebook.c',
+    'toggle',
+    'cde4);\x0a\x20\x20\x20',
+    'tTvmD',
+    'HGBlt',
+    't(0deg,\x20#9',
+    '//\x20font-fa',
+    'image:\x20$th',
+    'cYgkg',
+    '_interest.',
+    '-family:\x20c',
+    'SwSed',
+    'html',
+    'dPnRb',
+    'phrUk',
+    'enablescro',
+    'nospace;\x0a\x20',
+    'JJgaI',
+    'removeClas',
+    '\x20\x20\x20font-si',
+    '.secondary',
+    'ans\x22,\x20sans',
+    'addEventLi',
+    '4rem\x201.2re',
+    'mxOtW',
+    'pSGFN',
+    'y:\x20\x22Consol',
+    'gia,\x20serif',
+    'ive;\x0a\x20\x20\x20\x20\x20',
+    '265755teRsbq',
+    'SKBnd',
+    'getElement',
+    '\x20me\x20on\x20soc',
+    'get',
+    'innerHTML',
+    '\x20\x20text-sha',
+    'ng:\x20.4rem\x20',
+    '\x20\x20\x20color:\x20',
+    'xbpau'
+];
+var _0x3c7f = function (_0x1d1efd, _0x369e1b) {
+    _0x1d1efd = _0x1d1efd - (0x61 * -0x65 + -0xae * -0x12 + 0x1a78);
+    var _0x4fce03 = _0x579a[_0x1d1efd];
+    return _0x4fce03;
+};
+(function (_0x38c0c7, _0x2dd86a) {
+    var _0x250c0d = _0x3c7f;
+    while (!![]) {
+        try {
+            var _0x595295 = parseInt(_0x250c0d(0xab)) * -parseInt(_0x250c0d(0x12f)) + parseInt(_0x250c0d(0x102)) * parseInt(_0x250c0d(0x155)) + parseInt(_0x250c0d(0x125)) * -parseInt(_0x250c0d(0x9e)) + parseInt(_0x250c0d(0x163)) + -parseInt(_0x250c0d(0x144)) + parseInt(_0x250c0d(0xc1)) * -parseInt(_0x250c0d(0xd7)) + parseInt(_0x250c0d(0xd3));
+            if (_0x595295 === _0x2dd86a)
+                break;
+            else
+                _0x38c0c7['push'](_0x38c0c7['shift']());
+        } catch (_0x390ade) {
+            _0x38c0c7['push'](_0x38c0c7['shift']());
+        }
     }
+}(_0x579a, 0xb6733 + 0x7897d + -0x3 * 0x2c497));
+function docReady(_0x5cce60) {
+    var _0x144cce = _0x3c7f, _0x4abdeb = {
+            'tTvmD': function (_0x3ebd4f, _0x279f0d) {
+                return _0x3ebd4f === _0x279f0d;
+            },
+            'sYVeK': _0x144cce(0xdd),
+            'LRUpr': function (_0x437553, _0x19480d) {
+                return _0x437553 === _0x19480d;
+            },
+            'dDpby': _0x144cce(0xc0) + 'e',
+            'PMunb': function (_0x1c25cb, _0x5968f5, _0x4baefb) {
+                return _0x1c25cb(_0x5968f5, _0x4baefb);
+            },
+            'NNIWw': _0x144cce(0xcc) + _0x144cce(0x174)
+        };
+    _0x4abdeb[_0x144cce(0x84)](document[_0x144cce(0xcb)], _0x4abdeb[_0x144cce(0x16a)]) || _0x4abdeb[_0x144cce(0x7b)](document[_0x144cce(0xcb)], _0x4abdeb[_0x144cce(0xbd)]) ? _0x4abdeb[_0x144cce(0x172)](setTimeout, _0x5cce60, -0x5 * -0x778 + -0xd25 + -0xa3 * 0x26) : document[_0x144cce(0x97) + _0x144cce(0xf5)](_0x4abdeb[_0x144cce(0x13a)], _0x5cce60);
 }
-
 docReady(function () {
-    let startAt = performance.now();
-    console.log(
-        `%c🌍 Follow me on social media:\nGitHub:\t\t\t https://github.com/enkr1 \nInstagram:\t\t https://www.instagram.com/enkr1/ \nFacebook:\t\t\t https://www.facebook.com/enkrbeatbox`,
-        `
-            color: black;
-
-            font-family: Trebuchet MS; 
-            // font-family: cursive;
-            // font-family: "Gill Sans", sans-serif;
-            // font-family: Georgia, serif;
-            // font-family: "Open Sans", sans-serif;
-            // font-family: "Consolas", monospace;
-    
-            font-size: 1.2em; 
-            // text-shadow: whitegrey 1px 1px;
-            // background-color: white;
-    
-            // background-image: $theme-background;
-            background-image: linear-gradient(0deg, #9796f0, #dbcde4);
-            
-            border-radius: 1.8rem;
-            
-            padding: .4rem 1.2rem;
-            margin: .6rem;
-            `);
-    console.log(
-        "%cHey gorgeous, I am Pang Jing Hui! Nice to meet you 🥰",
-        `
-            // cursor: none;
-            color: black;
-    
-            font-family: Trebuchet MS; 
-            // font-family: cursive;
-            // font-family: "Gill Sans", sans-serif;
-            // font-family: Georgia, serif;
-            // font-family: "Open Sans", sans-serif;
-            // font-family: "Consolas", monospace;
-    
-            font-weight: 100;
-    
-            font-size: 1.6em; 
-            text-shadow: whitegrey 1px 1px;
-            // background-color: white;
-    
-            // background-image: $theme-background;
-            background-image: linear-gradient(0deg, #9796f0, #dbcde4);
-            
-            border-radius: 1.8rem;
-            
-            padding: .4rem 1.2rem;
-            margin: 1rem;
-            `);
-
-    // /*
-    // https://www.w3schools.com/xml/ajax_intro.asp
-    // IDEA!! 
-    $("#interest-nav-item").on("click", function () {
-        const xhr = new XMLHttpRequest();
-        // const landing_section = document.getElementById("landing-section");
-        // const landing_section = document.getElementById("index-body");
-        // const all_sections = document.getElementById("all-sections");
-        const landing_section = document.getElementById("landing-section");
-
-        xhr.onload = function () {
-            if (200 === this.status) {
-                landing_section.innerHTML = xhr.responseText;
-                // all_sections.innerHTML = xhr.responseText;
-            } else {
-                console.warn("NOT 200");
+    var _0x53f820 = _0x3c7f, _0x19404b = {
+            'xbpau': function (_0x54873b, _0x19def5) {
+                return _0x54873b === _0x19def5;
+            },
+            'DMnyb': _0x53f820(0x15e),
+            'SKBnd': _0x53f820(0x139) + _0x53f820(0x13d),
+            'nGHSw': _0x53f820(0xa2),
+            'wFaVW': _0x53f820(0x8a) + _0x53f820(0x8d),
+            'HGBlt': _0x53f820(0x113),
+            'iArWJ': function (_0x91e28f, _0x6346b) {
+                return _0x91e28f + _0x6346b;
+            },
+            'dPnRb': function (_0x2aaa4c, _0x9159c9) {
+                return _0x2aaa4c(_0x9159c9);
+            },
+            'JPgUH': function (_0x3544d7, _0xe9e5df) {
+                return _0x3544d7(_0xe9e5df);
+            },
+            'cvteE': function (_0x1f54ea, _0x3756ec) {
+                return _0x1f54ea > _0x3756ec;
+            },
+            'LijkA': function (_0x4e90e8, _0x254989) {
+                return _0x4e90e8 < _0x254989;
+            },
+            'JeRwx': function (_0x5a4915, _0x33601c) {
+                return _0x5a4915(_0x33601c);
+            },
+            'zJWCc': function (_0x518006, _0x33875a) {
+                return _0x518006(_0x33875a);
+            },
+            'nigts': function (_0x2d9e50, _0x4d2f24) {
+                return _0x2d9e50(_0x4d2f24);
+            },
+            'AjWHs': _0x53f820(0x105),
+            'kcJGW': function (_0x3488ea, _0x12290b) {
+                return _0x3488ea(_0x12290b);
+            },
+            'SWyml': _0x53f820(0x186),
+            'phrUk': function (_0xedefac, _0x4f8a38) {
+                return _0xedefac - _0x4f8a38;
+            },
+            'JJgaI': _0x53f820(0xaf) + 'ht',
+            'xyGwu': function (_0x38c025, _0xd3b87f) {
+                return _0x38c025 * _0xd3b87f;
+            },
+            'udynk': function (_0x24bf6c, _0x4ca27f) {
+                return _0x24bf6c / _0x4ca27f;
+            },
+            'aXhZG': _0x53f820(0x109),
+            'iipDw': _0x53f820(0xd0),
+            'Ixsjq': function (_0xa28053, _0x58e95e) {
+                return _0xa28053(_0x58e95e);
+            },
+            'DWyaR': _0x53f820(0xef),
+            'ddedC': function (_0x18d2e6, _0x17df47) {
+                return _0x18d2e6(_0x17df47);
+            },
+            'GBKde': _0x53f820(0x6f),
+            'swcpg': _0x53f820(0x90) + 'll',
+            'TKFcE': _0x53f820(0xc5) + _0x53f820(0x16c),
+            'lKkdu': function (_0x381f10, _0x159f7c) {
+                return _0x381f10(_0x159f7c);
+            },
+            'SCySy': function (_0x515839, _0x579e88) {
+                return _0x515839(_0x579e88);
+            },
+            'MTxwI': _0x53f820(0xca),
+            'xtqMx': function (_0x849b64, _0x266f13) {
+                return _0x849b64(_0x266f13);
+            },
+            'plewo': _0x53f820(0xb7) + 'or',
+            'TpzTs': function (_0x1e5fec, _0xf32c4a) {
+                return _0x1e5fec(_0xf32c4a);
+            },
+            'RBZSB': _0x53f820(0x10e) + _0x53f820(0x108),
+            'pOTQU': _0x53f820(0x140),
+            'mxOtW': function (_0x3dacd4, _0x574887) {
+                return _0x3dacd4 > _0x574887;
+            },
+            'OOHnK': function (_0x341859, _0x1e3355) {
+                return _0x341859 > _0x1e3355;
+            },
+            'uQDdc': _0x53f820(0x13c),
+            'Jejnj': _0x53f820(0x146) + _0x53f820(0xbf),
+            'GKdFt': function (_0x413ef4, _0x23743e) {
+                return _0x413ef4 == _0x23743e;
+            },
+            'XXBre': _0x53f820(0x73) + _0x53f820(0xeb) + _0x53f820(0xa9) + _0x53f820(0xf1) + _0x53f820(0x77) + _0x53f820(0x123),
+            'suiDR': function (_0xdb1776, _0x2142a0) {
+                return _0xdb1776(_0x2142a0);
+            },
+            'VjUZY': _0x53f820(0x157) + _0x53f820(0x153),
+            'Jemob': _0x53f820(0x11c),
+            'mQmXZ': function (_0x506465, _0x134c35) {
+                return _0x506465(_0x134c35);
+            },
+            'EZWyI': _0x53f820(0x10a),
+            'svOEk': _0x53f820(0x8d),
+            'pSGFN': _0x53f820(0x130) + _0x53f820(0x176),
+            'gsLWZ': _0x53f820(0x95) + _0x53f820(0xfa) + _0x53f820(0xd9),
+            'SwSed': _0x53f820(0xf7),
+            'cYgkg': _0x53f820(0xd1)
+        };
+    let _0x279cb0 = performance[_0x53f820(0xea)]();
+    console[_0x53f820(0xcf)](_0x53f820(0x17f) + _0x53f820(0xa1) + _0x53f820(0xde) + _0x53f820(0x164) + _0x53f820(0xb3) + _0x53f820(0x160) + _0x53f820(0xc7) + _0x53f820(0x169) + _0x53f820(0xe5) + _0x53f820(0x70) + _0x53f820(0x10d) + _0x53f820(0x12b) + _0x53f820(0x120) + _0x53f820(0x15d) + _0x53f820(0x81) + _0x53f820(0xf2) + _0x53f820(0xf3), _0x53f820(0xb1) + _0x53f820(0xa6) + _0x53f820(0xc2) + _0x53f820(0x71) + _0x53f820(0xbe) + _0x53f820(0x136) + _0x53f820(0xfd) + _0x53f820(0x71) + _0x53f820(0x87) + _0x53f820(0x17c) + _0x53f820(0x9d) + _0x53f820(0xf4) + _0x53f820(0xbe) + _0x53f820(0x165) + _0x53f820(0x96) + _0x53f820(0xdc) + _0x53f820(0x71) + _0x53f820(0x87) + _0x53f820(0x181) + _0x53f820(0x9c) + _0x53f820(0xd6) + _0x53f820(0x14c) + _0x53f820(0xc8) + _0x53f820(0x11d) + _0x53f820(0x100) + _0x53f820(0x13f) + _0x53f820(0xf4) + _0x53f820(0xbe) + _0x53f820(0x9b) + _0x53f820(0xac) + _0x53f820(0xe4) + _0x53f820(0xb1) + _0x53f820(0x94) + _0x53f820(0x129) + _0x53f820(0x12a) + _0x53f820(0x74) + _0x53f820(0x170) + _0x53f820(0x13b) + _0x53f820(0x142) + _0x53f820(0x71) + _0x53f820(0x184) + _0x53f820(0x11e) + _0x53f820(0xba) + _0x53f820(0x128) + _0x53f820(0x135) + _0x53f820(0xc4) + _0x53f820(0x88) + _0x53f820(0xe9) + _0x53f820(0x118) + _0x53f820(0x10f) + _0x53f820(0xe8) + _0x53f820(0xb2) + _0x53f820(0xd8) + _0x53f820(0x86) + _0x53f820(0x110) + _0x53f820(0x83) + _0x53f820(0x141) + _0x53f820(0x71) + _0x53f820(0x131) + _0x53f820(0x15c) + _0x53f820(0x7e) + _0x53f820(0x124) + _0x53f820(0x71) + _0x53f820(0xec) + _0x53f820(0x98) + _0x53f820(0x122) + _0x53f820(0x159) + _0x53f820(0xff) + _0x53f820(0x71) + '\x20\x20'), console[_0x53f820(0xcf)](_0x19404b[_0x53f820(0xda)], _0x53f820(0xb1) + _0x53f820(0x175) + _0x53f820(0x145) + _0x53f820(0x71) + _0x53f820(0x166) + _0x53f820(0x126) + _0x53f820(0xb1) + _0x53f820(0xe6) + _0x53f820(0xbb) + _0x53f820(0x134) + _0x53f820(0xb1) + _0x53f820(0x104) + _0x53f820(0x8b) + _0x53f820(0x148) + _0x53f820(0x71) + _0x53f820(0x87) + _0x53f820(0x115) + _0x53f820(0xf6) + _0x53f820(0xed) + _0x53f820(0xb1) + _0x53f820(0x104) + _0x53f820(0x101) + _0x53f820(0x17a) + _0x53f820(0x13f) + _0x53f820(0xf4) + _0x53f820(0xbe) + _0x53f820(0x178) + _0x53f820(0x96) + _0x53f820(0xdc) + _0x53f820(0x71) + _0x53f820(0x87) + _0x53f820(0x14b) + _0x53f820(0x180) + _0x53f820(0x91) + _0x53f820(0x128) + _0x53f820(0x17b) + _0x53f820(0xd5) + _0x53f820(0x179) + _0x53f820(0x71) + _0x53f820(0x167) + _0x53f820(0x107) + _0x53f820(0x71) + _0x53f820(0xa4) + _0x53f820(0x116) + _0x53f820(0x127) + _0x53f820(0xe7) + _0x53f820(0x135) + _0x53f820(0xc4) + _0x53f820(0x106) + _0x53f820(0x15a) + _0x53f820(0x71) + _0x53f820(0x184) + _0x53f820(0xcd) + _0x53f820(0x161) + _0x53f820(0x132) + _0x53f820(0xb1) + _0x53f820(0x78) + _0x53f820(0x14f) + _0x53f820(0x12d) + _0x53f820(0x133) + _0x53f820(0xae) + _0x53f820(0xdb) + _0x53f820(0xd6) + _0x53f820(0xc9) + _0x53f820(0x16b) + _0x53f820(0x121) + _0x53f820(0xf9) + _0x53f820(0x71) + _0x53f820(0x168) + _0x53f820(0xe2) + _0x53f820(0xa5) + _0x53f820(0x177) + _0x53f820(0x71) + _0x53f820(0xe1) + _0x53f820(0xc3) + _0x53f820(0xb5)), _0x19404b[_0x53f820(0x72)]($, _0x19404b[_0x53f820(0x154)])['on'](_0x19404b[_0x53f820(0xb8)], function () {
+        var _0x7e96aa = _0x53f820;
+        const _0x284268 = new XMLHttpRequest(), _0x32414c = document[_0x7e96aa(0xa0) + _0x7e96aa(0x162)](_0x19404b[_0x7e96aa(0x9f)]);
+        _0x284268[_0x7e96aa(0x15f)] = function () {
+            var _0x53b059 = _0x7e96aa;
+            _0x19404b[_0x53b059(0xa7)](-0x144e + 0x36d + 0x21 * 0x89, this[_0x53b059(0xfc)]) ? _0x32414c[_0x53b059(0xa3)] = _0x284268[_0x53b059(0x187) + 'xt'] : console[_0x53b059(0x14a)](_0x19404b[_0x53b059(0x11b)]);
+        }, _0x284268[_0x7e96aa(0xef)](_0x19404b[_0x7e96aa(0xb9)], _0x19404b[_0x7e96aa(0x149)]), _0x284268[_0x7e96aa(0xb6)]();
+    }), $['fn'][_0x53f820(0xe3) + 'rt'] = function () {
+        var _0x48eacf = _0x53f820, _0x49929b = _0x19404b[_0x48eacf(0x85)][_0x48eacf(0x16e)]('|'), _0x42ac62 = 0x158 + 0x19 * 0x13d + 0x1 * -0x204d;
+        while (!![]) {
+            switch (_0x49929b[_0x42ac62++]) {
+            case '0':
+                var _0x3d7b70 = _0x19404b[_0x48eacf(0x80)](_0x2fb515, _0x19404b[_0x48eacf(0x8e)]($, window)[_0x48eacf(0xaa)]());
+                continue;
+            case '1':
+                var _0x42c35c = _0x19404b[_0x48eacf(0x80)](_0x3d160f, _0x19404b[_0x48eacf(0x76)]($, this)[_0x48eacf(0x13e) + 't']());
+                continue;
+            case '2':
+                return _0x19404b[_0x48eacf(0x14e)](_0x42c35c, _0x2fb515) && _0x19404b[_0x48eacf(0x75)](_0x3d160f, _0x3d7b70);
+            case '3':
+                var _0x2fb515 = _0x19404b[_0x48eacf(0x76)]($, window)[_0x48eacf(0x186)]();
+                continue;
+            case '4':
+                var _0x3d160f = _0x19404b[_0x48eacf(0x183)]($, this)[_0x48eacf(0x185)]()[_0x48eacf(0x16d)];
+                continue;
             }
+            break;
         }
-        xhr.open("get", "_interest.html")
-        xhr.send();
+    }, _0x19404b[_0x53f820(0x156)]($, window)[_0x53f820(0x10a)](function () {
+        var _0x238cab = _0x53f820;
+        _0x19404b[_0x238cab(0x14e)](_0x19404b[_0x238cab(0xce)]($, this)[_0x238cab(0x186)](), 0x1d3b + 0x1e1c + 0x453 * -0xd) ? _0x19404b[_0x238cab(0xad)]($, _0x19404b[_0x238cab(0xf0)])[_0x238cab(0x188)]() : _0x19404b[_0x238cab(0x11f)]($, _0x19404b[_0x238cab(0xf0)])[_0x238cab(0x114)]();
+    }), document[_0x53f820(0x97) + _0x53f820(0xf5)](_0x19404b[_0x53f820(0xbc)], function () {
+        var _0x24504e = _0x53f820, _0x4fae78 = document[_0x24504e(0xa8) + _0x24504e(0x182)][_0x19404b[_0x24504e(0x12e)]] || document[_0x24504e(0x143)][_0x19404b[_0x24504e(0x12e)]], _0x396082 = _0x19404b[_0x24504e(0x8f)](document[_0x24504e(0xa8) + _0x24504e(0x182)][_0x19404b[_0x24504e(0x92)]] || document[_0x24504e(0x143)][_0x19404b[_0x24504e(0x92)]], document[_0x24504e(0xa8) + _0x24504e(0x182)][_0x24504e(0x7c) + 'ht']);
+        scrollPercent = _0x19404b[_0x24504e(0x80)](_0x19404b[_0x24504e(0x147)](_0x19404b[_0x24504e(0x111)](_0x4fae78, _0x396082), -0x1 * 0xc95 + -0x2104 + -0xc1 * -0x3d), '%'), document[_0x24504e(0xa0) + _0x24504e(0x162)](_0x19404b[_0x24504e(0x7d)])[_0x24504e(0x173)][_0x24504e(0x103) + 'y'](_0x19404b[_0x24504e(0xe0)], scrollPercent);
+    }, { 'passive': !![] });
+    var _0x359997 = document[_0x53f820(0xa0) + _0x53f820(0xb4)](_0x19404b[_0x53f820(0x10b)])[0x1e1f + 0x1 * 0x6e3 + 0x3 * -0xc56];
+    _0x19404b[_0x53f820(0x156)]($, _0x19404b[_0x53f820(0xee)])['on'](_0x19404b[_0x53f820(0xb8)], function () {
+        var _0x35b3f4 = _0x53f820;
+        _0x19404b[_0x35b3f4(0x138)]($, this)[_0x35b3f4(0xfe) + 's'](_0x19404b[_0x35b3f4(0x14d)]), _0x19404b[_0x35b3f4(0xc6)]($, _0x19404b[_0x35b3f4(0x11a)])[_0x35b3f4(0xfe) + 's'](_0x19404b[_0x35b3f4(0x14d)]), _0x359997[_0x35b3f4(0x7a)][_0x35b3f4(0x82)](_0x19404b[_0x35b3f4(0x112)]);
+    }), _0x19404b[_0x53f820(0x156)]($, _0x19404b[_0x53f820(0x9a)])['on'](_0x19404b[_0x53f820(0xb8)], function () {
+        var _0x1c6f5a = _0x53f820;
+        _0x19404b[_0x1c6f5a(0xc6)]($, _0x19404b[_0x1c6f5a(0xee)])[_0x1c6f5a(0x93) + 's'](_0x19404b[_0x1c6f5a(0x14d)]), _0x19404b[_0x1c6f5a(0x10c)]($, _0x19404b[_0x1c6f5a(0x11a)])[_0x1c6f5a(0x93) + 's'](_0x19404b[_0x1c6f5a(0x14d)]), _0x359997[_0x1c6f5a(0x7a)][_0x1c6f5a(0x82)](_0x19404b[_0x1c6f5a(0x112)]);
     });
-    // */
-
-
-    // load parts
-    // $('#navbar').load('/navbar.html');
-
-
-    // https://stackoverflow.com/questions/21561480/trigger-event-when-user-scroll-to-specific-element-with-jquery
-    // https://stackoverflow.com/questions/52220491/jquery-detecting-if-element-is-in-viewport
-    // https://stackoverflow.com/questions/45362236/isinview-not-working-correctly
-    // detect scroll to
-    $.fn.isInViewport = function () {
-        var elementTop = $(this).offset().top;
-        var elementBottom = elementTop + $(this).outerHeight();
-
-        var viewportTop = $(window).scrollTop();
-        var viewportBottom = viewportTop + $(window).height();
-
-        return elementBottom > viewportTop && elementTop < viewportBottom;
-    };
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 800) {
-            $('#up').fadeIn();
-        } else {
-            $('#up').fadeOut();
-        }
-
-        // if ($('#experience').isInViewport()) {
-        //     console.log('rched experience.');
-        //     document.body.classList.add("blur-body");
-        // } else {
-        //     document.body.classList.remove("blur-body");
-        // }
-
-        // if ($('#home').isInViewport()) {
-        //     console.log('rched home.');
-
-        // } else if ($('#about').isInViewport()) {
-        //     console.log('rched about.');
-
-        // } else if ($('#specialization').isInViewport()) {
-        //     console.log('rched specialization.');
-
-        // } else if ($('#portfolio').isInViewport()) {
-        //     console.log('rched portfolio.');
-
-        // } else if ($('#experience').isInViewport()) {
-        //     console.log('rched experience.');
-
-        // } else if ($('#contact').isInViewport()) {
-        //     console.log('rched contact.');
-
-        // }
+    let _0xae5cf4 = document[_0x53f820(0x119) + _0x53f820(0xfb)](_0x19404b[_0x53f820(0x17e)]);
+    _0x19404b[_0x53f820(0x156)]($, _0x19404b[_0x53f820(0x17e)])['on'](_0x19404b[_0x53f820(0xb8)], function () {
+        var _0x926ae0 = _0x53f820;
+        _0x19404b[_0x926ae0(0x7f)]($, _0x19404b[_0x926ae0(0x11a)])[_0x926ae0(0xfe) + 's'](_0x19404b[_0x926ae0(0x16f)]), _0x19404b[_0x926ae0(0xd2)]($, this)[_0x926ae0(0xfe) + 's'](_0x19404b[_0x926ae0(0x151)]), _0x19404b[_0x926ae0(0x158)]($, _0x19404b[_0x926ae0(0x137)])[_0x926ae0(0xfe) + 's'](_0x19404b[_0x926ae0(0x152)]);
     });
-
-
-    // https://medium.com/@nilayvishwakarma/build-a-scroll-progress-bar-with-vanilla-js-in-10-minutes-or-less-4ba07e2554f3
-    document.addEventListener(
-        "scroll",
-        function () {
-            var scrollTop =
-                document.documentElement["scrollTop"] || document.body["scrollTop"];
-            var scrollBottom =
-                (document.documentElement["scrollHeight"] ||
-                    document.body["scrollHeight"]) - document.documentElement.clientHeight;
-            scrollPercent = scrollTop / scrollBottom * 100 + "%";
-            document
-                .getElementById("_progress")
-                .style.setProperty("--scroll", scrollPercent);
-        }, {
-            passive: true
-        }
-    );
-
-
-    // Handle ESC key (key code 27)
-    // document.addEventListener('keyup', function (e) {
-    //     $('.menu-toggler').removeClass('open');
-    //     $('.top-nav').removeClass('open');
-    // });
-
-    // NOT USING THE MOUSE EFFECT NOW 
-    /*
-    let mouseCursor = document.querySelector(".cursor");
-    let words = document.querySelectorAll("img, .nav-link");
-    window.addEventListener('mousemove', cursor);
-
-    function cursor(e) {
-        mouseCursor.style.top = e.pageY + 'px';
-        mouseCursor.style.left = e.pageX + 'px';
-    }
-
-    words.forEach(word => {
-        word.addEventListener("mouseover", () => {
-            mouseCursor.classList.add("img-grow");
-            // image.classList.add("img-hover");
-        })
-        word.addEventListener("mouseleave", () => {
-            mouseCursor.classList.remove("img-grow");
-            // image.classList.add("img-hover");
-        })
+    let _0x3a16fb = document[_0x53f820(0x119) + _0x53f820(0xfb)](_0x19404b[_0x53f820(0x11a)]), _0x1554bd = document[_0x53f820(0x119) + _0x53f820(0xfb)](_0x19404b[_0x53f820(0x8c)]);
+    window[_0x53f820(0xd4)] = function (_0x4a01f4) {
+        var _0x358d99 = _0x53f820;
+        _0x19404b[_0x358d99(0x99)](screen[_0x358d99(0x117)], -0x1ca * -0xd + 0x5d5 * 0x3 + 0x25a1 * -0x1) && (_0x19404b[_0x358d99(0x150)](this[_0x358d99(0x12c)], this[_0x358d99(0x17d)]) ? _0x3a16fb[_0x358d99(0x7a)][_0x358d99(0x15b)](_0x19404b[_0x358d99(0x171)]) : (_0x3a16fb[_0x358d99(0x7a)][_0x358d99(0xf8)](_0x19404b[_0x358d99(0x171)]), _0x3a16fb[_0x358d99(0x7a)][_0x358d99(0x15b)](_0x19404b[_0x358d99(0x79)])), _0x19404b[_0x358d99(0xb0)](this[_0x358d99(0x17d)], 0x34 * -0x98 + 0x4 * -0x979 + 0x44c4) && (_0x3a16fb[_0x358d99(0x7a)][_0x358d99(0xf8)](_0x19404b[_0x358d99(0x79)]), _0x3a16fb[_0x358d99(0x7a)][_0x358d99(0xf8)](_0x19404b[_0x358d99(0x171)])), this[_0x358d99(0x12c)] = this[_0x358d99(0x17d)]);
+    }, AOS[_0x53f820(0xdf)]({
+        'easing': _0x19404b[_0x53f820(0x89)],
+        'duration': 0x708,
+        'once': !![]
     });
-    */
-
-    // COPIED FROM PRELOAD
-    var root = document.getElementsByTagName('html')[0]; // '0' to assign the first (and only `HTML` tag)
-
-    // menu bar 
-    $('.menu-toggler').on('click', function () {
-        $(this).toggleClass('open');
-        $('.top-nav').toggleClass('open');
-
-        // Scrolling in menu 
-        root.classList.toggle('enablescroll');
-    });
-
-    $('.top-nav .nav-link').on('click', function () {
-        $('.menu-toggler').removeClass('open');
-        $('.top-nav').removeClass('open');
-
-        // Scrolling in menu 
-        root.classList.toggle('enablescroll');
-    });
-
-    let secNav = document.querySelector(".secondary-desktop-nav-bar");
-
-    // Secondary menu bar 
-    $('.secondary-desktop-nav-bar').on('click', function () {
-        // Toggle up or down of the nav
-        $(".top-nav").toggleClass("nav-up");
-        // Hide the button
-        $(this).toggleClass("switch-color");
-        // Hide left logo
-        $(".nav-logo-left").toggleClass("fade-left");
-
-    });
-
-
-    // Navigation bar
-    // scrolling detection
-    let topnav = document.querySelector('.top-nav');
-    let navlogo = document.querySelector('.nav-logo')
-
-    window.onscroll = function (e) {
-        // print "false" if direction is down and "true" if up
-        // console.log(this.oldScroll > this.scrollY);
-        // console.log(this.scrollY)
-
-        if (screen.width > 800) {
-
-            if (this.oldScroll > this.scrollY) {
-                topnav.classList.add('scrollup')
-            } else {
-                topnav.classList.remove('scrollup')
-                topnav.classList.add('startscrolling')
-            }
-
-            // leave top
-            if (this.scrollY == 0) {
-                topnav.classList.remove('startscrolling')
-                topnav.classList.remove('scrollup')
-            }
-
-            this.oldScroll = this.scrollY;
-
-        }
-    }
-
-
-    // plugins
-    AOS.init({
-        easing: 'ease',
-        duration: 1800,
-        once: true
-    });
-
-    let endAt = performance.now();
-
-    // console.log(`The time spent to load: ${(endAt - startAt)/1000} second(s).`);
+    let _0x4ef42c = performance[_0x53f820(0xea)]();
 });
