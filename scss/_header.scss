@@ -1,6 +1,9 @@
 // NEW
 // Navigation bar 
 // ONLY AVAILABLE ON WEB
+.nav-logo-left {
+    display: none;
+}
 @media all and (min-width: $screen_md_2 + 1px) {
     .nav-up {
         transform: translateY(-100%);
@@ -14,6 +17,7 @@
     }
 
     .nav-logo-left {
+        display: block;
         position: fixed;
         text-align: center;
         letter-spacing: $logo-text-letter-spacing;
@@ -40,6 +44,7 @@
         cursor: pointer;
         transform: translateY(1em);
 
+        /*
         // For the animation to go back
         &::after {
             position: absolute;
@@ -55,6 +60,7 @@
             font-size: 1px;
             font-style: italic;
         }
+        */
 
         &:hover {
             transform: translateY(1em) scale(1.1);

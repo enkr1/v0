@@ -890,6 +890,10 @@ span {
 }
 
 /*End global*/
+.nav-logo-left {
+  display: none;
+}
+
 @media all and (min-width: 993px) {
   .nav-up {
     -webkit-transform: translateY(-100%);
@@ -902,6 +906,7 @@ span {
   }
 
   .nav-logo-left {
+    display: block;
     position: fixed;
     text-align: center;
     letter-spacing: 0.6rem;
@@ -928,25 +933,23 @@ span {
     cursor: pointer;
     -webkit-transform: translateY(1em);
             transform: translateY(1em);
-  }
-  .secondary-desktop-nav-bar::after {
-    position: absolute;
-    -webkit-transform: translateY(1em);
-            transform: translateY(1em);
-    top: .6em;
-    right: 0;
-    color: #dedef5;
-    opacity: 0;
-    content: "Menu Toggle";
-    white-space: nowrap;
-    -webkit-transition: all .4s;
-    transition: all .4s;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    font-size: 1px;
-    font-style: italic;
+    /*
+    // For the animation to go back
+    &::after {
+        position: absolute;
+        transform: translateY(1em);
+        top: .6em;
+        right: 0;
+        color: $theme-font-color;
+        opacity: 0;            
+        content: "Menu Toggle";
+        white-space: nowrap;
+        transition: all .4s;
+        user-select: none;
+        font-size: 1px;
+        font-style: italic;
+    }
+    */
   }
   .secondary-desktop-nav-bar:hover {
     -webkit-transform: translateY(1em) scale(1.1);
