@@ -1622,7 +1622,7 @@ box-shadow:
   z-index: -1;
   font-size: 28rem;
   /* Neumorphism Theme */
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.15);
 }
 @media all and (max-width: 1024px) {
   .about-details .about-heading h1 {
@@ -1754,7 +1754,7 @@ box-shadow:
   }
   .specialization .section-heading h1 {
     font-size: 28rem;
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.15);
     -webkit-transform: translate(0.6em, -1em);
             transform: translate(0.6em, -1em);
   }
@@ -1862,6 +1862,36 @@ box-shadow:
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .experience {
+    overflow: hidden;
+  }
+  .experience .section-heading {
+    position: absolute;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    z-index: -1;
+    top: 0;
+  }
+  .experience .section-heading h1 {
+    font-size: 20rem;
+    color: rgba(255, 255, 255, 0.15);
+    -webkit-transform: translate(-10rem, -20%);
+            transform: translate(-10rem, -20%);
+  }
+  .experience .section-heading h6 {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .experience .journey-container {
+    height: 100vh;
+    -webkit-transform: translate(0, 40%);
+            transform: translate(0, 40%);
   }
 }
 .experience .timeline {
@@ -2213,7 +2243,7 @@ box-shadow:
   color: #9796f0;
   width: 100%;
   position: relative;
-  height: 6rem;
+  min-height: 6rem;
   overflow: hidden;
   margin: 2rem auto;
 }
@@ -2251,6 +2281,7 @@ select:-webkit-autofill:focus {
 }
 
 .message-section textarea {
+  resize: vertical;
   width: 100%;
   height: 100%;
   padding-top: 3.6rem;
@@ -2296,6 +2327,7 @@ select:-webkit-autofill:focus {
 .content-name,
 .content-email,
 .content-message {
+  top: 50%;
   position: absolute;
   bottom: 5px;
   left: 0;
@@ -2312,12 +2344,13 @@ select:-webkit-autofill:focus {
 .name-section input:valid + .label-name .content-name,
 .email-section input:focus + .label-email .content-email,
 .email-section input:valid + .label-email .content-email,
-.email-section input:placeholder-shown + .label-email .content-email,
+.email-section input:not([value=""]):not(:focus) + .label-email .content-email,
 .message-section textarea:focus + .label-message .content-message,
 .message-section textarea:valid + .label-message .content-message {
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  top: 0;
   color: #dbcde4;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .name-section input:focus + .label-name::after,
