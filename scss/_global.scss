@@ -331,6 +331,7 @@ span {
 // For js body
 .hide-all-in-body {
     opacity: 0;
+    transition: all .6 ease-in-out; // TODO: Double check does it work 
 }
 
 $nav-logo-left-y: .3em;
