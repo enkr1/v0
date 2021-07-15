@@ -632,8 +632,6 @@ span {
 
 .hide-all-in-body {
   opacity: 0;
-  -webkit-transition: all .6 ease-in-out;
-  transition: all .6 ease-in-out;
 }
 
 .fade-left {
