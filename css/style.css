@@ -1871,7 +1871,7 @@ box-shadow:
     display: none;
   }
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 992px) {
   .experience .journey-container {
     height: 100vh;
     -webkit-transform: translate(0, 30%);
