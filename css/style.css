@@ -935,8 +935,8 @@ span {
     cursor: pointer;
     -webkit-transform: translateY(1em);
             transform: translateY(1em);
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease;
+    -webkit-transition: all 1.4s ease-in-out;
+    transition: all 1.4s ease-in-out;
     /*
     // For the animation to go back
     &::after {
