@@ -1721,7 +1721,7 @@ box-shadow:
     height: fit-content;
   }
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 992px) {
   .specialization {
     overflow: hidden;
   }
@@ -1750,7 +1750,7 @@ box-shadow:
     display: none;
   }
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 992px) {
   .specialization .skills-container {
     height: 100vh;
     -webkit-transform: translate(0, 30vh);
@@ -1845,7 +1845,7 @@ box-shadow:
     height: fit-content;
   }
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 992px) {
   .experience {
     overflow: hidden;
   }
@@ -1857,12 +1857,15 @@ box-shadow:
             user-select: none;
     z-index: -1;
     top: 0;
+    left: 0;
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+    -webkit-transform: translate(-30%, 50%) rotate(-90deg);
+            transform: translate(-30%, 50%) rotate(-90deg);
   }
   .experience .section-heading h1 {
-    font-size: 20rem;
+    font-size: 10rem;
     color: rgba(255, 255, 255, 0.15);
-    -webkit-transform: translate(-10rem, -20%);
-            transform: translate(-10rem, -20%);
   }
   .experience .section-heading h6 {
     display: none;
@@ -1871,8 +1874,8 @@ box-shadow:
 @media only screen and (min-width: 1440px) {
   .experience .journey-container {
     height: 100vh;
-    -webkit-transform: translate(0, 40%);
-            transform: translate(0, 40%);
+    -webkit-transform: translate(0, 30%);
+            transform: translate(0, 30%);
   }
 }
 .experience .timeline {

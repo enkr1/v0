@@ -7,7 +7,7 @@
     }
 
     // TODO: WIP THE NEW DESIGN 
-    @media only screen and (min-width: $screen_xl) {
+    @media only screen and (min-width: $screen_md_2) {
         overflow: hidden;
 
         .section-heading {
@@ -38,7 +38,7 @@
     }
 
     // TODO: WIP THE NEW DESIGN 
-    @media only screen and (min-width: $screen_xl) {
+    @media only screen and (min-width: $screen_md_2) {
         .skills-container {
             // ...    
             height: 100vh;

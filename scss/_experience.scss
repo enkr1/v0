@@ -7,7 +7,7 @@
     }
 
     // TODO: WIP THE NEW DESIGN 
-    @media only screen and (min-width: $screen_xl) {
+    @media only screen and (min-width: $screen_md_2) {
         overflow: hidden;
 
         .section-heading {
@@ -15,11 +15,15 @@
             user-select: none;
             z-index: -1;
             top: 0;
+            left: 0;
+            // transform: rotate(-90deg);
+            transform-origin: bottom;
+            transform: translate(-30%, 50%) rotate(-90deg);
 
             h1 {
-                font-size: 20rem;
+                font-size: 10rem;
                 color: $theme-h1-color;
-                transform: translate(-10rem, -20%);
+                // transform: translate(-10rem, -20%);
 
                 // &::after {
                 //     content: "experience";
@@ -40,7 +44,7 @@
         .journey-container {
             // ...    
             height: 100vh;
-            transform: translate(0, 40%);
+            transform: translate(0, 30%);
         }
     }
 
