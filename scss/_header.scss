@@ -4,6 +4,7 @@
 .nav-logo-left {
     display: none;
 }
+
 @media all and (min-width: $screen_md_2 + 1px) {
     .nav-up {
         transform: translateY(-100%);
@@ -32,7 +33,6 @@
     }
 
     .secondary-desktop-nav-bar {
-        // display: none;
         position: fixed;
         right: 2em;
         height: 1.6em;
@@ -43,6 +43,7 @@
         box-shadow: $neumorphism-box-shadow;
         cursor: pointer;
         transform: translateY(1em);
+        transition: all 1.4s ease-in-out;
 
         /*
         // For the animation to go back
@@ -383,9 +384,10 @@ li {
 .scrollup {
     /* height: 6vh; */
     background-color: #10212888;
-    /* browser support */
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
     transition: all 1s ease;
+}
+
+// For animating the right toggle button (dot) to fade up
+.scroll-down-right-toggle-btn {
+    transform: translate(0, -100%);
 }
