@@ -27,31 +27,6 @@
             height: auto;
         }
     }
-
-    // THIS IMAGE IS ALREADY REMOVED 
-    .profile-img {
-        // TODO: REMOVE TESTING
-        display: none;
-
-        flex: 1;
-        margin-right: 5rem;
-        /* animation: pulse 2s infinite; */
-        z-index: 2;
-
-        @media all and (max-width: $screen_sm) {
-            margin: 0 0 7rem 0;
-        }
-
-        img {
-            transform: scale(.7);
-            /*  Neumorphism Theme */
-            box-shadow: 0px 0px 29px -5px rgba(0, 0, 0, 0.5);
-
-            @media all and (max-width: $screen_md_1) {
-                transform: scale(1.06);
-            }
-        }
-    }
 }
 
 /* .profile-img a img:hover {

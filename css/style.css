@@ -1580,33 +1580,6 @@ box-shadow:
     height: auto;
   }
 }
-.about .container .profile-img {
-  display: none;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin-right: 5rem;
-  /* animation: pulse 2s infinite; */
-  z-index: 2;
-}
-@media all and (max-width: 768px) {
-  .about .container .profile-img {
-    margin: 0 0 7rem 0;
-  }
-}
-.about .container .profile-img img {
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
-  /*  Neumorphism Theme */
-  -webkit-box-shadow: 0px 0px 29px -5px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 0px 29px -5px rgba(0, 0, 0, 0.5);
-}
-@media all and (max-width: 1024px) {
-  .about .container .profile-img img {
-    -webkit-transform: scale(1.06);
-            transform: scale(1.06);
-  }
-}
 
 /* .profile-img a img:hover {
     transition: all 0.7s ease; 
