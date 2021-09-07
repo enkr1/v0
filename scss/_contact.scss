@@ -98,7 +98,7 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
     /* -webkit-text-fill-color: rgb(197, 197, 197); */
-    -webkit-text-fill-color: #eee;
+    -webkit-text-fill-color: $theme-font-color;
     -webkit-box-shadow: $theme-dark-color;
     transition: background-color 5000s ease-in-out 0s;
 }
@@ -173,7 +173,8 @@ select:-webkit-autofill:focus {
 .email-section input:focus+.label-email .content-email,
 .email-section input:valid+.label-email .content-email,
 // FIXME: Temp fix https://stackoverflow.com/questions/8639282/notempty-css-selector-is-not-working
-.email-section input:not([value=""]):not(:focus)+.label-email .content-email, // make invalid stay on top too
+.email-section input:not([value=""]):not(:focus)+.label-email .content-email,
+// make invalid stay on top too
 // .email-section input:placeholder-shown+.label-email .content-email,
 .message-section textarea:focus+.label-message .content-message,
 .message-section textarea:valid+.label-message .content-message {
