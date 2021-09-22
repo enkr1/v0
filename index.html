@@ -29,6 +29,7 @@
   <title>ENKR | Pang Jing Hui | 彭競辉</title>
 
   <!-- Start of External -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
@@ -274,6 +275,7 @@
       </div>
     </section>
 
+
     <section class="portfolio" id="portfolio">
       <div class="container">
         <div class="section-heading">
@@ -281,52 +283,10 @@
           <h6>My finished works and recent projects</h6>
         </div>
 
-        <div class="portfolio-item" data-aos="fade-right" data-aos-delay="100">
-
-          <div class="portfolio-img-div has-margin-right">
-            <img src="images/portfolio/555_website.png" alt="ENKR | 555 Beatbox Initiative" />
-          </div>
-
-          <div class="portfolio-description">
-            <h6>Web Design & Development</h6>
-            <h1>555 Beatbox Initiative</h1>
-            <p>
-              555 Beatbox Initiative website is aimed for
-              encouraging the beatboxers and non beatboxers to get involved in the
-              community. Side note, this is one of the current web projects that I am currently developing on.
-            </p>
-
-            <a target="_blank" href="https://enkr1.github.io/555beatbox/" class="cta">View</a>
-          </div>
-
-        </div>
+        <portfolio-items-component></portfolio-items-component>
 
 
-        <div class="portfolio-item" data-aos="fade-in" data-aos-delay="200">
-
-          <div class="portfolio-description has-margin-right">
-            <h6>Web Design</h6>
-            <h1>Redesign Yinen Crystals</h1>
-            <p>
-              In 2019, for my UX/UI specialization module, I redesigned an existing Singapore commercial website and
-              applied
-              a grid system and optimised the graphics for web purposes.
-              <!-- The design of this website will be a solution to help users find relevant information using
-                          principles like visual hierarchy, colours, typography and images.
-                          The new design of the website provides some unique features to attract users to find it useful. -->
-            </p>
-
-            <a target="_blank" href="https://xd.adobe.com/view/70da2996-2e62-4834-7d54-20ed619382b6-06eb/"
-              class="cta">View Prototype</a>
-          </div>
-
-          <div class="portfolio-img-div ">
-            <img src="images/portitem1.jpg" alt="" />
-          </div>
-
-        </div>
-
-        <div class="portfolio-item" data-aos="fade-right" data-aos-delay="300">
+        <!-- <div class="portfolio-item" data-aos="fade-right" data-aos-delay="300">
           <div class="portfolio-img-div has-margin-right">
             <img src="images/portitem2.jpg" alt="" />
           </div>
@@ -346,27 +306,9 @@
 
         </div>
 
-        <div class="portfolio-item" data-aos="fade-in" data-aos-delay="300">
-
-          <div class="portfolio-description has-margin-right">
-            <h6>Design</h6>
-            <h1>Custom Shoes Design</h1>
-            <p>
-              I designed many projects and I customised them as well. This is
-              one of my favourite products. I do product design and sketching.
-            </p>
-            <a target="_blank" href="https://www.instagram.com/p/B0YcuLVnnlu/" class="cta">View Details</a>
-          </div>
-
-          <div class="portfolio-img-div ">
-            <img src="images/portitem3.jpg" alt="" />
-          </div>
-
-        </div>
-
         <a href="portfolio" class="cta view-more-btn" data-aos="fade-up" data-aos-delay="400">
           View more projects
-        </a>
+        </a> -->
 
 
       </div>
@@ -426,6 +368,7 @@
   <footer-component></footer-component>
 
   <!-- Start of External -->
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <!-- End of External -->
@@ -433,10 +376,11 @@
   <script type="text/javascript" defer src="js/main.js"></script>
   <script type="text/javascript" defer src="js/components/preloader.js"></script>
   <script type="text/javascript" defer src="js/components/leaves.js"></script>
+  <script type="text/javascript" defer src="js/components/portfolio-items.js"></script>
   <script type="text/javascript" defer src="js/components/footer.js"></script>
 
   <script>
-
+    /*
     // typing effects
     const landingtexts = [
       "i design website and mobile applications.",
@@ -503,6 +447,7 @@
         timer = null;
       }
     }, 800);
+    */
   </script>
 
 </body>
