@@ -6,7 +6,7 @@
         height: fit-content;
     }
 
-    // TODO: WIP THE NEW DESIGN 
+    // TODO: WIP THE NEW DESIGN
     @media only screen and (min-width: $screen_md_2) {
         overflow: hidden;
 
@@ -18,7 +18,7 @@
             left: 0;
             // transform: rotate(-90deg);
             transform-origin: bottom;
-            transform: translate(-30%, 50%) rotate(-90deg);
+            transform: translate(-30%, 80%) rotate(-90deg);
 
             h1 {
                 font-size: 10rem;
@@ -39,10 +39,10 @@
         }
     }
 
-    // TODO: WIP THE NEW DESIGN 
+    // TODO: WIP THE NEW DESIGN
     @media only screen and (min-width: $screen_md_2) {
         .journey-container {
-            // ...    
+            // ...
             height: 100vh;
             transform: translate(0, 30%);
         }
