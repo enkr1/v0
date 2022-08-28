@@ -3,11 +3,12 @@
     height: fit-content;
 
     .portfolio-items-swiper {
+        margin: 2rem 0 0;
 
         .swiper-wrapper {
             .portfolio-item {
                 // .swiper-slide
-                margin: 0 1rem;
+                // margin: 0 1rem;
 
                 .portfolio-img-div {
 
@@ -24,6 +25,38 @@
                 p,
                 a {
                     user-select: none;
+                }
+
+                .portfolio-project_name {
+                    margin: 0;
+                }
+
+                .portfolio-description {
+
+                    .portfolio-category {
+                        margin: 0;
+                        font-size: 1.6rem;
+                        color: $theme-color;
+                        transform: translate(0, -0.4rem);
+                        display: block;
+                    }
+
+                    .cta {
+                        display: inline-block;
+                        margin-top: 1.2rem;
+                        font-size: 1.3rem;
+                        text-transform: uppercase;
+                        color: $theme-light-color;
+
+                        @media all and (max-width: $screen_sm) {
+                            margin-bottom: 2rem;
+                        }
+
+                        &:hover,
+                        &:hover {
+                            color: $theme-color;
+                        }
+                    }
                 }
             }
         }

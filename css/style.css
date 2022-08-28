@@ -1860,8 +1860,8 @@ box-shadow:
     left: 0;
     -webkit-transform-origin: bottom;
             transform-origin: bottom;
-    -webkit-transform: translate(-30%, 50%) rotate(-90deg);
-            transform: translate(-30%, 50%) rotate(-90deg);
+    -webkit-transform: translate(-30%, 80%) rotate(-90deg);
+            transform: translate(-30%, 80%) rotate(-90deg);
   }
   .experience .section-heading h1 {
     font-size: 10rem;
@@ -2029,8 +2029,8 @@ box-shadow:
   height: -moz-fit-content;
   height: fit-content;
 }
-.portfolio .portfolio-items-swiper .swiper-wrapper .portfolio-item {
-  margin: 0 1rem;
+.portfolio .portfolio-items-swiper {
+  margin: 2rem 0 0;
 }
 .portfolio .portfolio-items-swiper .swiper-wrapper .portfolio-item .portfolio-img-div img {
   height: 40rem;
@@ -2046,6 +2046,32 @@ box-shadow:
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+.portfolio .portfolio-items-swiper .swiper-wrapper .portfolio-item .portfolio-project_name {
+  margin: 0;
+}
+.portfolio .portfolio-items-swiper .swiper-wrapper .portfolio-item .portfolio-description .portfolio-category {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #9796f0;
+  -webkit-transform: translate(0, -0.4rem);
+          transform: translate(0, -0.4rem);
+  display: block;
+}
+.portfolio .portfolio-items-swiper .swiper-wrapper .portfolio-item .portfolio-description .cta {
+  display: inline-block;
+  margin-top: 1.2rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: #dbcde4;
+}
+@media all and (max-width: 768px) {
+  .portfolio .portfolio-items-swiper .swiper-wrapper .portfolio-item .portfolio-description .cta {
+    margin-bottom: 2rem;
+  }
+}
+.portfolio .portfolio-items-swiper .swiper-wrapper .portfolio-item .portfolio-description .cta:hover, .portfolio .portfolio-items-swiper .swiper-wrapper .portfolio-item .portfolio-description .cta:hover {
+  color: #9796f0;
 }
 
 /*End portfolio*/
