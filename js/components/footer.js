@@ -1,4 +1,4 @@
-// From 
+// From
 // https://dev.to/anuradha9712/create-reusable-web-components-in-html-1llc
 
 /*
@@ -110,7 +110,7 @@ class Footer extends HTMLElement {
         <i class="fas fa-chevron-up"></i>
     </div>
 
-    <p>&copy; 2020 - 2021 ENKR. All rights reserved.</p>
+    <p>&copy; 2020 - 2022 ENKR. All rights reserved.</p>
     <p>Developed and designed by ENKR</p>
 
 </footer>
