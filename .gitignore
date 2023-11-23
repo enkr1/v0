@@ -1,6 +1,7 @@
 # Mac's
 # find . -name ".DS_Store" -delete
 /.DS_Store
+/.vscode
 
 # Obfuscator
 /_000_web_unencrypted_js
